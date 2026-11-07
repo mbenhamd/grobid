@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "NOTE": "Template only: replace every null with captured evidence before using it; never treat this as a completed lock.",
+  "implementation": {
+    "language": null,
+    "source_commit": null,
+    "build_digest": null,
+    "runtime_versions": {}
+  },
+  "compatibility": {
+    "upstream_commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+    "model_manifest_sha256": null,
+    "effective_config_sha256": null,
+    "extractor_manifest_sha256": null,
+    "corpus_manifest_sha256": null,
+    "comparison_policy_sha256": null,
+    "profile": null
+  },
+  "environment": {
+    "os": null,
+    "cpu": null,
+    "memory_limit_bytes": null,
+    "gpu": null,
+    "locale": null,
+    "timezone": null
+  },
+  "observations": []
+}

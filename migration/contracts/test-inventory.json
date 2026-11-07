@@ -1,0 +1,2144 @@
+{
+  "upstream_commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "method": "Comment-aware lexical inventory of @Test and @Ignore/@Disabled declarations in tracked src/test Java and Kotlin; declaration counts, not test executions. Includes ignored classes, parameterized semantics not expanded.",
+  "counts": {
+    "grobid-core": {
+      "test_source_files": 100,
+      "with_test_annotations": 94,
+      "test_annotations": 714,
+      "ignore_annotations": 28,
+      "class_ignored": 7,
+      "test_annotations_in_ignored_classes": 26
+    },
+    "grobid-service": {
+      "test_source_files": 10,
+      "with_test_annotations": 9,
+      "test_annotations": 55,
+      "ignore_annotations": 2,
+      "class_ignored": 0,
+      "test_annotations_in_ignored_classes": 0
+    },
+    "grobid-trainer": {
+      "test_source_files": 9,
+      "with_test_annotations": 9,
+      "test_annotations": 63,
+      "ignore_annotations": 1,
+      "class_ignored": 0,
+      "test_annotations_in_ignored_classes": 0
+    }
+  },
+  "files": [
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/GrobidModelsTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        34,
+        47,
+        60,
+        86,
+        95
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/GrobidModelsTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/analyzers/GrobidAnalyzerTest.java",
+      "test_annotations": 6,
+      "test_lines": [
+        39,
+        62,
+        67,
+        96,
+        125,
+        154
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/analyzers/GrobidAnalyzerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/analyzers/GrobidDefaultAnalyzerTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        37,
+        60
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/analyzers/GrobidDefaultAnalyzerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/AuthorEmailAssignerTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        28
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/AuthorEmailAssignerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/DateTest.java",
+      "test_annotations": 12,
+      "test_lines": [
+        27,
+        44,
+        63,
+        83,
+        103,
+        122,
+        139,
+        157,
+        172,
+        182,
+        192,
+        201
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/DateTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/EmailSanitizerTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        30
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/EmailSanitizerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/NoteTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        25,
+        33
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/NoteTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/PersonDeduplicationTest.java",
+      "test_annotations": 13,
+      "test_lines": [
+        30,
+        43,
+        67,
+        92,
+        118,
+        144,
+        189,
+        218,
+        241,
+        275,
+        302,
+        330,
+        358
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/PersonDeduplicationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/PersonNormalisationTest.java",
+      "test_annotations": 13,
+      "test_lines": [
+        26,
+        37,
+        46,
+        55,
+        64,
+        73,
+        82,
+        91,
+        100,
+        109,
+        118,
+        129,
+        138
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/PersonNormalisationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/data/util/AuthorAffiliationAssignerTest.java",
+      "test_annotations": 45,
+      "test_lines": [
+        52,
+        66,
+        79,
+        95,
+        116,
+        134,
+        179,
+        201,
+        223,
+        246,
+        272,
+        294,
+        315,
+        336,
+        365,
+        402,
+        447,
+        461,
+        477,
+        507,
+        534,
+        556,
+        575,
+        604,
+        632,
+        656,
+        694,
+        714,
+        720,
+        726,
+        744,
+        825,
+        861,
+        878,
+        900,
+        944,
+        957,
+        980,
+        1036,
+        1117,
+        1155,
+        1191,
+        1226,
+        1276,
+        1313
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        172
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/data/util/AuthorAffiliationAssignerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/document/DocumentSourceTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        32,
+        45
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/document/DocumentSourceTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/document/TEIFormatterIntegrationTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        38
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/document/TEIFormatterIntegrationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/document/TEIFormatterTest.java",
+      "test_annotations": 13,
+      "test_lines": [
+        46,
+        62,
+        85,
+        99,
+        135,
+        167,
+        200,
+        232,
+        261,
+        291,
+        326,
+        358,
+        394
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/document/TEIFormatterTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/document/xml/XmlBuilderUtilsTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        25,
+        31,
+        40,
+        47,
+        54
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/document/xml/XmlBuilderUtilsTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/AffiliationAddressParserTest.java",
+      "test_annotations": 13,
+      "test_lines": [
+        71,
+        149,
+        171,
+        196,
+        230,
+        264,
+        322,
+        379,
+        409,
+        495,
+        535,
+        588,
+        632
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        265
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/AffiliationAddressParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/AuthorParserReDoSTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        35,
+        51,
+        67
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/AuthorParserReDoSTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/AuthorParserTest.java",
+      "test_annotations": 9,
+      "test_lines": [
+        43,
+        53,
+        62,
+        73,
+        83,
+        106,
+        145,
+        158,
+        179
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/AuthorParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/CitationParserTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        37
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/CitationParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/DateParserIntegrationTest.java",
+      "test_annotations": 15,
+      "test_lines": [
+        54,
+        68,
+        85,
+        109,
+        134,
+        158,
+        183,
+        207,
+        223,
+        247,
+        258,
+        268,
+        278,
+        283,
+        292
+      ],
+      "ignore_annotations": 2,
+      "ignore_lines": [
+        133,
+        182
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/DateParserIntegrationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/DateParserTest.java",
+      "test_annotations": 16,
+      "test_lines": [
+        52,
+        61,
+        70,
+        81,
+        92,
+        103,
+        114,
+        125,
+        136,
+        148,
+        164,
+        176,
+        192,
+        204,
+        220,
+        243
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/DateParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/EngineTest.java",
+      "test_annotations": 11,
+      "test_lines": [
+        61,
+        77,
+        1200,
+        1211,
+        1245,
+        1275,
+        1431,
+        1461,
+        1505,
+        1529,
+        1666
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        51
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/EngineTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/HeaderParserTest.java",
+      "test_annotations": 6,
+      "test_lines": [
+        80,
+        148,
+        369,
+        395,
+        406,
+        421
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/HeaderParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/LicenseClassifierTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        30,
+        109,
+        187
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/LicenseClassifierTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/ReferenceSegmenterParserTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        45,
+        82
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/ReferenceSegmenterParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/SegmentationTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        53,
+        74
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/SegmentationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/TaggingLabelsTestImpl.java",
+      "test_annotations": 5,
+      "test_lines": [
+        38,
+        49,
+        61,
+        73,
+        85
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/TaggingLabelsTestImpl.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/TrainingXmlIdSmokeTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        54
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/TrainingXmlIdSmokeTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/citations/CalloutAnalyzerTest.java",
+      "test_annotations": 6,
+      "test_lines": [
+        32,
+        40,
+        48,
+        56,
+        64,
+        72
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/citations/CalloutAnalyzerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/config/DebugCaptureContextTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        60,
+        65,
+        74,
+        82,
+        91
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/config/DebugCaptureContextTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/config/DebugLabelingCollectorTest.java",
+      "test_annotations": 6,
+      "test_lines": [
+        59,
+        70,
+        83,
+        98,
+        108,
+        122
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/config/DebugLabelingCollectorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/patent/ReferenceExtractorTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        55,
+        178,
+        199
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        217
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/patent/ReferenceExtractorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/tagging/DeLFTTaggerIntegrationTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        35
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        30
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/tagging/DeLFTTaggerIntegrationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/tagging/DummyTaggerTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        44,
+        49,
+        56
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/tagging/DummyTaggerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/tagging/GenericTaggerUtilsTest.java",
+      "test_annotations": 9,
+      "test_lines": [
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/tagging/GenericTaggerUtilsTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/engines/tagging/TaggerFactoryTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        46,
+        54,
+        61
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        53
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/engines/tagging/TaggerFactoryTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/factory/GrobidPoolingFactoryTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        22
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/factory/GrobidPoolingFactoryTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/features/FeaturesVectorCitationMiddleDotTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        48,
+        56
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/features/FeaturesVectorCitationMiddleDotTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/features/TestFeatures.java",
+      "test_annotations": 5,
+      "test_lines": [
+        48,
+        66,
+        81,
+        98,
+        116
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/features/TestFeatures.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/jni/JEPThreadPoolClassifierTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        38,
+        48,
+        56
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/jni/JEPThreadPoolClassifierTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/jni/JEPThreadPoolTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        38,
+        48,
+        56
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/jni/JEPThreadPoolTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lang/LanguageTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        26,
+        90,
+        95,
+        100,
+        105
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lang/LanguageTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lang/impl/BlingFireSentenceDetectorTest.java",
+      "test_annotations": 7,
+      "test_lines": [
+        31,
+        41,
+        52,
+        58,
+        64,
+        73,
+        89
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lang/impl/BlingFireSentenceDetectorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lang/impl/OpenNLPSentenceDetectorTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        50,
+        59,
+        70,
+        76,
+        91
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lang/impl/OpenNLPSentenceDetectorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lang/impl/PragmaticSentenceDetectorCoverageTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        42,
+        47
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lang/impl/PragmaticSentenceDetectorCoverageTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lang/impl/PragmaticSentenceDetectorTest.java",
+      "test_annotations": 18,
+      "test_lines": [
+        37,
+        50,
+        69,
+        88,
+        107,
+        126,
+        144,
+        154,
+        168,
+        182,
+        206,
+        230,
+        247,
+        264,
+        280,
+        289,
+        306,
+        320
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lang/impl/PragmaticSentenceDetectorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lang/impl/PragmaticSentenceOffsetsBenchmark.java",
+      "test_annotations": 1,
+      "test_lines": [
+        54
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        48
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lang/impl/PragmaticSentenceOffsetsBenchmark.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lexicon/FastMatcherTest.java",
+      "test_annotations": 14,
+      "test_lines": [
+        46,
+        53,
+        60,
+        67,
+        74,
+        81,
+        95,
+        113,
+        131,
+        141,
+        151,
+        160,
+        172,
+        187
+      ],
+      "ignore_annotations": 4,
+      "ignore_lines": [
+        112,
+        130,
+        140,
+        150
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lexicon/FastMatcherTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lexicon/LexiconIntegrationTest.java",
+      "test_annotations": 29,
+      "test_lines": [
+        42,
+        52,
+        62,
+        73,
+        84,
+        93,
+        107,
+        117,
+        129,
+        139,
+        156,
+        167,
+        183,
+        194,
+        210,
+        226,
+        243,
+        254,
+        273,
+        290,
+        301,
+        315,
+        329,
+        350,
+        369,
+        389,
+        410,
+        423,
+        439
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lexicon/LexiconIntegrationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/lexicon/LexiconTest.java",
+      "test_annotations": 29,
+      "test_lines": [
+        39,
+        51,
+        67,
+        79,
+        96,
+        109,
+        122,
+        196,
+        231,
+        279,
+        332,
+        391,
+        438,
+        487,
+        540,
+        600,
+        669,
+        721,
+        738,
+        751,
+        764,
+        780,
+        796,
+        812,
+        825,
+        934,
+        1013,
+        1114,
+        1178
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        110
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/lexicon/LexiconTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/process/ProcessEnvironmentTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        36
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/process/ProcessEnvironmentTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/sax/CrossrefUnixrefSaxParserTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        50,
+        60
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/sax/CrossrefUnixrefSaxParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/sax/PDFALTOAnnotationSaxParserTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        53
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/sax/PDFALTOAnnotationSaxParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/sax/PDFALTOOutlineSaxHandlerTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        53,
+        73
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/sax/PDFALTOOutlineSaxHandlerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/sax/PDFALTOSaxHandlerTest.java",
+      "test_annotations": 7,
+      "test_lines": [
+        61,
+        77,
+        93,
+        112,
+        163,
+        168,
+        176
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/sax/PDFALTOSaxHandlerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/sax/TextSaxParserTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        45,
+        59
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/sax/TextSaxParserTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/EngineTest.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/EngineTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/Runner.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/Runner.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestAffiliationAddressParser.java",
+      "test_annotations": 2,
+      "test_lines": [
+        45,
+        72
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestAffiliationAddressParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestChemicalNameParser.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        28
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestChemicalNameParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestCitationParser.java",
+      "test_annotations": 5,
+      "test_lines": [
+        44,
+        71,
+        81,
+        96,
+        139
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        45
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestCitationParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestCitationPatentParser.java",
+      "test_annotations": 1,
+      "test_lines": [
+        107
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestCitationPatentParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestDate.java",
+      "test_annotations": 6,
+      "test_lines": [
+        45,
+        59,
+        71,
+        90,
+        110,
+        128
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestDate.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestEbookParser.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        22
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestEbookParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestFullTextParser.java",
+      "test_annotations": 6,
+      "test_lines": [
+        55,
+        73,
+        81,
+        88,
+        95,
+        102
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestFullTextParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestHeaderParser.java",
+      "test_annotations": 1,
+      "test_lines": [
+        50
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestHeaderParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestNameParser.java",
+      "test_annotations": 3,
+      "test_lines": [
+        41,
+        87,
+        111
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestNameParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/test/TestReferencesParser.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/test/TestReferencesParser.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/tokenization/TaggingTokenClusterorTest.java",
+      "test_annotations": 6,
+      "test_lines": [
+        45,
+        55,
+        65,
+        75,
+        89,
+        131
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/tokenization/TaggingTokenClusterorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/tokenization/TaggingTokenSynchronizerTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        45,
+        65
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/tokenization/TaggingTokenSynchronizerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/transformation/xslt/JatsTransformerTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        31,
+        40
+      ],
+      "ignore_annotations": 2,
+      "ignore_lines": [
+        32,
+        41
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/transformation/xslt/JatsTransformerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/ConsolidationIntegrationTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        46
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        47
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/ConsolidationIntegrationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/ConsolidationTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        39
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/ConsolidationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/DataSetContextExtractorTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        26
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/DataSetContextExtractorTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/GrobidHomeFinderTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        39,
+        50
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/GrobidHomeFinderTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/GrobidPropertiesTest.java",
+      "test_annotations": 12,
+      "test_lines": [
+        45,
+        50,
+        55,
+        65,
+        75,
+        85,
+        95,
+        105,
+        118,
+        136,
+        144,
+        153
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        33
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/GrobidPropertiesTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/GrobidTestUtils.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/GrobidTestUtils.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/IOUtilitiesTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        30,
+        37
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/IOUtilitiesTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/LayoutTokensUtilIntegrationTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        40,
+        54
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/LayoutTokensUtilIntegrationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/LayoutTokensUtilTest.java",
+      "test_annotations": 10,
+      "test_lines": [
+        36,
+        47,
+        58,
+        70,
+        81,
+        92,
+        119,
+        128,
+        145,
+        162
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/LayoutTokensUtilTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/SHA1Test.java",
+      "test_annotations": 1,
+      "test_lines": [
+        23
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/SHA1Test.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/SentenceUtilitiesForbiddenIntervalTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        79
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/SentenceUtilitiesForbiddenIntervalTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/SentenceUtilitiesTest.java",
+      "test_annotations": 10,
+      "test_lines": [
+        55,
+        62,
+        74,
+        86,
+        99,
+        115,
+        132,
+        151,
+        170,
+        189
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/SentenceUtilitiesTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/SentenceUtilitiesTrimTest.java",
+      "test_annotations": 9,
+      "test_lines": [
+        35,
+        46,
+        57,
+        65,
+        73,
+        82,
+        90,
+        107,
+        112
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/SentenceUtilitiesTrimTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/TextUtilitiesTest.java",
+      "test_annotations": 71,
+      "test_lines": [
+        38,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95,
+        100,
+        105,
+        110,
+        116,
+        125,
+        130,
+        137,
+        142,
+        149,
+        159,
+        172,
+        180,
+        190,
+        210,
+        219,
+        228,
+        247,
+        267,
+        278,
+        292,
+        299,
+        309,
+        326,
+        343,
+        360,
+        388,
+        396,
+        404,
+        411,
+        418,
+        425,
+        432,
+        439,
+        446,
+        453,
+        460,
+        467,
+        474,
+        481,
+        488,
+        495,
+        502,
+        509,
+        515,
+        522,
+        529,
+        536,
+        544,
+        552,
+        560,
+        570,
+        595,
+        631,
+        674,
+        715,
+        750,
+        773,
+        781,
+        787
+      ],
+      "ignore_annotations": 4,
+      "ignore_lines": [
+        266,
+        277,
+        291,
+        298
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/TextUtilitiesTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/UnicodeUtilMiddleDotTest.java",
+      "test_annotations": 9,
+      "test_lines": [
+        36,
+        48,
+        58,
+        68,
+        78,
+        85,
+        91,
+        100,
+        112
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/UnicodeUtilMiddleDotTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/UnicodeUtilTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        33
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        30
+      ],
+      "class_ignored": true,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/UnicodeUtilTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/UtilitiesTest.java",
+      "test_annotations": 11,
+      "test_lines": [
+        35,
+        43,
+        51,
+        59,
+        67,
+        75,
+        83,
+        91,
+        106,
+        125,
+        144
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/UtilitiesTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/counters/GrobidTimerTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        31,
+        41,
+        56
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/counters/GrobidTimerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/counters/impl/CntManagerImplTest.java",
+      "test_annotations": 10,
+      "test_lines": [
+        44,
+        51,
+        65,
+        80,
+        106,
+        121,
+        139,
+        148,
+        168,
+        175
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/counters/impl/CntManagerImplTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/counters/impl/CntManagerReportRepresentationTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        36,
+        55
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/counters/impl/CntManagerReportRepresentationTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/utilities/crossref/WorkDeserializerTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        43,
+        61
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/utilities/crossref/WorkDeserializerTest.java"
+    },
+    {
+      "path": "grobid-core/src/test/java/org/grobid/core/visualization/TestCitationsVisualizer.java",
+      "test_annotations": 2,
+      "test_lines": [
+        47,
+        101
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/java/org/grobid/core/visualization/TestCitationsVisualizer.java"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/data/BiblioItemTest.kt",
+      "test_annotations": 89,
+      "test_lines": [
+        55,
+        78,
+        107,
+        136,
+        155,
+        177,
+        198,
+        234,
+        239,
+        263,
+        303,
+        344,
+        384,
+        421,
+        448,
+        477,
+        508,
+        536,
+        567,
+        594,
+        624,
+        646,
+        655,
+        664,
+        673,
+        682,
+        691,
+        700,
+        729,
+        738,
+        747,
+        756,
+        765,
+        779,
+        793,
+        804,
+        812,
+        820,
+        833,
+        847,
+        859,
+        871,
+        883,
+        902,
+        915,
+        925,
+        933,
+        941,
+        950,
+        970,
+        988,
+        998,
+        1012,
+        1022,
+        1031,
+        1046,
+        1071,
+        1110,
+        1118,
+        1126,
+        1134,
+        1142,
+        1150,
+        1158,
+        1166,
+        1174,
+        1184,
+        1197,
+        1205,
+        1214,
+        1225,
+        1233,
+        1241,
+        1250,
+        1261,
+        1272,
+        1283,
+        1294,
+        1304,
+        1312,
+        1322,
+        1328,
+        1339,
+        1348,
+        1359,
+        1371,
+        1385,
+        1401,
+        1414
+      ],
+      "ignore_annotations": 2,
+      "ignore_lines": [
+        896,
+        1040
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/data/BiblioItemTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/document/DocumentTest.kt",
+      "test_annotations": 5,
+      "test_lines": [
+        48,
+        58,
+        68,
+        120,
+        178
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/document/DocumentTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/engines/FullTextParserTest.kt",
+      "test_annotations": 12,
+      "test_lines": [
+        75,
+        115,
+        162,
+        202,
+        249,
+        303,
+        402,
+        422,
+        454,
+        501,
+        556,
+        610
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/engines/FullTextParserTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/engines/FundingAcknowledgementParserIntegrationTest.kt",
+      "test_annotations": 10,
+      "test_lines": [
+        43,
+        77,
+        103,
+        123,
+        148,
+        174,
+        198,
+        218,
+        238,
+        258
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/engines/FundingAcknowledgementParserIntegrationTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/engines/FundingAcknowledgementParserTest.kt",
+      "test_annotations": 6,
+      "test_lines": [
+        49,
+        132,
+        186,
+        221,
+        326,
+        397
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/engines/FundingAcknowledgementParserTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/lang/impl/LinguaLanguageDetectorTest.kt",
+      "test_annotations": 6,
+      "test_lines": [
+        28,
+        36,
+        44,
+        52,
+        59,
+        66
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/lang/impl/LinguaLanguageDetectorTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/utilities/LabelUtilsTest.kt",
+      "test_annotations": 4,
+      "test_lines": [
+        30,
+        112,
+        187,
+        234
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/utilities/LabelUtilsTest.kt"
+    },
+    {
+      "path": "grobid-core/src/test/kotlin/org/grobid/core/utilities/SentenceUtilitiesKTest.kt",
+      "test_annotations": 2,
+      "test_lines": [
+        24,
+        33
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/test/kotlin/org/grobid/core/utilities/SentenceUtilitiesKTest.kt"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/main/GrobidMetricsFilterTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        49,
+        75,
+        105
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/main/GrobidMetricsFilterTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/metrics/ApplicationMetricsTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        39,
+        66,
+        78,
+        100,
+        109
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/metrics/ApplicationMetricsTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/metrics/OtlpMetricsReporterTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        37,
+        44,
+        51,
+        60,
+        67
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/metrics/OtlpMetricsReporterTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/module/GrobidServiceModuleTest.java",
+      "test_annotations": 0,
+      "test_lines": [],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/module/GrobidServiceModuleTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessFilesTest.java",
+      "test_annotations": 3,
+      "test_lines": [
+        50,
+        74,
+        109
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessFilesTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessStringTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        57,
+        77
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessStringTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessTrainingConcurrencyTest.java",
+      "test_annotations": 6,
+      "test_lines": [
+        39,
+        44,
+        50,
+        58,
+        68,
+        75
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessTrainingConcurrencyTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessTrainingTasksTest.java",
+      "test_annotations": 7,
+      "test_lines": [
+        53,
+        64,
+        80,
+        91,
+        97,
+        108,
+        114
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/process/GrobidRestProcessTrainingTasksTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/tests/GrobidRestServiceTest.java",
+      "test_annotations": 22,
+      "test_lines": [
+        103,
+        109,
+        129,
+        153,
+        162,
+        171,
+        183,
+        194,
+        208,
+        258,
+        270,
+        279,
+        310,
+        342,
+        379,
+        402,
+        536,
+        576,
+        599,
+        620,
+        641,
+        654
+      ],
+      "ignore_annotations": 2,
+      "ignore_lines": [
+        209,
+        426
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/tests/GrobidRestServiceTest.java"
+    },
+    {
+      "path": "grobid-service/src/test/java/org/grobid/service/util/GrobidRestUtilsTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        28,
+        35
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/test/java/org/grobid/service/util/GrobidRestUtilsTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/AbstractTrainerIntegrationTest.java",
+      "test_annotations": 4,
+      "test_lines": [
+        93,
+        133,
+        200,
+        221
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/AbstractTrainerIntegrationTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/StatsTest.java",
+      "test_annotations": 19,
+      "test_lines": [
+        36,
+        43,
+        53,
+        63,
+        72,
+        79,
+        88,
+        97,
+        108,
+        129,
+        157,
+        179,
+        207,
+        234,
+        264,
+        329,
+        403,
+        428,
+        439
+      ],
+      "ignore_annotations": 1,
+      "ignore_lines": [
+        263
+      ],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/StatsTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/evaluation/EndToEndEvaluationTest.java",
+      "test_annotations": 5,
+      "test_lines": [
+        32,
+        51,
+        72,
+        81,
+        157
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/evaluation/EndToEndEvaluationTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/evaluation/EvaluationUtilitiesTest.java",
+      "test_annotations": 9,
+      "test_lines": [
+        28,
+        45,
+        63,
+        87,
+        108,
+        128,
+        148,
+        170,
+        226
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/evaluation/EvaluationUtilitiesTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/evaluation/ModelStatsTest.java",
+      "test_annotations": 10,
+      "test_lines": [
+        39,
+        44,
+        55,
+        68,
+        87,
+        105,
+        123,
+        141,
+        159,
+        176
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/evaluation/ModelStatsTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/evaluation/utilities/FieldSpecificationTest.java",
+      "test_annotations": 12,
+      "test_lines": [
+        52,
+        80,
+        130,
+        149,
+        164,
+        169,
+        186,
+        199,
+        205,
+        215,
+        220,
+        229
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/evaluation/utilities/FieldSpecificationTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/sax/TEICitationSaxParserTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        41
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/sax/TEICitationSaxParserTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/sax/TEIHeaderArticleLightSaxParserTest.java",
+      "test_annotations": 2,
+      "test_lines": [
+        40,
+        57
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/sax/TEIHeaderArticleLightSaxParserTest.java"
+    },
+    {
+      "path": "grobid-trainer/src/test/java/org/grobid/trainer/sax/TEISegmentationArticleLightSaxParserTest.java",
+      "test_annotations": 1,
+      "test_lines": [
+        42
+      ],
+      "ignore_annotations": 0,
+      "ignore_lines": [],
+      "class_ignored": false,
+      "source_url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/test/java/org/grobid/trainer/sax/TEISegmentationArticleLightSaxParserTest.java"
+    }
+  ],
+  "tree_inventory": {
+    "tracked_files": 13904,
+    "main_source_files": {
+      "grobid-core": 238,
+      "grobid-service": 32,
+      "grobid-trainer": 69
+    },
+    "test_resource_files": {
+      "grobid-core": 68,
+      "grobid-service": 15,
+      "grobid-trainer": 8
+    },
+    "training_dataset_entries": 12134,
+    "training_dataset_templates": 26,
+    "training_dataset_entries_by_family": {
+      "acknowledgment": 1,
+      "affiliation-address": 1132,
+      "citation": 472,
+      "date": 358,
+      "ebook": 3,
+      "entities": 357,
+      "figure": 46,
+      "fulltext": 417,
+      "funding-acknowledgement": 5,
+      "header": 3398,
+      "name": 1170,
+      "patent": 288,
+      "reference-segmenter": 284,
+      "segmentation": 4136,
+      "shorttext": 16,
+      "table": 51
+    },
+    "home_entries_by_family": {
+      "config": 5,
+      "language-detection": 53,
+      "lexicon": 50,
+      "lib": 13,
+      "models": 86,
+      "pdfalto": 266,
+      "schemas": 12,
+      "scripts": 4,
+      "sentence-segmentation": 38
+    }
+  },
+  "runtime_executed": false
+}

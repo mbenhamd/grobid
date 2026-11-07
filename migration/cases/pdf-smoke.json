@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "suite_id": "pdf-smoke-v1",
+  "profile": "crf-offline",
+  "description": "Uses fixture already in the GROBID fork. XML timestamp/generated-ID and ZIP TEI content may differ between Java repeats; strict harness intentionally exposes that until T007.",
+  "cases": [
+    {
+      "id": "header",
+      "method": "POST",
+      "path": "/api/processHeaderDocument",
+      "encoding": "multipart",
+      "headers": [
+        [
+          "Accept",
+          "application/xml"
+        ]
+      ],
+      "fields": [
+        [
+          "consolidateHeader",
+          "0"
+        ]
+      ],
+      "files": [
+        {
+          "field": "input",
+          "path": "../../grobid-service/src/test/resources/sample1/sample.pdf",
+          "filename": "sample.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "comparator": "xml",
+      "expected_status": 200
+    },
+    {
+      "id": "fulltext",
+      "method": "POST",
+      "path": "/api/processFulltextDocument",
+      "encoding": "multipart",
+      "headers": [
+        [
+          "Accept",
+          "application/xml"
+        ]
+      ],
+      "fields": [
+        [
+          "consolidateHeader",
+          "0"
+        ],
+        [
+          "consolidateCitations",
+          "0"
+        ],
+        [
+          "generateIDs",
+          "0"
+        ],
+        [
+          "segmentSentences",
+          "0"
+        ]
+      ],
+      "files": [
+        {
+          "field": "input",
+          "path": "../../grobid-service/src/test/resources/sample1/sample.pdf",
+          "filename": "sample.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "comparator": "xml",
+      "expected_status": 200
+    },
+    {
+      "id": "fulltext-coordinates",
+      "method": "POST",
+      "path": "/api/processFulltextDocument",
+      "encoding": "multipart",
+      "headers": [
+        [
+          "Accept",
+          "application/xml"
+        ]
+      ],
+      "fields": [
+        [
+          "consolidateHeader",
+          "0"
+        ],
+        [
+          "consolidateCitations",
+          "0"
+        ],
+        [
+          "teiCoordinates",
+          "persName"
+        ],
+        [
+          "teiCoordinates",
+          "ref"
+        ]
+      ],
+      "files": [
+        {
+          "field": "input",
+          "path": "../../grobid-service/src/test/resources/sample1/sample.pdf",
+          "filename": "sample.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "comparator": "xml",
+      "expected_status": 200
+    },
+    {
+      "id": "references",
+      "method": "POST",
+      "path": "/api/processReferences",
+      "encoding": "multipart",
+      "headers": [
+        [
+          "Accept",
+          "application/xml"
+        ]
+      ],
+      "fields": [
+        [
+          "consolidateCitations",
+          "0"
+        ]
+      ],
+      "files": [
+        {
+          "field": "input",
+          "path": "../../grobid-service/src/test/resources/sample1/sample.pdf",
+          "filename": "sample.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "comparator": "xml",
+      "expected_status": 200
+    },
+    {
+      "id": "assets",
+      "method": "POST",
+      "path": "/api/processFulltextAssetDocument",
+      "encoding": "multipart",
+      "headers": [
+        [
+          "Accept",
+          "application/zip"
+        ]
+      ],
+      "fields": [
+        [
+          "consolidateHeader",
+          "0"
+        ],
+        [
+          "consolidateCitations",
+          "0"
+        ]
+      ],
+      "files": [
+        {
+          "field": "input",
+          "path": "../../grobid-service/src/test/resources/sample1/sample.pdf",
+          "filename": "sample.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "comparator": "zip",
+      "expected_status": 200
+    }
+  ]
+}

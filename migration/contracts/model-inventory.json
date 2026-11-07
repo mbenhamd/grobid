@@ -1,0 +1,1470 @@
+{
+  "upstream": "https://github.com/grobidOrg/grobid",
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "evidence": "static source audit; no model loading or runtime execution",
+  "cautions": [
+    "Resolved engine/architecture are calculated from the source prefix lookup; other nested fields are not deep-merged.",
+    "DeLFTModel normalizes hyphens to underscores before certain runtime getters; effective Python runtime values must be captured from the Java oracle.",
+    "Model files listed in git tree were not downloaded or verified against filesystem model availability.",
+    "Presence in GrobidModels enum does not prove an installed supported model."
+  ],
+  "profiles": {
+    "grobid.yaml": {
+      "source_sha256": "3c0f62ea53e96bceac3c9a7f85c61005b3f4d314af8786f7603f59b8083fa053",
+      "model_entry_count": 21,
+      "models": [
+        {
+          "name": "segmentation",
+          "source_line": 119,
+          "configured": {
+            "name": "segmentation",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 1
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 10
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-article-light",
+          "source_line": 140,
+          "configured": {
+            "name": "segmentation-article-light",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-article-light-ref",
+          "source_line": 148,
+          "configured": {
+            "name": "segmentation-article-light-ref",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-sdo-ietf",
+          "source_line": 156,
+          "configured": {
+            "name": "segmentation-sdo-ietf",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation-sdo-ietf",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "fulltext",
+          "source_line": 165,
+          "configured": {
+            "name": "fulltext",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 0.0001,
+              "window": 20,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "fulltext",
+          "resolved_architecture_from_prefix_lookup": null,
+          "architecture_source": null,
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header",
+          "source_line": 174,
+          "configured": {
+            "name": "header",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 1
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 9
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-article-light",
+          "source_line": 198,
+          "configured": {
+            "name": "header-article-light",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-article-light-ref",
+          "source_line": 207,
+          "configured": {
+            "name": "header-article-light-ref",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "header-article-light-ref",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-sdo-ietf",
+          "source_line": 216,
+          "configured": {
+            "name": "header-sdo-ietf",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "header-sdo-ietf",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "reference-segmenter",
+          "source_line": 225,
+          "configured": {
+            "name": "reference-segmenter",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 2
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 10
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "reference-segmenter",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "reference-segmenter",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "name-header",
+          "source_line": 244,
+          "configured": {
+            "name": "name-header",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "name-header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "name-header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "name-citation",
+          "source_line": 251,
+          "configured": {
+            "name": "name-citation",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "name-citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "name-citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "date",
+          "source_line": 258,
+          "configured": {
+            "name": "date",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "date",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "date",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "figure",
+          "source_line": 265,
+          "configured": {
+            "name": "figure",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "figure",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF",
+          "architecture_source": "figure",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "table",
+          "source_line": 276,
+          "configured": {
+            "name": "table",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "table",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF",
+          "architecture_source": "table",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "affiliation-address",
+          "source_line": 287,
+          "configured": {
+            "name": "affiliation-address",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "affiliation-address",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "affiliation-address",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "citation",
+          "source_line": 294,
+          "configured": {
+            "name": "citation",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 50,
+              "nbMaxIterations": 3000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 500,
+                "batch_size": 30
+              },
+              "training": {
+                "max_sequence_length": 500,
+                "batch_size": 50
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "patent-citation",
+          "source_line": 316,
+          "configured": {
+            "name": "patent-citation",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 0.0001,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 800,
+                "batch_size": 20
+              },
+              "training": {
+                "max_sequence_length": 1000,
+                "batch_size": 40
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "patent-citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "patent-citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "funding-acknowledgement",
+          "source_line": 336,
+          "configured": {
+            "name": "funding-acknowledgement",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 50,
+              "nbMaxIterations": 2000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 800,
+                "batch_size": 20
+              },
+              "training": {
+                "max_sequence_length": 500,
+                "batch_size": 40
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "funding-acknowledgement",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "funding-acknowledgement",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "copyright",
+          "source_line": 358,
+          "configured": {
+            "name": "copyright",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "gru"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "copyright",
+          "resolved_architecture_from_prefix_lookup": "gru",
+          "architecture_source": "copyright",
+          "active_sequence_model": false,
+          "note": "Classifier disabled with wapiti; only DeLFT implementation exists."
+        },
+        {
+          "name": "license",
+          "source_line": 369,
+          "configured": {
+            "name": "license",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "gru"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "license",
+          "resolved_architecture_from_prefix_lookup": "gru",
+          "architecture_source": "license",
+          "active_sequence_model": false,
+          "note": "Classifier disabled with wapiti; only DeLFT implementation exists."
+        }
+      ]
+    },
+    "grobid-full.yaml": {
+      "source_sha256": "70f7677f8d4295e4d443b348b1340371bda7a41841f52b2c2bdf00ee5b1534ae",
+      "model_entry_count": 21,
+      "models": [
+        {
+          "name": "segmentation",
+          "source_line": 114,
+          "configured": {
+            "name": "segmentation",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 1
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 10
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-article-light",
+          "source_line": 135,
+          "configured": {
+            "name": "segmentation-article-light",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-article-light-ref",
+          "source_line": 143,
+          "configured": {
+            "name": "segmentation-article-light-ref",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-sdo-ietf",
+          "source_line": 151,
+          "configured": {
+            "name": "segmentation-sdo-ietf",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation-sdo-ietf",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "fulltext",
+          "source_line": 160,
+          "configured": {
+            "name": "fulltext",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 0.0001,
+              "window": 20,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "fulltext",
+          "resolved_architecture_from_prefix_lookup": null,
+          "architecture_source": null,
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header",
+          "source_line": 169,
+          "configured": {
+            "name": "header",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 1
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 9
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-article-light",
+          "source_line": 193,
+          "configured": {
+            "name": "header-article-light",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-article-light-ref",
+          "source_line": 201,
+          "configured": {
+            "name": "header-article-light-ref",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-sdo-ietf",
+          "source_line": 209,
+          "configured": {
+            "name": "header-sdo-ietf",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "header-sdo-ietf",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "reference-segmenter",
+          "source_line": 218,
+          "configured": {
+            "name": "reference-segmenter",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 2
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 10
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "reference-segmenter",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "reference-segmenter",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "name-header",
+          "source_line": 237,
+          "configured": {
+            "name": "name-header",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "name-header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "name-header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "name-citation",
+          "source_line": 244,
+          "configured": {
+            "name": "name-citation",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "name-citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "name-citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "date",
+          "source_line": 251,
+          "configured": {
+            "name": "date",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "date",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "date",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "figure",
+          "source_line": 258,
+          "configured": {
+            "name": "figure",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "figure",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF",
+          "architecture_source": "figure",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "table",
+          "source_line": 269,
+          "configured": {
+            "name": "table",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "table",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF",
+          "architecture_source": "table",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "affiliation-address",
+          "source_line": 280,
+          "configured": {
+            "name": "affiliation-address",
+            "engine": "delft",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "affiliation-address",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "affiliation-address",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "citation",
+          "source_line": 287,
+          "configured": {
+            "name": "citation",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 50,
+              "nbMaxIterations": 3000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 500,
+                "batch_size": 30
+              },
+              "training": {
+                "max_sequence_length": 500,
+                "batch_size": 50
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "patent-citation",
+          "source_line": 309,
+          "configured": {
+            "name": "patent-citation",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 0.0001,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 800,
+                "batch_size": 20
+              },
+              "training": {
+                "max_sequence_length": 1000,
+                "batch_size": 40
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "patent-citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "patent-citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "funding-acknowledgement",
+          "source_line": 329,
+          "configured": {
+            "name": "funding-acknowledgement",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 50,
+              "nbMaxIterations": 2000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 800,
+                "batch_size": 20
+              },
+              "training": {
+                "max_sequence_length": 500,
+                "batch_size": 40
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "funding-acknowledgement",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "funding-acknowledgement",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "copyright",
+          "source_line": 351,
+          "configured": {
+            "name": "copyright",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "gru"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "copyright",
+          "resolved_architecture_from_prefix_lookup": "gru",
+          "architecture_source": "copyright",
+          "active_sequence_model": false,
+          "note": "Classifier disabled with wapiti; only DeLFT implementation exists."
+        },
+        {
+          "name": "license",
+          "source_line": 362,
+          "configured": {
+            "name": "license",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "gru"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "license",
+          "resolved_architecture_from_prefix_lookup": "gru",
+          "architecture_source": "license",
+          "active_sequence_model": false,
+          "note": "Classifier disabled with wapiti; only DeLFT implementation exists."
+        }
+      ]
+    },
+    "grobid-evaluation.yaml": {
+      "source_sha256": "f9c3a1b769c2c946b688dab6ae007f5771bdf4cb6d435f0f5bb682883d6892f7",
+      "model_entry_count": 20,
+      "models": [
+        {
+          "name": "segmentation",
+          "source_line": 88,
+          "configured": {
+            "name": "segmentation",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 1
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 10
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-article-light",
+          "source_line": 109,
+          "configured": {
+            "name": "segmentation-article-light",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation-article-light",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "segmentation-article-light-ref",
+          "source_line": 117,
+          "configured": {
+            "name": "segmentation-article-light-ref",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-07,
+              "window": 50,
+              "nbMaxIterations": 2000
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "segmentation-article-light-ref",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "segmentation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "fulltext",
+          "source_line": 125,
+          "configured": {
+            "name": "fulltext",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 0.0001,
+              "window": 20,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "fulltext",
+          "resolved_architecture_from_prefix_lookup": null,
+          "architecture_source": null,
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header",
+          "source_line": 134,
+          "configured": {
+            "name": "header",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 1
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 9
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-article-light",
+          "source_line": 158,
+          "configured": {
+            "name": "header-article-light",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "header-article-light",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header-article-light",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-article-light-ref",
+          "source_line": 169,
+          "configured": {
+            "name": "header-article-light-ref",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "header-article-light-ref",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header-article-light-ref",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "header-sdo-ietf",
+          "source_line": 180,
+          "configured": {
+            "name": "header-sdo-ietf",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-06,
+              "window": 30,
+              "nbMaxIterations": 1500
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "header-sdo-ietf",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "reference-segmenter",
+          "source_line": 188,
+          "configured": {
+            "name": "reference-segmenter",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_ChainCRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 3000,
+                "batch_size": 2
+              },
+              "training": {
+                "max_sequence_length": 3000,
+                "batch_size": 10
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "reference-segmenter",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_ChainCRF_FEATURES",
+          "architecture_source": "reference-segmenter",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "name-header",
+          "source_line": 207,
+          "configured": {
+            "name": "name-header",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "name-header",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "name-header",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "name-citation",
+          "source_line": 214,
+          "configured": {
+            "name": "name-citation",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "name-citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "name-citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "date",
+          "source_line": 221,
+          "configured": {
+            "name": "date",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "date",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "date",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "figure",
+          "source_line": 228,
+          "configured": {
+            "name": "figure",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "figure",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF",
+          "architecture_source": "figure",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "table",
+          "source_line": 239,
+          "configured": {
+            "name": "table",
+            "engine": "wapiti",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "table",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF",
+          "architecture_source": "table",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "affiliation-address",
+          "source_line": 250,
+          "configured": {
+            "name": "affiliation-address",
+            "engine": "delft",
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "affiliation-address",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "affiliation-address",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "citation",
+          "source_line": 257,
+          "configured": {
+            "name": "citation",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 50,
+              "nbMaxIterations": 3000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 500,
+                "batch_size": 30
+              },
+              "training": {
+                "max_sequence_length": 500,
+                "batch_size": 50
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "patent-citation",
+          "source_line": 279,
+          "configured": {
+            "name": "patent-citation",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 0.0001,
+              "window": 20
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 800,
+                "batch_size": 20
+              },
+              "training": {
+                "max_sequence_length": 1000,
+                "batch_size": 40
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "patent-citation",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "patent-citation",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "funding-acknowledgement",
+          "source_line": 299,
+          "configured": {
+            "name": "funding-acknowledgement",
+            "engine": "delft",
+            "wapiti": {
+              "epsilon": 1e-05,
+              "window": 50,
+              "nbMaxIterations": 2000
+            },
+            "delft": {
+              "architecture": "BidLSTM_CRF_FEATURES",
+              "runtime": {
+                "max_sequence_length": 800,
+                "batch_size": 20
+              },
+              "training": {
+                "max_sequence_length": 500,
+                "batch_size": 40
+              }
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "delft",
+          "engine_source": "funding-acknowledgement",
+          "resolved_architecture_from_prefix_lookup": "BidLSTM_CRF_FEATURES",
+          "architecture_source": "funding-acknowledgement",
+          "active_sequence_model": true,
+          "note": null
+        },
+        {
+          "name": "copyright",
+          "source_line": 321,
+          "configured": {
+            "name": "copyright",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "gru"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "copyright",
+          "resolved_architecture_from_prefix_lookup": "gru",
+          "architecture_source": "copyright",
+          "active_sequence_model": false,
+          "note": "Classifier disabled with wapiti; only DeLFT implementation exists."
+        },
+        {
+          "name": "license",
+          "source_line": 332,
+          "configured": {
+            "name": "license",
+            "engine": "wapiti",
+            "delft": {
+              "architecture": "gru"
+            }
+          },
+          "resolved_engine_from_prefix_lookup": "wapiti",
+          "engine_source": "license",
+          "resolved_architecture_from_prefix_lookup": "gru",
+          "architecture_source": "license",
+          "active_sequence_model": false,
+          "note": "Classifier disabled with wapiti; only DeLFT implementation exists."
+        }
+      ]
+    }
+  },
+  "git_tree_model_paths": [
+    "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/affiliation-address/model.wapiti",
+    "grobid-home/models/citation-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/config.json",
+    "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+    "grobid-home/models/citation/model.wapiti",
+    "grobid-home/models/copyright_gru/config.json",
+    "grobid-home/models/copyright_gru/model_weights.hdf5",
+    "grobid-home/models/date-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/date-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/date-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/date/model.wapiti",
+    "grobid-home/models/figure-BidLSTM_CRF/config.json",
+    "grobid-home/models/figure-BidLSTM_CRF/model_weights.hdf5",
+    "grobid-home/models/figure-BidLSTM_CRF/preprocessor.json",
+    "grobid-home/models/figure-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/figure-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/figure-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/figure/model.wapiti",
+    "grobid-home/models/fulltext/article/light-ref/model.wapiti",
+    "grobid-home/models/fulltext/article/light/model.wapiti",
+    "grobid-home/models/fulltext/model.wapiti",
+    "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/funding-acknowledgement/model.wapiti",
+    "grobid-home/models/header-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/header-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/header-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/config.json",
+    "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+    "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/config.json",
+    "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+    "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/config.json",
+    "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+    "grobid-home/models/header/article/light-ref/model.wapiti",
+    "grobid-home/models/header/article/light-ref/placeholder.txt",
+    "grobid-home/models/header/article/light/model.wapiti",
+    "grobid-home/models/header/article/light/placeholder.txt",
+    "grobid-home/models/header/model.wapiti",
+    "grobid-home/models/header/sdo/ietf/model.wapiti",
+    "grobid-home/models/license_gru/config.json",
+    "grobid-home/models/license_gru/model_weights.hdf5",
+    "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/name/citation/model.wapiti",
+    "grobid-home/models/name/header/model.wapiti",
+    "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/patent/citation/model.wapiti",
+    "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/config.json",
+    "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/preprocessor.json",
+    "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/config.json",
+    "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+    "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+    "grobid-home/models/reference-segmenter/model.wapiti",
+    "grobid-home/models/segmentation/article/light-ref/model.wapiti",
+    "grobid-home/models/segmentation/article/light-ref/placeholder.txt",
+    "grobid-home/models/segmentation/article/light/model.wapiti",
+    "grobid-home/models/segmentation/article/light/placeholder.txt",
+    "grobid-home/models/segmentation/model.wapiti",
+    "grobid-home/models/segmentation/sdo/ietf/model.wapiti",
+    "grobid-home/models/table-BidLSTM_CRF/config.json",
+    "grobid-home/models/table-BidLSTM_CRF/model_weights.hdf5",
+    "grobid-home/models/table-BidLSTM_CRF/preprocessor.json",
+    "grobid-home/models/table/model.wapiti"
+  ],
+  "counts": {
+    "core_production_java_kotlin_files": 238,
+    "core_production_java_kotlin_physical_lines": 76789,
+    "wapiti_model_files_in_git_tree": 21,
+    "delft_weight_files_in_git_tree": 21
+  }
+}

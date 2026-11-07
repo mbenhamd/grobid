@@ -1,0 +1,12 @@
+{
+  "status": "kit_structure_valid",
+  "runtime_parity_verified": false,
+  "tasks": 60,
+  "skills": 11,
+  "adrs": 16,
+  "feature_rows": 168,
+  "api_handlers": 45,
+  "starter_suites": 2,
+  "json_files_parsed": 20,
+  "note": "Runtime assets, baseline capture, Rust implementation and release gates remain separate tasks."
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "REPLACE_TASK_ID",
+  "reviewer": "REPLACE_INDEPENDENT_REVIEWER",
+  "result_commit": "REPLACE_WITH_SUBMITTED_GIT_SHA",
+  "decision": "approve",
+  "commands": [
+    {
+      "argv": [
+        "REPLACE_WITH_RERUN_COMMAND"
+      ],
+      "exit_code": 0,
+      "log": "REPLACE_LOG_PATH",
+      "log_sha256": "REPLACE_WITH_SHA256"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPLACE_REVIEW_REPORT_PATH",
+      "sha256": "REPLACE_WITH_SHA256"
+    }
+  ],
+  "findings": [],
+  "limitations": [],
+  "NOTE": "Example only; approval requires an actual independent rerun and matching evidence hashes."
+}

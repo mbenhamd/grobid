@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "not_materialized",
+  "items": [],
+  "official_dataset": {
+    "repository": "sciencialab/grobid-evaluation",
+    "repository_type": "dataset",
+    "revision": null,
+    "nominal_articles": 5927,
+    "collections": {
+      "PMC_sample_1943": 1943,
+      "biorxiv-10k-test-2000": 2000,
+      "PLOS_1000": 1000,
+      "eLife_984": 984
+    }
+  },
+  "required_item_fields": [
+    "id",
+    "path",
+    "sha256",
+    "source",
+    "license",
+    "collection",
+    "expected_result",
+    "feature_tags",
+    "split"
+  ],
+  "gates": [
+    "Empty items cannot pass S0",
+    "Resolve immutable dataset revision before capture",
+    "Validate actual eligible counts",
+    "Keep held-out and development splits distinct",
+    "Do not redistribute unauthorized user PDFs"
+  ]
+}

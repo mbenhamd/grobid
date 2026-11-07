@@ -1,0 +1,35 @@
+{
+  "task_id": "REPLACE_TASK_ID",
+  "worker": "REPLACE_WORKER",
+  "base_commit": "REPLACE_WITH_ACTUAL_GIT_SHA",
+  "result_commit": "REPLACE_WITH_ACTUAL_GIT_SHA",
+  "changed_paths": [],
+  "source_refs": [],
+  "commands": [
+    {
+      "argv": [
+        "REPLACE_WITH_ACTUAL_COMMAND"
+      ],
+      "exit_code": 0,
+      "started_at": null,
+      "finished_at": null,
+      "log": "REPLACE_LOG_PATH",
+      "log_sha256": "REPLACE_WITH_SHA256"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "REPLACE_ARTIFACT_PATH",
+      "sha256": "REPLACE_WITH_SHA256"
+    }
+  ],
+  "case_counts": {
+    "executed": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "skip_justifications": [],
+  "limitations": [],
+  "profile_provenance": [],
+  "NOTE": "Invalid example until every placeholder and zero executed count is replaced with observed evidence."
+}

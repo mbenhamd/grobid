@@ -1,0 +1,2051 @@
+{
+  "schema_version": 1,
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "definition": "Tracked Java/Kotlin files under src/main; physical lines include comments and blanks, not executable SLOC. Files are inventoried; not every line was manually reviewed.",
+  "file_counts": {
+    "grobid-core": 238,
+    "grobid-service": 32,
+    "grobid-trainer": 69
+  },
+  "physical_line_counts": {
+    "grobid-core": 76789,
+    "grobid-service": 6308,
+    "grobid-trainer": 19364
+  },
+  "files": [
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/GrobidModel.java",
+      "module": "grobid-core",
+      "physical_lines": 31,
+      "sha256": "a8ac910c8cde837d12126544a890557e3154493cdd7dbd2ea0ed166377b2ff78"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/GrobidModels.java",
+      "module": "grobid-core",
+      "physical_lines": 286,
+      "sha256": "8e1afbdd96544901cccbbc5bf4aa1e5ac4c24c6f0bab88a49b288af33865d374"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/analyzers/Analyzer.java",
+      "module": "grobid-core",
+      "physical_lines": 46,
+      "sha256": "745cad4d1c266f5d264400f183885aaec8a027cd2fbdbeac222debca94df534a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/analyzers/ArabicChars.java",
+      "module": "grobid-core",
+      "physical_lines": 77,
+      "sha256": "501de9116083ac4c1ea5155e636e5e19246072f5dfa555aabc34e79c3c7ff2b0"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/analyzers/GrobidAnalyzer.java",
+      "module": "grobid-core",
+      "physical_lines": 223,
+      "sha256": "21f7319e6cb1d2371a63cf23d6857c1daf3332c362a02bd07fbbb6d3fe17849b"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/analyzers/GrobidDefaultAnalyzer.java",
+      "module": "grobid-core",
+      "physical_lines": 252,
+      "sha256": "bb1025b85f02477d2699afe62e22e94c4b3fd05443ae922d6e71c33d36e4df05"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/analyzers/GrobidFilterDeleteSpaceBetweenSameAlphabet.java",
+      "module": "grobid-core",
+      "physical_lines": 165,
+      "sha256": "235d828509065a339b3dc5794f8730f7dfe1f3c805864771340a10641cce6144"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Affiliation.java",
+      "module": "grobid-core",
+      "physical_lines": 747,
+      "sha256": "7707f6102546642f117cf268d89c98469b5e4666f0fed26db85dd2da199f76e0"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/AnnotatedXMLElement.java",
+      "module": "grobid-core",
+      "physical_lines": 51,
+      "sha256": "8e1cb6cec28165007f2604bcd1d980749f47ec31f58671646631ab295560c20f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/BibDataSet.java",
+      "module": "grobid-core",
+      "physical_lines": 155,
+      "sha256": "f1edf3b34bea279b0509fa86388b0a302600a47976e9e77d9ae0e47c7a7353e6"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/BiblioItem.java",
+      "module": "grobid-core",
+      "physical_lines": 4737,
+      "sha256": "9239e864c553de9352b74cefc19a529c9e7fd9e50c605c306098c66fea6304f6"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/ChemicalEntity.java",
+      "module": "grobid-core",
+      "physical_lines": 88,
+      "sha256": "73ce8d526eff6a0e31b7c760636fcc207372daef0ec0a06dfabe026df4abd094"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Classification.java",
+      "module": "grobid-core",
+      "physical_lines": 53,
+      "sha256": "b4c5174c7b0c0145692d3cc48fd145fa2d0aa1680c9a8c087dbb3e5931708192"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/CopyrightsLicense.java",
+      "module": "grobid-core",
+      "physical_lines": 117,
+      "sha256": "a84184fce42efddfddfe04e5b2a533c3c827c423ae0793996dd57155a0ff7e84"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/DataSetContext.java",
+      "module": "grobid-core",
+      "physical_lines": 49,
+      "sha256": "68cafbfb7fc3579636de9b85331522161e1af5862e48a9ddd1e89c7d63e30f20"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Date.java",
+      "module": "grobid-core",
+      "physical_lines": 300,
+      "sha256": "63a41ee55c6f0abf2f0945fed00a5a6a05b02665f0b7d465d9d2f95da3e19c30"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Equation.java",
+      "module": "grobid-core",
+      "physical_lines": 212,
+      "sha256": "9513f4068623bc6e409e4c8c3f07b397a5856741c97a48d9e33bcd045c74083e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Figure.java",
+      "module": "grobid-core",
+      "physical_lines": 623,
+      "sha256": "3e737471f15956f7b2ef612f268d6a1b4dfc05639a0ce0e9c91de0fe2d539586"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/FigureTableType.java",
+      "module": "grobid-core",
+      "physical_lines": 31,
+      "sha256": "79aca899ef1173f12de343a7136aa022a721baacc4b6bfb00a7a56810a018bca"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Funder.java",
+      "module": "grobid-core",
+      "physical_lines": 275,
+      "sha256": "7d0510fd4be667fd022693dc0b8d1eef2a4348427c62e33abf9a624529ddfeae"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Funding.java",
+      "module": "grobid-core",
+      "physical_lines": 463,
+      "sha256": "dcaa068c60b09d7c10c071a54fae166e5946a4eee1824578a5a1e0aeb97f156f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/FundingAcknowledgmentParse.java",
+      "module": "grobid-core",
+      "physical_lines": 61,
+      "sha256": "4c26a93f7960c22e123b08134ec613d50724c943a0ec79084ab571a08d3db52f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Keyword.java",
+      "module": "grobid-core",
+      "physical_lines": 79,
+      "sha256": "c4f6f92dce4610bc10d129d45b4c2a0e11dd77c748bb77daede31fad9c871a34"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Metadata.java",
+      "module": "grobid-core",
+      "physical_lines": 91,
+      "sha256": "01be6f8690a6bea7d61e8f9aae280872b5bbc0b1b35c8edafe5df15b3d35b6a5"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Note.java",
+      "module": "grobid-core",
+      "physical_lines": 148,
+      "sha256": "3fa922bb6440b9523fe4160571713d2575097dc1f06cf9868f3c9245fcd39d35"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Passage.java",
+      "module": "grobid-core",
+      "physical_lines": 75,
+      "sha256": "6e63fd9dbfb2d0db52639971d359f9cee387ab250047390f35915edaaa5ac14a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/PatentItem.java",
+      "module": "grobid-core",
+      "physical_lines": 488,
+      "sha256": "f277b6fb4efbbf92d4264ac6def9433476eb75796459637747af143ea6b54f2f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Person.java",
+      "module": "grobid-core",
+      "physical_lines": 821,
+      "sha256": "237c6db9d7ff5ff683ea14fc687c6316c21d8028890bc018f160e4357c798f69"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/PriorArtCitation.java",
+      "module": "grobid-core",
+      "physical_lines": 96,
+      "sha256": "7e51f352620d5b463d877ba15cd2b6e7c49c5f298755268479ade58efdefe05b"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/Table.java",
+      "module": "grobid-core",
+      "physical_lines": 504,
+      "sha256": "f54d78941fac2e76b93b658cbb52f30993a287e4efa8bf0e6f9a7391407aabe4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/table/Cell.java",
+      "module": "grobid-core",
+      "physical_lines": 74,
+      "sha256": "8a70030ee714a106f07055a696b417b4e92410dbd2e3dae0f484fc0f2f25d993"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/table/Line.java",
+      "module": "grobid-core",
+      "physical_lines": 167,
+      "sha256": "91ed02fa3f454d1ff5304a308916890877c2a93440704eb6c8a448b15d8fa54a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/table/LinePart.java",
+      "module": "grobid-core",
+      "physical_lines": 137,
+      "sha256": "49e65f05bc85951e509af3b30638b7d4d204695d8794ce314245e78b3e83ab63"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/table/Row.java",
+      "module": "grobid-core",
+      "physical_lines": 245,
+      "sha256": "fb3a76df20256c08f88a331b7f88abf1887123382e0ac5c2c75363e42a0d88b4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/util/AuthorAffiliationAssigner.java",
+      "module": "grobid-core",
+      "physical_lines": 1017,
+      "sha256": "17a3a866f757cfe5a823389dc552ad7e39e59d94288995e1f6a4983cc436ab9f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/util/AuthorEmailAssigner.java",
+      "module": "grobid-core",
+      "physical_lines": 26,
+      "sha256": "6631df5da3418e8710996785f6b8839ac6fd7e4c8a72cc0eade833ba2db50f28"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/util/ClassicAuthorEmailAssigner.java",
+      "module": "grobid-core",
+      "physical_lines": 73,
+      "sha256": "02df902ed503b5dc21986a293c91bc8801bbe7d77a13f0cd131d5d1a6804f1a1"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/data/util/EmailSanitizer.java",
+      "module": "grobid-core",
+      "physical_lines": 278,
+      "sha256": "e909877f004c5f7d578559f79839fd40350492572a0a829b289694929a93471d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/BasicStructureBuilder.java",
+      "module": "grobid-core",
+      "physical_lines": 549,
+      "sha256": "ecc6c223dd469b22f2ac0efa306b0cfad798bd0733554bb0b4fa664152d52026"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/Document.java",
+      "module": "grobid-core",
+      "physical_lines": 1753,
+      "sha256": "18fc4d587baf438f768eecb289aad97de9f476b82c82276a896ef25d8d167272"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/DocumentNode.java",
+      "module": "grobid-core",
+      "physical_lines": 225,
+      "sha256": "e9236b5d03efc655b3b6e901f5b8c95eca4b7f2711da010c5bfc7bbc499f2688"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/DocumentPiece.java",
+      "module": "grobid-core",
+      "physical_lines": 54,
+      "sha256": "2beeb3e2c46cd73de4aa1eaa7ebf49a4c32dcb933ef93769af524369ce377848"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/DocumentPointer.java",
+      "module": "grobid-core",
+      "physical_lines": 95,
+      "sha256": "5b1d3ced6a5f75d7ec7d6fc2371ba21e31a45a5872e8cac1e7938d4b15c1809d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/DocumentSource.java",
+      "module": "grobid-core",
+      "physical_lines": 545,
+      "sha256": "6b67fa24e63e5c2da364751d9de68f1ee69af87b57e896a969cf5fc6dd0dc739"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/OPSService.java",
+      "module": "grobid-core",
+      "physical_lines": 164,
+      "sha256": "355185b27e02c15c78fb2b07ddd56afd3dacfd316a821ba6489866535d577277"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/PatentDocument.java",
+      "module": "grobid-core",
+      "physical_lines": 100,
+      "sha256": "db4d20a48ab13413f7126d45749d4c2a997679a08a2bbb2765dec83a9eccb9b4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/TEICounters.java",
+      "module": "grobid-core",
+      "physical_lines": 24,
+      "sha256": "680e704774ea71510e56a78548d4ccdb196ff8034421600d0cfc5e6e1507efea"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/TEIFormatter.java",
+      "module": "grobid-core",
+      "physical_lines": 2875,
+      "sha256": "6da93f8a47e47056740dc3aa46cb80c03bda61e7aa5ce57da55bc8c175515bce"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/xml/NodeChildrenIterator.java",
+      "module": "grobid-core",
+      "physical_lines": 85,
+      "sha256": "856e44daf594393465324df2f7b123317dc86c2b789bb2334d03c505697cbed4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/xml/NodesIterator.java",
+      "module": "grobid-core",
+      "physical_lines": 56,
+      "sha256": "25277f600dc1f42601abc6fb9c3a7873f0fc143dbdaf1f8cf45ea8d226df0a64"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/document/xml/XmlBuilderUtils.java",
+      "module": "grobid-core",
+      "physical_lines": 141,
+      "sha256": "e2b6ed74934170d780d8b75d986475121c623f979b9be1cc93bd85161282f3a8"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/AbstractParser.java",
+      "module": "grobid-core",
+      "physical_lines": 118,
+      "sha256": "7b41ac6d1eee31ff5dca9b7cb9149ca6cbf52e1c288541f957afcfb152620140"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/AffiliationAddressParser.java",
+      "module": "grobid-core",
+      "physical_lines": 1437,
+      "sha256": "1257e5b6ece3443a5eeca0576d03e66f5d81ceca7ecb41fd25023caf75ba31e2"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/AuthorParser.java",
+      "module": "grobid-core",
+      "physical_lines": 723,
+      "sha256": "06aaddf98684f09bd071ceeecb18c9886a3533c83ad2bb5dd9036a7070ac4da4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/CitationParser.java",
+      "module": "grobid-core",
+      "physical_lines": 1102,
+      "sha256": "a75d450f7aae4d25914b10dcd7a04c69ab40d8fa1da3bf8c2f13f3651e3a679e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/DateParser.java",
+      "module": "grobid-core",
+      "physical_lines": 622,
+      "sha256": "29cece6c022b42ae71bde93d69246f8f4545ac168408d0bb8525f9400a99e556"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/Engine.java",
+      "module": "grobid-core",
+      "physical_lines": 1393,
+      "sha256": "bf328338ccfd055708231fd211e5779b31fa09ba9891c5c068c778fba532f6d3"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/EngineParsers.java",
+      "module": "grobid-core",
+      "physical_lines": 393,
+      "sha256": "e1f9a7417913a046ba768f6cf909f16dd0494d021848eec3e50fd015546daaed"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/FigureParser.java",
+      "module": "grobid-core",
+      "physical_lines": 382,
+      "sha256": "27d96fd4348e98e618e75a6a2eab904992f7a8d98d41fb02196f7c68e8115554"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/FullTextBlankParser.java",
+      "module": "grobid-core",
+      "physical_lines": 153,
+      "sha256": "dab9d6f962fd760505b6c43e2703d7742056b8f5073762aa89875d5765fa98ef"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/FullTextParser.java",
+      "module": "grobid-core",
+      "physical_lines": 3681,
+      "sha256": "f8780d55c25f17f53e2be2b286e9f68c0e674f09c4b88e3e1f2c7bb800228796"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/FundingAcknowledgementParser.java",
+      "module": "grobid-core",
+      "physical_lines": 1173,
+      "sha256": "2ef4b58581dc3707d15ab3f21acde201dd7b699cce0c058406e0ffa0bda3a537"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/HeaderParser.java",
+      "module": "grobid-core",
+      "physical_lines": 1664,
+      "sha256": "ddfe5a7d46b15e02e9ac04b94e86c1773bbc3efbc0581c15d2d3289b5dda4e29"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/LicenseClassifier.java",
+      "module": "grobid-core",
+      "physical_lines": 202,
+      "sha256": "86dcee1e4aeca3bc79fe91830935e123cba7b85bb3de6658c9cf8906dc39b5fd"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/ModelMap.java",
+      "module": "grobid-core",
+      "physical_lines": 124,
+      "sha256": "7adc7d782a09d66a6a01eaef3f48908cdf25d43969d7086113604f7c72f5a43f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/MonographParser.java",
+      "module": "grobid-core",
+      "physical_lines": 759,
+      "sha256": "f3b4188298d81fbebdd4ea9b351a3dc998c76d158520f9594de95ba0d8dc8d84"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/ProcessEngine.java",
+      "module": "grobid-core",
+      "physical_lines": 797,
+      "sha256": "cbef24cb01efbd63209e0763d90cd2e8d0c5e2e899a51f5b119af1a68ed7eac2"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/ReferenceSegmenterParser.java",
+      "module": "grobid-core",
+      "physical_lines": 994,
+      "sha256": "81c03a1c27326e5d21cb30e30e97924dfac3b81509be35a7bd14a39b8b63bb0c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/Segmentation.java",
+      "module": "grobid-core",
+      "physical_lines": 1345,
+      "sha256": "6575cabc8fb9b27b7eaf7e57ce711dc0b0441e2befaa6df5f70adc5bd85de0a3"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/TableParser.java",
+      "module": "grobid-core",
+      "physical_lines": 440,
+      "sha256": "374c2a5bb55f144b89531145a6ff072ed5e3b47bb4e35c5ed8dbca950d75e239"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/citations/AdditionalRegexTextSegmenter.java",
+      "module": "grobid-core",
+      "physical_lines": 246,
+      "sha256": "9dfa5787f550d0608aaef3150114cb7fa5ba99e3f2c0841d4df4ae819bb2eb7c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/citations/CalloutAnalyzer.java",
+      "module": "grobid-core",
+      "physical_lines": 109,
+      "sha256": "581ece0bb09933fcf142ff89c06019e25fa407b8975ace0eb786846af1487aac"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/citations/LabeledReferenceResult.java",
+      "module": "grobid-core",
+      "physical_lines": 74,
+      "sha256": "e5ab0cb0c0bf8676dacf539bb970a8e1917e570f296ed139f8d0caffd9f20023"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/citations/ReferenceSegmenter.java",
+      "module": "grobid-core",
+      "physical_lines": 26,
+      "sha256": "55ab135cf8a181fd25889c6b798c2eb3aa6b62f64beeb8e79f12ad68dff96d2f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/citations/RegexReferenceSegmenter.java",
+      "module": "grobid-core",
+      "physical_lines": 185,
+      "sha256": "4f53e9d4021a1ed58dcf950fd09ed53f51fc14ee3942d17d2ab266e4607c3915"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/config/DebugCaptureContext.java",
+      "module": "grobid-core",
+      "physical_lines": 78,
+      "sha256": "16a921f1565b05897a4d736f73abb8a0bd18b553ed1aff9281e52f17cad512b2"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/config/DebugLabelingCollector.java",
+      "module": "grobid-core",
+      "physical_lines": 64,
+      "sha256": "69dae35ed771505d8c21476944fbce990b2eec8e2f6bb82a8a3dee6347f4740d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/config/GrobidAnalysisConfig.java",
+      "module": "grobid-core",
+      "physical_lines": 374,
+      "sha256": "2796b1e0ee1ebb1b119904867c7324a8a81f5dd39593e178419e731abc7123bc"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/config/InvalidGrobidAnalysisConfig.java",
+      "module": "grobid-core",
+      "physical_lines": 25,
+      "sha256": "9796e5f1270689b5742b4993b6b7593a0d6bb9e38372aae1bdb9503944830103"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/counters/CitationParserCounters.java",
+      "module": "grobid-core",
+      "physical_lines": 43,
+      "sha256": "159513ec4b22452b824ae9162787c1ff27b8e931c07c59b3fbc5e5d29f6cbae3"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/counters/Countable.java",
+      "module": "grobid-core",
+      "physical_lines": 20,
+      "sha256": "baa4c7351b819cfe91755cf651cf675eaa96a93110a67056df7b3bd68b8c719d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/counters/FigureCounters.java",
+      "module": "grobid-core",
+      "physical_lines": 65,
+      "sha256": "0f447b3eb370b2b065e80604c334b79affaaf6cbd8ab5dd5bccb21469cbdc1e5"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/counters/ReferenceMarkerMatcherCounters.java",
+      "module": "grobid-core",
+      "physical_lines": 96,
+      "sha256": "af15cf3b4806c58ef77e3ff4779d449060031b14e26da0184c430c829fda5925"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/counters/TableRejectionCounters.java",
+      "module": "grobid-core",
+      "physical_lines": 97,
+      "sha256": "e63594e38ab5edb10e5a586375481ee71e06e35567559b46ef1167f336fca67d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/entities/ChemicalParser.java",
+      "module": "grobid-core",
+      "physical_lines": 194,
+      "sha256": "5fd16f07b882e02faa87089465f0fffc9630203f14fbc01b2189de05ae6f158d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/entities/NameToStructureResolver.java",
+      "module": "grobid-core",
+      "physical_lines": 37,
+      "sha256": "9185066beabfa49fa8428bd573e5abf877b5f9b226a902534a9598a4e0550877"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/label/SegmentationLabels.java",
+      "module": "grobid-core",
+      "physical_lines": 92,
+      "sha256": "196bdbefce20bfd9765e48f6c6a75e63d7ab2dd2b3cbfc11a1316a362760063c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/label/TaggingLabel.java",
+      "module": "grobid-core",
+      "physical_lines": 28,
+      "sha256": "99d90615095505c7603ee79f4c6bf3d95f01263a43621d3a81e63f62115fa607"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/label/TaggingLabelImpl.java",
+      "module": "grobid-core",
+      "physical_lines": 79,
+      "sha256": "dc7628fabe2dc9b9efdb7664f5cce8c0c5f051f494444882b925c4ec1d8b3880"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/label/TaggingLabels.java",
+      "module": "grobid-core",
+      "physical_lines": 548,
+      "sha256": "eb0eef846e80fccfa6bc835e3f24c9eaa66cc2b66fbdd8b8074c7c30d3e775a8"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/patent/PatentRefParser.java",
+      "module": "grobid-core",
+      "physical_lines": 1637,
+      "sha256": "83455a7cd358b7fe0ee4506b3b95950b555a0b4ce6830d1d4a64a84e13c50968"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/patent/ReferenceExtractor.java",
+      "module": "grobid-core",
+      "physical_lines": 1914,
+      "sha256": "b9bf6df985a5e6b9dd874ec8d513dd5701ca07db732b6a29c49e4257861136f7"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/CRFPPTagger.java",
+      "module": "grobid-core",
+      "physical_lines": 125,
+      "sha256": "485240c9b4dccd68538c03bf61e7d6e721222b459b338ac944e331c3b279fada"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/DeLFTTagger.java",
+      "module": "grobid-core",
+      "physical_lines": 51,
+      "sha256": "11e2e25755a86ada05984815edc103226ac59d90594d5ac86dbd830614b66d63"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/DummyTagger.java",
+      "module": "grobid-core",
+      "physical_lines": 58,
+      "sha256": "e69461ad7f68ce161089d83ca912a9f6e986c6190b5c2745629c49f199fe37c0"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/GenericTagger.java",
+      "module": "grobid-core",
+      "physical_lines": 24,
+      "sha256": "c0c3dcf614940ce96760b0ae5d8b345472c45d00d9d8a6b3bf506437f995ed7e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/GenericTaggerUtils.java",
+      "module": "grobid-core",
+      "physical_lines": 107,
+      "sha256": "cbe3ac9ad8db93cea671c6e9478590340a32f00597409102a48f7bef7ba0699c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/GrobidCRFEngine.java",
+      "module": "grobid-core",
+      "physical_lines": 57,
+      "sha256": "875bbde35136b8db02064b4fb404345cd5696f934a9e4d0bbd93fbc88f812fab"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/TaggerFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 137,
+      "sha256": "b28fa1ab43314fdce8ce98c35024f80efd49fbee154cabf1fdfa51b763b8628e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/engines/tagging/WapitiTagger.java",
+      "module": "grobid-core",
+      "physical_lines": 52,
+      "sha256": "16f9df3d043c35369b20d3cc35d1778a0af6e67eddfa978149f601d1ee0a4a36"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/exceptions/GrobidException.java",
+      "module": "grobid-core",
+      "physical_lines": 71,
+      "sha256": "229e26ffe14278fd76861a24fe0b2aad281d8ce03cc340716ceea945a6a6bfd0"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/exceptions/GrobidExceptionStatus.java",
+      "module": "grobid-core",
+      "physical_lines": 28,
+      "sha256": "c279f9420e51fbb5220500fd3384fbcb129c4f7ee9984519fdd975d24aad497c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/exceptions/GrobidPropertyException.java",
+      "module": "grobid-core",
+      "physical_lines": 37,
+      "sha256": "69969f380646fa1f28b6b49ddb5dd13e8764ef7d76c2c11de5577da51768b753"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/exceptions/GrobidResourceException.java",
+      "module": "grobid-core",
+      "physical_lines": 37,
+      "sha256": "6bc3deeaaaaf8b66226f7daea5bfd0b79fffac433852d806dcb66ba3036d8f8a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/factory/AbstractEngineFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 104,
+      "sha256": "36e834a9c31c2f56ec819e9d8f23a48a1cfa2c846dcaf8c2f6f4b77f6b8551dc"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/factory/GrobidFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 99,
+      "sha256": "7055697127c15dbe9b746753245155627f22b9d1ace262767886328a5affcc39"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/factory/GrobidPoolingFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 185,
+      "sha256": "9990e97e3379eb0c2c7458a66077903fed1d7b1bd356a231787da580ae5e34ea"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeatureFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 386,
+      "sha256": "f1f2b7fc90783dd3c2b27c0981ade3155c6d2045a553310ad8a2d2800ec393ff"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorAffiliationAddress.java",
+      "module": "grobid-core",
+      "physical_lines": 358,
+      "sha256": "4e58ffb38dd6046fc991ded2d86f9bc607b85b577a7ba46a0d035a77623a8b65"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorChemicalEntity.java",
+      "module": "grobid-core",
+      "physical_lines": 221,
+      "sha256": "89b6a7588bff6babcb37c9da4b7dd652aa7ea5965eccdefe3e415e7918b51738"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorCitation.java",
+      "module": "grobid-core",
+      "physical_lines": 612,
+      "sha256": "69bea27a0ad03e226a3ee7062183967eadc5047de2ed78e05b6210b1808c66a4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorDate.java",
+      "module": "grobid-core",
+      "physical_lines": 309,
+      "sha256": "ffc687543356563a59416146bf7e17923c46caeb63b25771e17d013dbd25b085"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorFigure.java",
+      "module": "grobid-core",
+      "physical_lines": 199,
+      "sha256": "521dc1c806e1a764a467c091d215939d822eebda0c284421e71ccd85151d1f65"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorFulltext.java",
+      "module": "grobid-core",
+      "physical_lines": 189,
+      "sha256": "1a2177e61d94579a5091b624d615b845a516a31647290b6c08f8c59341ad7a99"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorFunding.java",
+      "module": "grobid-core",
+      "physical_lines": 352,
+      "sha256": "b86fb2c4456b36aaf0de04e33ca47b4e26014dc76e66ec02957e4350514e7ae9"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorHeader.java",
+      "module": "grobid-core",
+      "physical_lines": 224,
+      "sha256": "974bdf427d520cbcb56f29b2de56ec7e59f4dd56700c2f4b7dc0a98cad623ebb"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorMonograph.java",
+      "module": "grobid-core",
+      "physical_lines": 259,
+      "sha256": "08fedfa44a34ad890f1ab78ff267b0609395020d65bead2f458a1b7d9e50ebe2"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorName.java",
+      "module": "grobid-core",
+      "physical_lines": 391,
+      "sha256": "6dd9892c66aa2e760511802d154c5cb0f26c4329d6285046d4b59c61bb5c1b50"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorReference.java",
+      "module": "grobid-core",
+      "physical_lines": 305,
+      "sha256": "6181c49fb7257796673615c312661058ffcb7381813d9500025eecb4f945ae4e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorReferenceSegmenter.java",
+      "module": "grobid-core",
+      "physical_lines": 180,
+      "sha256": "f733a96eb7f6e631d18e699a998ab8c35143c55b419f22a2168f7aa0c196128c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/features/FeaturesVectorSegmentation.java",
+      "module": "grobid-core",
+      "physical_lines": 259,
+      "sha256": "8ecb225138bffc98e14aa743f486e8b028223764d161082fb191b974ee8d38da"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/DeLFTClassifierModel.java",
+      "module": "grobid-core",
+      "physical_lines": 468,
+      "sha256": "623da90d2f0b27abffa2a33aaa7bcc36bf81cfd3d084b902c72ddee89ffe66b6"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/DeLFTModel.java",
+      "module": "grobid-core",
+      "physical_lines": 569,
+      "sha256": "225ed91a8d8376a404e7016b0edc298471a1b6eed3db0bc9bde35c136634ce97"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/JEPThreadPool.java",
+      "module": "grobid-core",
+      "physical_lines": 279,
+      "sha256": "a05f7759681852cb8c22d6ccc2e985b781b0edd4f4e8ed5e734bb3ce6f46d8fd"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/JEPThreadPoolClassifier.java",
+      "module": "grobid-core",
+      "physical_lines": 278,
+      "sha256": "c081edc3e2affa13e375cbf87ae8ad9c6b60f3d7e5c0851015e31f9eb2da6b6e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/PythonEnvironmentConfig.java",
+      "module": "grobid-core",
+      "physical_lines": 160,
+      "sha256": "99ad8536391c1e7e5cd5844022098ab5c12321e672d0bc5e918a19772b007508"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/WapitiModel.java",
+      "module": "grobid-core",
+      "physical_lines": 88,
+      "sha256": "ab56a1e1c72bb9717e4f20106c56d2de290974b4ea92b49d2c5edabf0b94f131"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/jni/WapitiWrapper.java",
+      "module": "grobid-core",
+      "physical_lines": 52,
+      "sha256": "40e465fcb063a01ad793061018461594720815b29a674c73beaaa1ae86058e90"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/Language.java",
+      "module": "grobid-core",
+      "physical_lines": 121,
+      "sha256": "9d719afc537f778eca52ce0c95299a88a24ef6d3505f5d79bb20be2938901eac"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/LanguageDetector.java",
+      "module": "grobid-core",
+      "physical_lines": 29,
+      "sha256": "69df06b4f45d62b34d9c68a863d6e97edaf885d203517b499912a4b77a5fabe4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/LanguageDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 23,
+      "sha256": "02a1fa6346f095a316b80cfaee9e9fb8504324cab33b3d6353fb7ffed10c2ffd"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/SentenceDetector.java",
+      "module": "grobid-core",
+      "physical_lines": 42,
+      "sha256": "757a9e13f0a7f4a41f2f189ada5efe445a36c45ac5bc2e30bbd7404c1ac3f186"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/SentenceDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 23,
+      "sha256": "ca53c7981eef879105f06c2daa420909e9e0a8cc2d121304a776ca49b490285d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/BlingFireSentenceDetector.java",
+      "module": "grobid-core",
+      "physical_lines": 86,
+      "sha256": "9d020c60a5eb62da599796badb771231a2b1a5d0d54946f3971d4f521fa7e123"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/BlingFireSentenceDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 42,
+      "sha256": "fd1ebe527eaeadf55c0bae7a7bb6bd7cb3dd6a70beaa8dafc0c99c9feb403f7c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/CybozuLanguageDetector.java",
+      "module": "grobid-core",
+      "physical_lines": 52,
+      "sha256": "43dcdac665279299a223d51f27a90b8db70db3e6c92e88d39408dcca0a18871f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/CybozuLanguageDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 66,
+      "sha256": "0338daaf130e6c1734d46b04f21ac126e6a5910a96ad581ade7a6f9da14ccd41"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/OpenNLPSentenceDetector.java",
+      "module": "grobid-core",
+      "physical_lines": 82,
+      "sha256": "76ab09413a49f8f666e21b56684733733c4f4129f35cc1302b6df6dbf2df4ec9"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/OpenNLPSentenceDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 42,
+      "sha256": "834932691feaed7b0fec40a4d674bb34bb0fb88fc961bf05ea4c45d0b01b995a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/PragmaticSentenceDetector.java",
+      "module": "grobid-core",
+      "physical_lines": 332,
+      "sha256": "1a16a40eb59ce362c4e691fece2e4a3dbf3a6fc5e3c850d6b4bad8ca4ef4cbfd"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lang/impl/PragmaticSentenceDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 42,
+      "sha256": "2b605b80a119696410bcd5f67e34d80103d567c46d0fc7e08f6c5c8f70b5def3"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/Block.java",
+      "module": "grobid-core",
+      "physical_lines": 256,
+      "sha256": "e4c30e9a8db29a133f487a7308216cb4f24d00172675ca9ea8b1a0c92e010629"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/BoundingBox.java",
+      "module": "grobid-core",
+      "physical_lines": 325,
+      "sha256": "671d30bdef87bfbc6b021deae33418c1fb9b89f8e856133d53ab8acbb78e477e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/Cluster.java",
+      "module": "grobid-core",
+      "physical_lines": 107,
+      "sha256": "f66148ea96c8963c1ea17b1c78336dabb4f5aee9ac0d7393c645e173790da093"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/GraphicObject.java",
+      "module": "grobid-core",
+      "physical_lines": 206,
+      "sha256": "413d463678479167ad7f4c0251b4bb4a810048936789c92ce913953389fc7211"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/GraphicObjectType.java",
+      "module": "grobid-core",
+      "physical_lines": 26,
+      "sha256": "d7262f8e78b18db8a1d568343dc380eb69f80f7674aaf3352393435ea4b22850"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/LayoutToken.java",
+      "module": "grobid-core",
+      "physical_lines": 319,
+      "sha256": "67c31cd8a3804df51278f5fd6a0e053ecd4259e2a3e430ed329d1007afefaf9c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/LayoutTokenization.java",
+      "module": "grobid-core",
+      "physical_lines": 85,
+      "sha256": "e5928d245f3dfbdc74b7a667f79e1ebd305e874b471b3eeb1fe80fa7fb08bb4e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/PDFAnnotation.java",
+      "module": "grobid-core",
+      "physical_lines": 180,
+      "sha256": "6677a4004e35d6796a0ae52cfb7966d0a310c408668234fa614b3c548b794a2c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/Page.java",
+      "module": "grobid-core",
+      "physical_lines": 90,
+      "sha256": "6273b466344c48fa90c57075c23b5c96ef8a16c6d00082d720ea07fb63d087d9"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/layout/VectorGraphicBoxCalculator.java",
+      "module": "grobid-core",
+      "physical_lines": 149,
+      "sha256": "5ee9d2805f63c2e8e50cef8e7dcbbf60a306a5903e2eb8bb60ae4755357e294b"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lexicon/FastMatcher.java",
+      "module": "grobid-core",
+      "physical_lines": 726,
+      "sha256": "14254e03c3a3930ba632348776204e1758147d73509ad01fe212e7e4e1d80c97"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/lexicon/Lexicon.java",
+      "module": "grobid-core",
+      "physical_lines": 1956,
+      "sha256": "300692898e4a764a6a62921935619100279f54e691e6b9f7734759a3d8151df2"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/main/GrobidHomeFinder.java",
+      "module": "grobid-core",
+      "physical_lines": 243,
+      "sha256": "3b32e12ee9d0e63c65059e53485860833780b0b7373e5a7077da03983f11b62d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/main/LibraryLoader.java",
+      "module": "grobid-core",
+      "physical_lines": 243,
+      "sha256": "5410c3f69c75674d69c4189cba1e30fb853feebd477d67b40b49bbb82d2e9b69"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/main/batch/GrobidMain.java",
+      "module": "grobid-core",
+      "physical_lines": 235,
+      "sha256": "87a55ccd19898d210b48af18195742c1af39c8debceb66ac39beebf5d0206a3b"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/main/batch/GrobidMainArgs.java",
+      "module": "grobid-core",
+      "physical_lines": 270,
+      "sha256": "65ddd8988c5a9fc2082e55a6bac290e37f32a7573e12a8bf18fee9321bd2d339"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/process/ProcessEnvironment.java",
+      "module": "grobid-core",
+      "physical_lines": 57,
+      "sha256": "08d9becf360f6390230e7e2c92c9187253fb3116fc534143f496d4e20f14340c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/process/ProcessPdfToXml.java",
+      "module": "grobid-core",
+      "physical_lines": 82,
+      "sha256": "ae495c9a0b05df8d8255cfe8fa12094cf7ec006991314b52a82b9fe0a49ae885"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/process/ProcessRunner.java",
+      "module": "grobid-core",
+      "physical_lines": 139,
+      "sha256": "c94916c4040fa9deeac1a0dbb10bd4d39adbd1c7a69016d4ce85a95de9f367e8"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/process/StreamGobbler.java",
+      "module": "grobid-core",
+      "physical_lines": 206,
+      "sha256": "ceb3bc9d7f37cbea187945c4e030a627c4e47680ab9aa3a2b9029b5ff30dbc8c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/process/StreamProcess.java",
+      "module": "grobid-core",
+      "physical_lines": 207,
+      "sha256": "3b8ec8a6cbdb07a2af65f2abe86ee4e9df22c16d3af87600692029b4d09b9707"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/CountryCodeSaxParser.java",
+      "module": "grobid-core",
+      "physical_lines": 117,
+      "sha256": "0af8237aadb2d84a5145da6c374c20f6cfb80468fe18830308f5cbcf7eec2b7e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/CrossrefSaxParser.java",
+      "module": "grobid-core",
+      "physical_lines": 124,
+      "sha256": "523a3c5e5ae8564af3514766caf0512c45dc2d0865e7ded4d623f317cc92b300"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/CrossrefUnixrefSaxParser.java",
+      "module": "grobid-core",
+      "physical_lines": 368,
+      "sha256": "ba76c7256c267d1af1da474e7e155efd48c930ea9bf5765c489313a9055aefba"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/PDFALTOAnnotationSaxHandler.java",
+      "module": "grobid-core",
+      "physical_lines": 205,
+      "sha256": "16453b648946f6da6eafd640dfe733be358720d56b3d2572537cb8f525409c7c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/PDFALTOOutlineSaxHandler.java",
+      "module": "grobid-core",
+      "physical_lines": 249,
+      "sha256": "d43dc97e4a4cd38e6d938ec249960e8b231f948660b33360c2a6f9879d75e15f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/PDFALTOSaxHandler.java",
+      "module": "grobid-core",
+      "physical_lines": 783,
+      "sha256": "cc502102be58a5145b18aa81292023f72105dde7e94158eae670e0e7ffff5bb4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/PDFMetadataSaxHandler.java",
+      "module": "grobid-core",
+      "physical_lines": 113,
+      "sha256": "c0794ecafd6da8cdd7b7b1789b2db676fb74ff2cdf053b4df93760e45e7947cf"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/PatentAnnotationSaxParser.java",
+      "module": "grobid-core",
+      "physical_lines": 249,
+      "sha256": "dfb8b722886fcb86ae606a50fd694758ff55d94c6878334f92865ee4e45374e4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/ST36SaxParser.java",
+      "module": "grobid-core",
+      "physical_lines": 554,
+      "sha256": "8e7f6775e45a99d0754dc24edbdcb9fed3c837e79f5925a3827f999d459e033f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/sax/TextSaxParser.java",
+      "module": "grobid-core",
+      "physical_lines": 144,
+      "sha256": "a4e45726affbe9dbc2130c66e9038384ab4b142bd3c68c9e6f80258c2c3b921d"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/tokenization/LabeledTokensContainer.java",
+      "module": "grobid-core",
+      "physical_lines": 104,
+      "sha256": "9c2d0eae3d5211dd45880580539dbfc888faaca876cda9d9cd7e6776e9e3822f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/tokenization/TaggingTokenCluster.java",
+      "module": "grobid-core",
+      "physical_lines": 100,
+      "sha256": "064015324a7aca7c61ed59ec0d08a5b3e7ba021008674e3777fe411664a88089"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/tokenization/TaggingTokenClusteror.java",
+      "module": "grobid-core",
+      "physical_lines": 107,
+      "sha256": "024b8d3e70dc8c812040b3d595637145e64cb85259016ef721956bbca0a1085f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/tokenization/TaggingTokenSynchronizer.java",
+      "module": "grobid-core",
+      "physical_lines": 184,
+      "sha256": "6385bfce9cf42f749ae76ef958b770da5f4da67ac34543d158d6b7153a5a3b97"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/transformation/xslt/JATSTransformer.java",
+      "module": "grobid-core",
+      "physical_lines": 73,
+      "sha256": "29b443cd67a67278c78f0eb71cd8fe753d8ad2569a8f3401fff510f0f91f8987"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/BoundingBoxCalculator.java",
+      "module": "grobid-core",
+      "physical_lines": 103,
+      "sha256": "b8cc546e3b2c1bd34179f5fd65f62a955db913f4c9fe74f3d180c79eaabe37c1"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/Consolidation.java",
+      "module": "grobid-core",
+      "physical_lines": 635,
+      "sha256": "b4eda48f33d0a2fccebd0dd040acb104804731a2f713bd5e5051bd781817de36"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/ConsolidationCounters.java",
+      "module": "grobid-core",
+      "physical_lines": 55,
+      "sha256": "fca0f4119e4e61872cb7a3c7a8407c5ebb4df552aefd86671cbcb838631f1518"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/DataSetContextExtractor.java",
+      "module": "grobid-core",
+      "physical_lines": 220,
+      "sha256": "1d5757b94f3eed1071d31abb9c867bc29cd51592422a68977c24400dc028d7a3"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/ElementCounter.java",
+      "module": "grobid-core",
+      "physical_lines": 105,
+      "sha256": "09534561325914e1b138b4fa12166cc4f2c38d9d8b0329aa47810f5f0e684556"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/ElementCounterItem.java",
+      "module": "grobid-core",
+      "physical_lines": 38,
+      "sha256": "b0d68e6af99b77ab279b76115bfa103bce2dabedfe0baedae50b3d6e01c37c52"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/EnvironmentVariableValues.java",
+      "module": "grobid-core",
+      "physical_lines": 40,
+      "sha256": "483622362c8dc1e3022600aef49584f0beaaa7a35ad794196a37a0880f84773c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/GrobidConfig.java",
+      "module": "grobid-core",
+      "physical_lines": 139,
+      "sha256": "41b7d1d9beb28559546683e8327e56a915a2e152dc433594e62fe37d18aa97fb"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/GrobidProperties.java",
+      "module": "grobid-core",
+      "physical_lines": 1066,
+      "sha256": "cbfc6d738c749cb8b4c11132348e560479ea40386e6cb1780fde28cae441cabd"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/IOUtilities.java",
+      "module": "grobid-core",
+      "physical_lines": 282,
+      "sha256": "3b7afadbcbd065ea19d66930b5290f88ca6403ccf8122a7e211b9ab77e21c04c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/KeyGen.java",
+      "module": "grobid-core",
+      "physical_lines": 57,
+      "sha256": "d0671cf1b39946ca599cf7609d02251bb90d996842bf988e79f1853702f51415"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/LanguageUtilities.java",
+      "module": "grobid-core",
+      "physical_lines": 115,
+      "sha256": "06278b756affa5ae6b7dd6a1c2f7511311605e63e380295417c30f4218ffdcf6"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/LayoutTokensUtil.java",
+      "module": "grobid-core",
+      "physical_lines": 353,
+      "sha256": "91c2c7f4c8fc12bd104c849e8f00f86fcd4c29308fd1c281df75ee5cc443f7c0"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/LevenshteinDistanceAligment.java",
+      "module": "grobid-core",
+      "physical_lines": 333,
+      "sha256": "75d08a090b5ce765e7ab01f414691caf576e6d9bb7b65ff53a67fc8b1f843732"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/OffsetPosition.java",
+      "module": "grobid-core",
+      "physical_lines": 79,
+      "sha256": "228cd08d70444013543d810d8737f52dd943f98e9702697fc11ff6cde53dcbf4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/Pair.java",
+      "module": "grobid-core",
+      "physical_lines": 70,
+      "sha256": "6cd0d9ea9a351bcc408866132454f4599b4ab553bf53c07b0f3077f1a925ade1"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/PathUtil.java",
+      "module": "grobid-core",
+      "physical_lines": 79,
+      "sha256": "a8baf27f46ba19ede6803187fcc6c4ccf2120988795cea076fcaa72437c3c642"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/SHA1.java",
+      "module": "grobid-core",
+      "physical_lines": 75,
+      "sha256": "b78036c20dcbb738005804e96533c8eed4ee31d2001066890e54c880a9a17447"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/SentenceUtilities.java",
+      "module": "grobid-core",
+      "physical_lines": 415,
+      "sha256": "24b9f7c7d7c425e660d8c8aeed52691d28090d69d52579596432b45cc580d640"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/TextUtilities.java",
+      "module": "grobid-core",
+      "physical_lines": 1694,
+      "sha256": "005c9c977515f7efdcb61d4ef178923988a533d49b7cbeabcd049f796e442b97"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/Triple.java",
+      "module": "grobid-core",
+      "physical_lines": 101,
+      "sha256": "386a053652a0663ba31e6bcfbdeb2b882a728be8f69e237bce5ffca9beb9bddb"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/UnicodeUtil.java",
+      "module": "grobid-core",
+      "physical_lines": 266,
+      "sha256": "7f93300056715cb3bbcaac065e461ef7506e5341a22146bad2e8993144c15e80"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/Utilities.java",
+      "module": "grobid-core",
+      "physical_lines": 585,
+      "sha256": "09c61e28a27cdc85cfa34ec080ddaa2b93c698a744da4138632e73f6660d4987"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/XQueryProcessor.java",
+      "module": "grobid-core",
+      "physical_lines": 79,
+      "sha256": "2691616fe758fbbe5dcb9a5d072318d34148b2ffe5b154f4de47d09bb9e69a4f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/CntManager.java",
+      "module": "grobid-core",
+      "physical_lines": 53,
+      "sha256": "e93597e0ab86e6b30fcf6a8c046862e67f3fe6034c7f04a749a081a82ea75766"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/CntManagerRepresentation.java",
+      "module": "grobid-core",
+      "physical_lines": 22,
+      "sha256": "3be8f0a52dc6b40446801f3ffd61c9d9c618c5ab9db1b7234aa245f59b8a150c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/CntManagerSaver.java",
+      "module": "grobid-core",
+      "physical_lines": 26,
+      "sha256": "65d06820bdf62b6bb31c527202130226f043aefb19caa8f1419643ba86442200"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/CntsMetric.java",
+      "module": "grobid-core",
+      "physical_lines": 20,
+      "sha256": "7b5e6c0e35cde579d0ae89b011c470257ca413c61e57bbd0612265dcc721b577"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/Counter.java",
+      "module": "grobid-core",
+      "physical_lines": 28,
+      "sha256": "053c0499f4a983dd7fd083bb9d78d25004ccc825c83469b4afdb5ce92df212dc"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/GrobidTimer.java",
+      "module": "grobid-core",
+      "physical_lines": 208,
+      "sha256": "629960cbb4961dbd08149fcc9f7ad51248213c55bdecc14c4c30b8e9dee51c37"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/CntManagerFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 28,
+      "sha256": "9325da66cd3d1013b7c92829e28bdcdd57107a4acd44028b419952899b3106aa"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/CntManagerGrepRepresentation.java",
+      "module": "grobid-core",
+      "physical_lines": 48,
+      "sha256": "028e7f13173627beeb766613edaecd47d567a6f073cf1043cd5413ff18529380"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/CntManagerImpl.java",
+      "module": "grobid-core",
+      "physical_lines": 246,
+      "sha256": "f13881e1d5f95a8d544769de69314215fe2b0c6489d6f3d347af9fa325d39d90"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/CntManagerReportRepresentation.java",
+      "module": "grobid-core",
+      "physical_lines": 86,
+      "sha256": "98743a51ad6544ff08475aa170287a5da2e6f77a0f6119bead685c355ecb8366"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/CntManagerSaverImpl.java",
+      "module": "grobid-core",
+      "physical_lines": 52,
+      "sha256": "fa42650a86741443e45bc238bbdf2691b5058242e1145a986b59a1c6ff63fe12"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/CounterImpl.java",
+      "module": "grobid-core",
+      "physical_lines": 74,
+      "sha256": "c382fb3f61b4b6757d13087e85b844550af552186d0a1badb09154da10763fd6"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/NoOpCntManagerImpl.java",
+      "module": "grobid-core",
+      "physical_lines": 101,
+      "sha256": "c6b1243e1533994b1fe2659d0232487c3b1c21e50f9b9d7d295f27fad71a7a73"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/counters/impl/NoOpCounterImpl.java",
+      "module": "grobid-core",
+      "physical_lines": 40,
+      "sha256": "57222ec6ba671dd9ba2c6c47ae575b9923d9228f97502f815bf681b619c59cbc"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/CrossrefClient.java",
+      "module": "grobid-core",
+      "physical_lines": 608,
+      "sha256": "a2bce9a7e1c8ac46f0c61da00169ed23baa0d37d17eeb0c1420d39d664241b61"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/CrossrefDeserializer.java",
+      "module": "grobid-core",
+      "physical_lines": 112,
+      "sha256": "555698d1313f6fe3e6cfd67ced52c606b0775ef7d6ef8adcebe071d5923c4cd4"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/CrossrefRequest.java",
+      "module": "grobid-core",
+      "physical_lines": 278,
+      "sha256": "c44f4679183f4ff211b8f5467e31c35c3d07235cfd76b631243ae2bab6f1c57b"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/CrossrefRequestListener.java",
+      "module": "grobid-core",
+      "physical_lines": 157,
+      "sha256": "564abec8aabed7f340b78ec8c1a1ba2bcca261df6768ad917790e50ddad9d39c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/CrossrefRequestTask.java",
+      "module": "grobid-core",
+      "physical_lines": 77,
+      "sha256": "5a4113f329932c7b7ad8a1ef86e3023803ede93dcb01f7b2365297b824f24c7a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/FunderDeserializer.java",
+      "module": "grobid-core",
+      "physical_lines": 95,
+      "sha256": "aae26064f5a600d9fa7cbdced09ef8b42340921d3510f492026d8422b586704a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/Test.java",
+      "module": "grobid-core",
+      "physical_lines": 205,
+      "sha256": "0805ef4c21b163152cd1c7e39dafaa109c265fa064f97352cf0c930ce61e9d34"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/crossref/WorkDeserializer.java",
+      "module": "grobid-core",
+      "physical_lines": 272,
+      "sha256": "36314fc98e20fad7250deed4ae605908c40ebd6d4a4689fb896df3421371a50b"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/glutton/GluttonClient.java",
+      "module": "grobid-core",
+      "physical_lines": 128,
+      "sha256": "f23283902a1e28ce5286f134ca95e8c2f4edd59c257af9b559fd7542e49d327a"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/glutton/GluttonRequest.java",
+      "module": "grobid-core",
+      "physical_lines": 263,
+      "sha256": "c5f7714c02a48673c1aa5f3650367fc82bcb6ee7c19ce626c54a02059421daee"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/glutton/GluttonRequestTask.java",
+      "module": "grobid-core",
+      "physical_lines": 70,
+      "sha256": "effe3e7f87fa4c2be7c1d43bf9baaf4586e58fca5c4b084b1be71595bee19c80"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/matching/DiffMatchPatch.java",
+      "module": "grobid-core",
+      "physical_lines": 2547,
+      "sha256": "8a3f83f88ed3778a2924c25c4c739a497ac9b79c8b7b85eea4945f53a727274c"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/matching/EntityMatcherException.java",
+      "module": "grobid-core",
+      "physical_lines": 36,
+      "sha256": "f68c67d98d7242b76909f8866dce3044d60b1f07971648dcc7ddee2c4a19dda8"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/matching/LuceneIndexMatcher.java",
+      "module": "grobid-core",
+      "physical_lines": 204,
+      "sha256": "940ef2b8b5234b7047cb36a04e096b398b98da2b83193a9a481f0ab8f11047a0"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/matching/LuceneUtil.java",
+      "module": "grobid-core",
+      "physical_lines": 112,
+      "sha256": "238870352ca2e1f5464904a22cacd7d85eef88133caea2d9c247f73453ed33a8"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/utilities/matching/ReferenceMarkerMatcher.java",
+      "module": "grobid-core",
+      "physical_lines": 527,
+      "sha256": "4608d3218e6e2b33df85f737c3e7472d07fce1ef691df64ba362a45c59f6c00e"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/visualization/AnnotationUtil.java",
+      "module": "grobid-core",
+      "physical_lines": 194,
+      "sha256": "85fe48f77aad5fd7b18cc01d6391006d4e53e3cea7e4d40a374f073bb5e558e5"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/visualization/BlockVisualizer.java",
+      "module": "grobid-core",
+      "physical_lines": 139,
+      "sha256": "526881308b5d19ec2faa719cd0d54365805073365fe523cac9511ea90f6bf20f"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/visualization/CitationsVisualizer.java",
+      "module": "grobid-core",
+      "physical_lines": 815,
+      "sha256": "a89beee593bf111fe151f19b8c3a985cddeea0997037e03bfc8cf86bdda42f52"
+    },
+    {
+      "path": "grobid-core/src/main/java/org/grobid/core/visualization/FigureTableVisualizer.java",
+      "module": "grobid-core",
+      "physical_lines": 302,
+      "sha256": "653dcf134e15028ccd34909803f3a2ca24ba9834f3a78d14336e5e0124e7c41d"
+    },
+    {
+      "path": "grobid-core/src/main/kotlin/org/grobid/core/lang/impl/LinguaLanguageDetector.kt",
+      "module": "grobid-core",
+      "physical_lines": 54,
+      "sha256": "6e0f09a190990de6d8e79f837f59dd57211c0cd03ff3808f880fa9520b76b4b6"
+    },
+    {
+      "path": "grobid-core/src/main/kotlin/org/grobid/core/lang/impl/LinguaLanguageDetectorFactory.java",
+      "module": "grobid-core",
+      "physical_lines": 44,
+      "sha256": "d31ecf071aacf5061456b77d87a8401ab7a19876da6749dbaa29a5443b0d487d"
+    },
+    {
+      "path": "grobid-core/src/main/kotlin/org/grobid/core/utilities/LabelUtils.kt",
+      "module": "grobid-core",
+      "physical_lines": 101,
+      "sha256": "6852c226f3fc9b6e8c5f4ed7ed5546ad59638f8257b3f7c185f36f8c9db048de"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/GrobidPaths.java",
+      "module": "grobid-service",
+      "physical_lines": 192,
+      "sha256": "91a518ae7cf088906b9d0c15be1168214c79002d2a909f413af93199dbc9db76"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+      "module": "grobid-service",
+      "physical_lines": 1058,
+      "sha256": "7a66753d48f4d961c7ff55adfb8639b9d3764b0567fc7b830e1e7e5183dcca00"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/GrobidServiceConfiguration.java",
+      "module": "grobid-service",
+      "physical_lines": 33,
+      "sha256": "9142220558c7b4190028d1ceb8bb9b9788459e5c08f6cebe953a3f930ee710a0"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/GrobidServicePropConfiguration.java",
+      "module": "grobid-service",
+      "physical_lines": 111,
+      "sha256": "05019da42df3582ce7c06d132cd7f20c45a0367676d027d5d1fda95e47bdfbe8"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/OtlpConfiguration.java",
+      "module": "grobid-service",
+      "physical_lines": 131,
+      "sha256": "8f5daa9ab22f4e275d9c8d69d984204220fac68a38e3bdfb47de7df63a785e77"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/data/ServiceInfo.java",
+      "module": "grobid-service",
+      "physical_lines": 51,
+      "sha256": "7ed6586dde9eb64753c43f7660b1a4943ebda64e6e5bb1ae9d8c46ac72804257"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/GrobidServiceException.java",
+      "module": "grobid-service",
+      "physical_lines": 45,
+      "sha256": "3c9206631248ccd35045095733220ba7dddf556666d1b729b9830296690bf09f"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/GrobidServicePropertyException.java",
+      "module": "grobid-service",
+      "physical_lines": 35,
+      "sha256": "15bfb14508e381ccb364b6a3a2af5f4ad736cb8514c9f32cbeaecf81082b3f71"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/mapper/GrobidExceptionMapper.java",
+      "module": "grobid-service",
+      "physical_lines": 60,
+      "sha256": "012008e0a8611b5ba4a0a8234e25795de841f74f311bf9ccb0d5341888c876b5"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/mapper/GrobidExceptionsTranslationUtility.java",
+      "module": "grobid-service",
+      "physical_lines": 131,
+      "sha256": "6d1557ac27865d7e06d300f53daf654bfdd6ced3d9cca33d1a3992826cab9ee8"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/mapper/GrobidServiceExceptionMapper.java",
+      "module": "grobid-service",
+      "physical_lines": 63,
+      "sha256": "b6fdc720b786ff44ffc067153dc6fc9834f2c87259440c5c8307d90fc4dd1ba0"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/mapper/GrobidStatusToHttpStatusMapper.java",
+      "module": "grobid-service",
+      "physical_lines": 47,
+      "sha256": "73e3fee3b68ad27309575d6ae719df884b61a007facfb281f33346061fd2a755"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/exceptions/mapper/WebApplicationExceptionMapper.java",
+      "module": "grobid-service",
+      "physical_lines": 40,
+      "sha256": "00ccc9718721a9c5d38d0777d9bd64244e17f429905e142c6c8a471053fccfe2"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/main/GrobidDropwizardExports.java",
+      "module": "grobid-service",
+      "physical_lines": 93,
+      "sha256": "9f476e4766432b2ff417e17054077bd46b7f3d8fe9de7dacd8a46402424b2852"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/main/GrobidMetricsFilter.java",
+      "module": "grobid-service",
+      "physical_lines": 143,
+      "sha256": "ac4474aef9bb84e3d4b460217d0a9bdef6f11523115bcfb94e39be34ccb3d256"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java",
+      "module": "grobid-service",
+      "physical_lines": 177,
+      "sha256": "049f353107aa9251370cb47a61d74a480f255db210a0e97203d3bde7082099b6"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/main/SnakeCaseSampleBuilder.java",
+      "module": "grobid-service",
+      "physical_lines": 73,
+      "sha256": "14d917d822e8242f8ddb39fcd07c421d3eafd082013e76867266bb75acd8ef86"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/metrics/ApplicationMetrics.java",
+      "module": "grobid-service",
+      "physical_lines": 157,
+      "sha256": "eefdc328a4a11a8245ac249a9c56323eda070c0c23f489040a0c6593427e4762"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/metrics/OtlpMetricsReporter.java",
+      "module": "grobid-service",
+      "physical_lines": 101,
+      "sha256": "783056a59634b78ee014282408da2ebbce9292d38478128e6e27728dfd071f00"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/modules/GrobidServiceModule.java",
+      "module": "grobid-service",
+      "physical_lines": 85,
+      "sha256": "19bd28a091d95d33b18a2cc3afaf1411a2e5ab14eb15284efbb22f3a121426dc"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/parser/ChangePropertyParser.java",
+      "module": "grobid-service",
+      "physical_lines": 110,
+      "sha256": "336765762de4a69d8776c6a288739323de8a2a5a27bdd7c13819af0fbb03e387"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/parser/Xml2HtmlParser.java",
+      "module": "grobid-service",
+      "physical_lines": 184,
+      "sha256": "a65815c8e567bdd742c8f283fc1089a03e2973e95f4ca6a4a8ace7e3e9c29b88"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessFiles.java",
+      "module": "grobid-service",
+      "physical_lines": 1365,
+      "sha256": "6db94751de0772bb0d2ec23f924e4a7c916bb6bcbf34782819ee8248890e6fc5"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessGeneric.java",
+      "module": "grobid-service",
+      "physical_lines": 79,
+      "sha256": "fbb0ddd18614eb1bb145534ef1630fbcff78edbdfe73e8eb9f2e90df31f24d18"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessString.java",
+      "module": "grobid-service",
+      "physical_lines": 518,
+      "sha256": "260dc81c499ace77b4bd9aea7ff90538752234428fac8d708b4ef9eceae30903"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessTraining.java",
+      "module": "grobid-service",
+      "physical_lines": 743,
+      "sha256": "6c4dee760aa5e328b7c9fa085db33421727883b0394052d9480683a3dee6fc5a"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/resources/HealthResource.java",
+      "module": "grobid-service",
+      "physical_lines": 128,
+      "sha256": "2a23857e5071ccdc37a05b2c9b521a9df48e60907426a8585d7a3bcc9d8248d1"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/util/BibTexMediaType.java",
+      "module": "grobid-service",
+      "physical_lines": 23,
+      "sha256": "b4d77dab33643a58d376220759655a6df0028b1f0afb98eb23c89e79bd966889"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/util/ExpectedResponseType.java",
+      "module": "grobid-service",
+      "physical_lines": 20,
+      "sha256": "33649a9cc0eed1e73f6030fe6521105cb1ee0c568a1c460d8e490bd3a3c6f21b"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/util/GrobidDebugUtils.java",
+      "module": "grobid-service",
+      "physical_lines": 139,
+      "sha256": "4c96ed85a9d2544fc97f756fa39e44dde130a9f74a89f695961e3f301f14df0c"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/util/GrobidRestUtils.java",
+      "module": "grobid-service",
+      "physical_lines": 51,
+      "sha256": "ad660704d4c7ff351933849df9fdcf6172a8ab0f0452ff58356d31421e1374ab"
+    },
+    {
+      "path": "grobid-service/src/main/java/org/grobid/service/util/ZipUtils.java",
+      "module": "grobid-service",
+      "physical_lines": 122,
+      "sha256": "cf3d03a1e05ac1f3d7582592f8b4e2700e42c99857de7e742eb123fba5810b10"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/AbstractTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 849,
+      "sha256": "f9d18458775543011bcf87598cf64c025eccbdeb80f1adacf257ad40e8e9d7a3"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/AffiliationAddressTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 191,
+      "sha256": "23f155225f901823e481171e9fe1f4f94e92474e43cd8f2e8bee1cb1a46ed420"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/CRFPPGenericTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 105,
+      "sha256": "9ef26b5d56142a3cf3694dc7d39c2228fb1393f1d0c187cc142613435a59f6af"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/ChemicalEntityTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 457,
+      "sha256": "cb334addd594e7fbb914d3e7f7c6c977af7afd50cfc9fd5291bd2add75466a71"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/CitationTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 214,
+      "sha256": "8224da75f96e2db28b0bccbe7672cd0c2f1cc5a4a1c73088985eb6dcc28ec554"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/DateTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 176,
+      "sha256": "ab6234dbcd0cbf9849a8d962e1b6fa4e45413227db41bc6926d6409f5a98dbe2"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/DeLFTTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 83,
+      "sha256": "4d42dbba8a0a3eac854c569de20ff06a813871afc92d3d9692f9a8383f7b4df6"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/DummyTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 76,
+      "sha256": "3667f4ca6bee9640854cd1a7c91be5871078bde79281f4c4a5fd0ec4baf7088a"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/FigureTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 234,
+      "sha256": "6248badc37b144a15728c29cab13c8979ad4c02198c4df6124829ea6257c732d"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/FulltextTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 280,
+      "sha256": "1bf8a74cf3f685c894fd65c2070b612ad601c106086f354d57b03edc98b89142"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/FundingAcknowledgementTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 175,
+      "sha256": "de66a03f95f26a6c0871e603214b5b20f50f6863f1da904d95cfaecbe47e5b5a"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/GenericTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 46,
+      "sha256": "941d6f742a54437d78cc002d6c5bbe508f1078d3b1dbe8823f7da558e3852d91"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/HeaderTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 351,
+      "sha256": "2d243efc2b9144b3f1f52057cbb6311dcec45c01d38dc79439bf41aef4d77e31"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/MonographTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 175,
+      "sha256": "6dd2b6e4097f85975488b5c0083d05de99768677c97b40442239aa892ca03825"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/NameCitationTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 188,
+      "sha256": "57274ee4e805b45b8fffa98e982a3b008f570abe9ff66b97dada37e7bd4677c3"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/NameHeaderTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 189,
+      "sha256": "2018b4e73490898cf91c862c02068878c3fef895b6d94b52510eb9c0dafa542f"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/PatentParserTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 648,
+      "sha256": "54ce60ee3c5d5cf88c9084756ad6f6af6e567ceb43a2008378b2a3205d93739a"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/ReferenceSegmenterTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 239,
+      "sha256": "0b4fb9e9b4888eb2603d228c9d771f7b6429975430dd45079fdece4ccc4b5023"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/SegmentationTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 276,
+      "sha256": "f6ad11fe284346ff94f574d10ec67a1c55dc4d2b58db49f08c1d787c95c8a7a9"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/ShorttextTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 179,
+      "sha256": "adf63c8b343cad3c6341e52261d82a644186dfa56877dbc04916c2ee14896689"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/TableTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 236,
+      "sha256": "902437e6087079857415568e6cd336ca84bc3b51c31fa959f29a92142a3e20f4"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/Trainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 48,
+      "sha256": "90dfa5fb469016d6c9c915af65d90f199dffad6b523f47b848859505ed19cf7b"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/TrainerFactory.java",
+      "module": "grobid-trainer",
+      "physical_lines": 42,
+      "sha256": "23a440afb52d46d13563bc13244c917d62b2dcc291a7e52793806b1fd632aab3"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/TrainerRegistry.java",
+      "module": "grobid-trainer",
+      "physical_lines": 78,
+      "sha256": "2ce9feac28e00002adc97538b4962a01407c0d6d0e447d6c6714a794108aac9b"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/TrainerRunner.java",
+      "module": "grobid-trainer",
+      "physical_lines": 221,
+      "sha256": "0f8a9077df26ece9b7145280488cf6b78a6269ea68a51d6bfbf5f6626f34c02d"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/WapitiTrainer.java",
+      "module": "grobid-trainer",
+      "physical_lines": 107,
+      "sha256": "a30b9cdcea0776a175827d9b50aaecf706cb40e6613762cccceba3cc85bb9069"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/EndToEndEvaluation.java",
+      "module": "grobid-trainer",
+      "physical_lines": 2368,
+      "sha256": "75915389d485e350a6d7fb8b87b4845b233ce1a5ebe3878d03ce24a07e2225fd"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/EvaluationConfigCheck.java",
+      "module": "grobid-trainer",
+      "physical_lines": 207,
+      "sha256": "7f3bd34799caf9287826b8f10129e4872f42ae336c757742a47a220899b0a733"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/EvaluationDOIMatching.java",
+      "module": "grobid-trainer",
+      "physical_lines": 814,
+      "sha256": "21069a1b1255639e8a03150789baf1dc4f07fda2e706fbf43942d4954229423d"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/EvaluationUtilities.java",
+      "module": "grobid-trainer",
+      "physical_lines": 211,
+      "sha256": "4d7cdfe49b8aafbdb86e4823c81ff8a2d77f4e52ef0683caf71dc1e99c0701b2"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/LabelResult.java",
+      "module": "grobid-trainer",
+      "physical_lines": 88,
+      "sha256": "060d4330d1b99b89fd81a7dfead1b3c4b0bd8c72653718fddd6ab20b489e0174"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/LabelStat.java",
+      "module": "grobid-trainer",
+      "physical_lines": 170,
+      "sha256": "b49e8df2a24005eda09d1d1ea3b172cc23f272096d16407ad934f1049b41009b"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/ModelStats.java",
+      "module": "grobid-trainer",
+      "physical_lines": 327,
+      "sha256": "8e769e26919167b84ae15e4ce9be1320a18e4cd239348d8e7c9320bb1583da49"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/PatentEvaluation.java",
+      "module": "grobid-trainer",
+      "physical_lines": 1230,
+      "sha256": "5d667634e239d39ee49bbd2cc44ecc43235c6ec52cd7898cfb88bbd4fb82159f"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/Stats.java",
+      "module": "grobid-trainer",
+      "physical_lines": 475,
+      "sha256": "239124ce1e28f24d763d936ef2f44de69d486051712a54fec87476341802ecb7"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/utilities/CustomFieldEvaluator.java",
+      "module": "grobid-trainer",
+      "physical_lines": 57,
+      "sha256": "7ef186993953a0d921ea61c8e2cd4e95cf6a8b98103cebe1e1ab0941dbc57cd9"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/utilities/EvaluationFieldSelection.java",
+      "module": "grobid-trainer",
+      "physical_lines": 149,
+      "sha256": "462a0f26834d8359253be778dd400ee91ba3303c0b792da2c8d688401791fa93"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/utilities/EvaluationNormalization.java",
+      "module": "grobid-trainer",
+      "physical_lines": 104,
+      "sha256": "42189996e5b17e08e9e841473929087a302a4c4786dade80c1d0f251b434927e"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/utilities/FieldSpecification.java",
+      "module": "grobid-trainer",
+      "physical_lines": 510,
+      "sha256": "52cf3f4b027abd000e3a18ead59d38d814d640587ac8c2aeb32d3063b5c9cf84"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/utilities/LinkedAffiliationEvaluator.java",
+      "module": "grobid-trainer",
+      "physical_lines": 401,
+      "sha256": "7ae78c19fe91c7383e7127cf92f5fa4840a512eadcae5843cdf42a99e1af6373"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/evaluation/utilities/NamespaceContextMap.java",
+      "module": "grobid-trainer",
+      "physical_lines": 164,
+      "sha256": "09ca3ae5c6919197d677543a4bc48ecb63fd975b6ec991dd15b443199e5d5cd2"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/ChemicalClassNamesSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 139,
+      "sha256": "bee76eba161e17c6c9b9c3a8773b3f4b33f8de392b9ccd4b00a01e1d839fd91a"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/ChemicalFormulasSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 139,
+      "sha256": "07619e76ef5e5f18bf05a5c62181a8a9492fb640213a338f644910d45154d66e"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/ChemicalLigandSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 139,
+      "sha256": "94de15503f693a0b07942df8c78dcea035c628f62cebdcaf401f8a59cbcbb6a4"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/ChemicalNameSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 140,
+      "sha256": "98710107cae4d619bc3c5f1ba72fd32ae82e7352b1c5932701bef2b54b649cf1"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/ChemicalSubstancesSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 139,
+      "sha256": "610c344da1833f4629e6cf5dfa2375d2d5db2195c22efe971ba3951649331ca3"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/ChemicalWordsSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 153,
+      "sha256": "b7ec976de7a413c4af0e306b2be907fd0e9a89801c006f910ef9b17d99d2eb70"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/FieldExtractSaxHandler.java",
+      "module": "grobid-trainer",
+      "physical_lines": 90,
+      "sha256": "a042df37c33be1619d5e33dd6f02361d960893d397c47e14f8e02220f7976f6c"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/MPDL_METS_SaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 227,
+      "sha256": "b4f75734154985d77145dd207a468b1377a3a5283a31073c763227fb9e8c57a8"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/NLMHeaderSaxHandler.java",
+      "module": "grobid-trainer",
+      "physical_lines": 359,
+      "sha256": "8f2807261a5e40d3a31627b52ba8f249c31f0e64db99ede46eda2817f055120c"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIAffiliationAddressSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 286,
+      "sha256": "8b220686a28f550963955f97516e5b4484d2488f6313afa5e468d9f75800dea1"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIAuthorSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 190,
+      "sha256": "e0b400a9333aa9302ea8a1a9d35724296f09c1aff62eb8324700a53d61243b80"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEICitationOpenEdition.java",
+      "module": "grobid-trainer",
+      "physical_lines": 213,
+      "sha256": "f6ce41b508de0729b70d07269778322613d19debb772fa8db33939fd165a0700"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEICitationSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 316,
+      "sha256": "1f015a6512775398835216f9eaffed4fde34f12ce7490f56b17e7d3acd06da35"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIDateSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 198,
+      "sha256": "bdd0341f785064cdec2c7ef7240041242f3f352d9546c770e38eb6102e060206"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIEbookSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 167,
+      "sha256": "ecd361991f4fd7b3f3dc6204951fb5c8a1835d0ce85afd43739cf48bfe94dd5c"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIFigureSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 214,
+      "sha256": "298f20689f719a1ae55d632cf2f6482bc459af0a1af095c4786ec99f807db6f0"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIFulltextArticleLightSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 290,
+      "sha256": "7a207c090075f2a5d5ff6ab5308f230c2e3993117771a22be7397c9c92497159"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIFulltextSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 318,
+      "sha256": "fdaefa2ce7a15f5b6d2a3bea72a6a370e9d0b5724cb537829afca4a60dadc7d0"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIFundingAcknowledgementSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 198,
+      "sha256": "5879aa88154f694b9af27fd9658a58454f920dfb3414d31f415e36e747cb613e"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIHeaderArticleLightSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 221,
+      "sha256": "5b626704ac40dcf61613de7fc9188abf1a018e92e66b291162ae7a72f7039893"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIHeaderSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 405,
+      "sha256": "3ccc5b092f49bc3444122013b24458fd05259665b2c0179ebfd66979cb7d0dbc"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIHeaderSaxParserOCRTraining.java",
+      "module": "grobid-trainer",
+      "physical_lines": 293,
+      "sha256": "5d71f198311bd0abb6ae10a80dddf1d71e5c88f866b00a13293fdc17dae8794d"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIMonographSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 167,
+      "sha256": "ee07df4e00e522eae59341343b06fa8fca9da13069626111c23d9610af2bf71d"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEIReferenceSegmenterSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 219,
+      "sha256": "6b71143fb1fb22f7a4fe29e85f5b043086e94681f9f36c3396dc3543f44d1ed8"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEISegmentationArticleLightRefSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 231,
+      "sha256": "0371812cb361cf5e1422e2eafada61382f74eec15cf4e0836a93241b37dbc476"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEISegmentationArticleLightSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 231,
+      "sha256": "35958544819c64e5a0bb052d32c6ab22df4d2bf761607c921958943666404e68"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/TEISegmentationSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 345,
+      "sha256": "a45f52aef3371516a265e39f107f530e6f64972950476f27f3af52ad00f15888"
+    },
+    {
+      "path": "grobid-trainer/src/main/java/org/grobid/trainer/sax/WikiTextExtractSaxParser.java",
+      "module": "grobid-trainer",
+      "physical_lines": 199,
+      "sha256": "d24b0f47d7b199422a87f774b2f0e42e1919358b2204e6c1653d3ee2f5cf4410"
+    }
+  ]
+}

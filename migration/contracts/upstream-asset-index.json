@@ -1,0 +1,3549 @@
+{
+  "schema_version": 1,
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "meaning": "Git tree identity only; runtime binary/asset SHA-256 and effective dependency closure must be captured in T003",
+  "entries": [
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/af",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "be8b1722ae56f5b42564dcba3bf5ac46746f0eb5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ar",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a7b40cca0cb7918be3c99d6e50ed2f3dd22e39b7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/bg",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "201663afca59d7b59ba9d4c3f6136422e9c738f5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/bn",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "69083369ce5a1a4b34ac91ce490ae6d44a5b6b81",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/cs",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e46e24f298a0addb038237093c1136be21473109",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/da",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "23e865876d7cf98fe497490057e276c9d94c301f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/de",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "94ebdbbdc7985eed9ca03fb9eae554233a8c0d05",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/el",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9ef014bcbe195366f5cc589e50bf0ee386290195",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/en",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4807e957eca28ed2b480b65e8b86de6b31386c8e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/es",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cdc195676a8124c206c2386acb9658b288ea25a1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/et",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2bdb2a6074e49bf91922cdf2f487ce054bd67346",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/fa",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "87dddc1b1733c3990a3f2b901265ec8b8f16d726",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/fi",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fdb41748ec5bab7f89ce5da9539d0cac6fc41c9f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/fr",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1d6d3baa067c297d97fcf2ffa819a91d9ea5f368",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/gu",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5ab783f822253283028e38ef1ca01efe03231ee0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/he",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "38a8c9d47773206ef62f72a34c5a1a3665130134",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/hi",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "104ed583ed78ede4ef7c1b37959241e16919dc7c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/hr",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "116cfa0d0aabb98ef658cb476529fea33e6ebe87",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/hu",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "77ab7c4c8da22f0adb3de33bdccc55568ae84df5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/id",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "578fd6c458e68dedfdeba02e7c545de5ff4edb27",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/it",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4ba4b4009727fbdb137c10ea182eec4ba6ffffaf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ja",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5a76401a1888b6a479eda0d6381e0bafa3bf1e5d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/kn",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7a599ba7580b8e609ec50ccb5aad583e851e037a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ko",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "dc970a27f11247d0b25e83a8884fc7d7c3d4d379",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/lt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3f3e0526e8fa3ec2e4879c1fe0a8dcdd0b5bdd5e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/lv",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ce5ff7ed1c3d05922c2d85c041f64d7e99011926",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/mk",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a0c736aa6f4371b078601e63f6ce86f17c2ecae9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ml",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "422334423833e8419da3cde70616b5be93f43b30",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/mr",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "19a1942928898f459eb3539119d84147d21a79a6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ne",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "22477481bd1ca89f92f7a058a7e0134cabb1eec4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/nl",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c74f0d2679d6b6cddbc813b065f443efefc296df",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/no",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7dc51ea940b018af7814b2866747c763571220ee",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/pa",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1140be0bfb867ecb8e577455ed15522e8bf27d6b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/pl",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "139647c0161923859f0b82f72a853cad0b3438bd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/pt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bbdf3ed0ec15db767e7fb2f94f07d307c8846e76",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ro",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2da130e0a9ceb2851d4a9669d9bc568ce11f2776",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ru",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "228e71e1b4a02d51328a26d38d4ad0cf4f924f85",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/sk",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "97f98807691189cb5eb139feab73463017796b69",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/sl",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cb961713169735eb25062e9fb9ff42786b2176a0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/so",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9d0c19cf62970228b912f7ec7807cc1cd00d0fbb",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/sq",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fe3fc7a2fbe796338f523a8d2f58b14212c1158e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/sv",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a648588e8617f864df9aaaaa6f2cdd408843fafa",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/sw",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e745ecba7a289f42cd8df756d7bd4d7e515a84c9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ta",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "facb43d2d3350b275b0ffc9f6f419016ba41becd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/te",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2a2370453f45a92a6e67971607d5655de0594a6d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/th",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2852f434017fc8edb685395bbb663a6677791784",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/tl",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d68c2b3df7e3b011a1ed154df6d25e767379cdbe",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/tr",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ed84e9ba3c1663d85ca3224dd62c84f3dcbc991d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/uk",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e80f2034b333a54f16c5e59e7d885d49cc6cf832",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/ur",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0c11cc7f6cfd5a602158a62564a1f88ed1c8c2d7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/vi",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c02de9dccdbac1f6459ff0da06ef770480dd111c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/zh-cn",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "904c61e39b240ba4e63eb90ae19a6651653ffca3",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/language-detection/cybozu/profiles/zh-tw",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "674b28d1295815eac2a9c02a212ce5ec631576ef",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/countries/CountryCodes.xml",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "d7c5ac90f3075d26f283a08dc3db66b8960dc355",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/countries/location.country",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fc7b6ac36d5d31a08e096938ebd52351d9a2dc73",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/journals/abbrev_journals.txt",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "e2c41fa94a39335542e8a4ef3911c9acda6e37c8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/journals/journals.txt",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "b77e24ed70a15c6dc3e95d7771eb2dce39619496",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/journals/proceedings.txt",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "66febbba33a87f82dd910c28803fbb344591cb53",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/VincentNgPeopleTitles.txt",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "36dc53f1fdb212958b4bb7d63ad5c099ce40f435",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/firstname.5k",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cf9537391369aa86806010e22c3037e7a16989ca",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/lastname.5k",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bc3bd127213e54ba01aea2460f3b3f51f82824de",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/names.family",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "71c55a0fc79b92a7202116903a5cf304afb0a627",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/names.female",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "679bfd213260f344f13b63b3664d7e0b5817b0f4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/names.male",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "88c40d7073b4c02dc825d11ac0f1d5e53e066847",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/people.family_name",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1aff434a6988e1ab64a8b1ab75cf418548c9970a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/people.person",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "65d3ac35aba65c69fda4bba773d8db2410b87250",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/people.person.lastnames",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "eae20ed30f1757d494a97e48f184f5180dbc53bf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/names/suffix.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "417723f7cac1bb77d4967ad447fedda6dc89b327",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/WikiOrganizations.lst",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7ce4668ec88c2076d6a61a05a71e753dbbc3ecdd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/WikiOrganizationsRedirects.lst",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2b632051a8bce60f47a969e9bed4a3b6be9e5345",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/collaborations.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "793d7c201d49e204f46389bb97c134d9542583e9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/corporations.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f9ba0d0e9ae844deb02503c6a7821aefa857c6bb",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/education.university",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "844928aca45f988d9d06ad9f90d24013b8233dc1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/fr-esr-feuille-de-route-infrastructures-recherche-historique.csv",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "366ff2e47c86eea2ef22a3f4c660acd3551fab1b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/funders.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "46eceacb98520012eee689070e8438ef1e3e0e3a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/government.government_agency",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "79e20bbf5ffb18ae9a6be5e5b17a601f7d2c7739",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/inspire_collaborations.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "88eb234d459e015e70f0086ee1c2dde295669883",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/inspire_ranked_collaborations.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2992d5e1b6c7ea5daed6b4befbb137e22c7c5f13",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/known_corporations.lst",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8506dd932da2bc73cea0c14587d53a8c918c7ee7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/orgClosings.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "10bc5a0e49adeca2c9edbc84dba5e5c8ff6474f6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/research_infrastructures.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ad55acc003d12efcfb38d306034a121de8b06049",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/research_infrastructures_map.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b1106ea01821e3cefcb68cffaba62fedbf95aa78",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/ris-data-table.csv",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f03f0ea3f1a50733d393350f5af1abc7d1ea6dd8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/organisations/venture_capital.venture_funded_company",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e7233a62a4a41f437f7b609042a6ed71452c6707",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/ar.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/de.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "478a08898aa980becc26ae9fba38076e0b37a11b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/en.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3eb2c54b80ebda0f24445e178a2b2013a8dd63ea",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/es.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1130b819b9e7f40f6d2e6df870e86364b4df9496",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/fr.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5254afef75dfb6ef01bd7ec82418d93a73cdb3e2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/it.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/ja.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/ko.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b9df24122acd651c6021d4523ed65f0d1ec16541",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/pt.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/patent/zh.local",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/places/WikiLocations.lst",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2be7aab0091ec1f0ef657567add2e5cc6fd9ee2a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/places/WikiLocationsRedirects.lst",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "73212d18c40075a639d6db0f70107c1c6c45d198",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/places/cities15000.txt",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "058fec902bdf23e19d8050161c0839d0dd7baf8e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/places/dataenCities.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "01bd3b57e50cf8f3e11c709efe386b034cb7065d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/places/location.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2987e554975a986a00cc3b5f6c724044c1c9f79a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/publishers/publishers.txt",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "1f5f514153ec4135b554f650c871d5727a2c8163",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/senses/descriptions.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9f0319ae828a2f7b42093272129c5046d72ef606",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/wordforms/english.wf",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "a1a433efa6605a031ba4e699902e152784ee128b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lexicon/wordforms/german.wf",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "12d4d3b7acad8b3cd275621522c0ddda1e9e3388",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-32/ld-linux.so.2",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "0a6b4be513ba7855be2680e968432c96fdd15384",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-32/libc.so.6",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "7981bc86637d1ee2f8ce1d8c003182a4effd4b3d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-32/libgcc_s.so.1",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "59c73c6f4dcff04ac5459034ff708fbbcaf70e49",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-32/libm.so.6",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2f0eb4672dc56cbb9439a7f4deff7cae6e96500a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-32/libstdc++.so.6",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "614f0ec234e609c6339e82577e744701e8f60595",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-32/libwapiti.so",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "358bf2b0d8a0a1a920b841898552de7dbe55a107",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-64/libcrfpp.so",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "25595800e496d288fe5a119e541091e70630887d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin-64/libwapiti.so",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9a98187ebb2b7664bfd764f9d096216abf13c036",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/lin_arm-64/libwapiti.so",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "924823ead877d44d6404b14115f381fd32c8f7e5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/mac-64/libwapiti.dylib",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9f969b4aa458b7f41a290617aa48db3dcc20652e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/mac_arm-64/libwapiti.dylib",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "64c9897e4560fd5092d6639093fab137a76a1f9f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/win-32/libcrfpp.dll",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "8f6ed88fe0935e9cc083e74e91ee17eb4f7d9c8e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/lib/win-64/libwapiti.dll",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7a1aa25dfe7c3e0b5aa4c8fca500fd172108fd41",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "dd6c9c2af144149a31298767073bfaa70c4549e4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "18d551e354afd03c797f2e90a11b26e15c3f6e05",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "637e28c17f0a865b45b0dc7649fbb1c8471a832b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/affiliation-address/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "197c90de8d6901eaff2c03278b4312da9abce907",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0d456bbe4487449df11e5706eba76747d5851103",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a0b4de874d9cc17259958c6cb6760afd975c8ddf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "90e571c30dce841b4e331590491ec70e14cb8554",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f07e46a7286c0a1f850f53f06718d7f973400bc4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a02c712b5a68d7cdf4a646ab403bb31546ae1cb8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "90e571c30dce841b4e331590491ec70e14cb8554",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/citation/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2fd316fb51a58129837f65f0a931e03924e8e319",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/copyright_gru/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "96b51199943d3b1a544123ba2b10a9c033486aeb",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/copyright_gru/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "36470b0751f228a016f37186846ffa39b1eaee0a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/date-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1ed115b2c2c44b7602b60d3b5786e18ec50f513e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/date-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2767962f6e96371f1af83b750f5d22236765bb6b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/date-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2f24a47881ff0ab3c9095ecb39ef0fe3b50ec32f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/date/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "dd3625b8732548b0dd5486ce975beb7e2e733ded",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure-BidLSTM_CRF/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fff374e6e2389ac1d678302ff297e3f2ff4196bc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure-BidLSTM_CRF/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e38ccec4f65d2957273e77e0453e4a6d23f82296",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure-BidLSTM_CRF/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6eb44fcec6a8dfa431d605d694b15af9b9b0b8db",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4abfcd42b4162871fd8dbff4ff374397304b1db2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8998e54db24c74e37f81cd77779e211afa5737ec",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2f3192b9a3d0f6aff8dba63f0970bae7f553aa41",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/figure/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5e36cfce488e89acebf5ef83f74c5d0f3d68e00e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/fulltext/article/light-ref/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bfb925bf82f18871e624b7b921a00d084ce7e86b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/fulltext/article/light/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bfb925bf82f18871e624b7b921a00d084ce7e86b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/fulltext/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9a00c4877eb2b595e2388c58111bf32bd773f11c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5b63a1b3c901051776091a3e6a4bf826717281cf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "711d8a605b0cfa51173adee56713e467a3035036",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cff5ff1c072af6c3a31a305b072f93a005dc3365",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/funding-acknowledgement/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "52a2eed0620e32d2291ef0377ac90dbe717a21dc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "787464000f41c380df006c8c6dabc70e2fd0bead",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7e442fb905900de778d625311019e6270676938a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cba92b100e68ed0cb5039a0dffce8515efc11bb0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9c79f7fd29cafd6239d8495748f41a12886a5871",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "871003db92a5e098743a2496e20e4073e253347f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cba92b100e68ed0cb5039a0dffce8515efc11bb0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6a3b706bdee3abdc1f613776f539374d9a7b827e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "191d8b10669e368f1684dc77e44ab066607f4468",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8f6dd035dcdfeec9f1bff0a909462cc10b6b7cc7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "280534793d926b68afeea13ecc51939277d4b4e8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0c3d78a43f8a803029dd8e7b7e087d914d0e26af",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8f6dd035dcdfeec9f1bff0a909462cc10b6b7cc7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "59b0734c07507d4bf0f2961df2d664710386954d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "191d8b10669e368f1684dc77e44ab066607f4468",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8f6dd035dcdfeec9f1bff0a909462cc10b6b7cc7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c60c0a36510a84dc6891f727e9425bf2d84fc474",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0c3d78a43f8a803029dd8e7b7e087d914d0e26af",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8f6dd035dcdfeec9f1bff0a909462cc10b6b7cc7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header/article/light-ref/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e83d9f795a9cbcab64f625eaeef882a45564082b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header/article/light-ref/placeholder.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header/article/light/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2e1fac85dca67615ecd87242b21c31987c1d2671",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header/article/light/placeholder.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a170234b224fb0a175b015d1b71f50bdb70f50ff",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/header/sdo/ietf/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ef30d79f23b21de21d01040622f28a30cc163144",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/license_gru/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4c3470268f567558a46acd26f3c19afe19761d3b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/license_gru/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b9e6e99c7e86c832f9c37b7abd54c3bd101144fd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0252d322a648f5f84b24ca07128e273ea09ea45f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d449a13834033d3e491e4c76a7925e44bdb8828d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3130dc81f7aed4eeba121cfe6017dbbaa05378e5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1abbd516e4a3feda8bbb7f02d51cb624b7979a15",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f131fed881a46080f39aec2624c173ab59f235ff",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "39352fa72d389ab568c84ce0864508a2d75b3b68",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name/citation/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "20289c60f3ed8b8750265c40c0d940c833ac625e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/name/header/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fd3809ac9480e6c7cd69acc93716a6969dc8f8f9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "59423d0fefc9afc5853ec97643953208ab76c193",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bbcf76af611f88a5807706bf0aa0b1b6f0866014",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "57c7806d13aebce380cba34c79c8c2aa7710272b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/patent/citation/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ade572a9087bd062001d2077bd04df911e55b7d7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5b2639bbfcc79e8a5c3808959877f1ac0124f657",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8e2ad37dae666f1896d04d62a3c47f9e07d61d6a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "64d9d555af2791782609bd7f9d407a494297c1d9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0dbc5b5647f454e8ef1b1c2f2e7302261857e5bd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "13e083e74cae89ba46ad999eb10b4db101e3b634",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "64d9d555af2791782609bd7f9d407a494297c1d9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/reference-segmenter/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "aa67cec76380f8b69791e8803a32e93b6eab4792",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/segmentation/article/light-ref/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8ca4bdd21d8fef26427b4e126fd82a134ed20015",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/segmentation/article/light-ref/placeholder.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/segmentation/article/light/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b7eb510ef017bd49db469d3cdfabb0a80d6f90f6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/segmentation/article/light/placeholder.txt",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/segmentation/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3d4c0c64a19ed88121e3fd09612aefd19913de8c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/segmentation/sdo/ietf/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "41470f0d27cfc57b72432c200e0658620c842245",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/table-BidLSTM_CRF/config.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cf85e64d80369d6705255dcb99aa83be7ca5b91c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/table-BidLSTM_CRF/model_weights.hdf5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "74aa6bd7d97e3a5a600f83912f96e7129adfc7b8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/table-BidLSTM_CRF/preprocessor.json",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7df5134fbfc6d4a17594740bc1ea44687ed49753",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/models/table/model.wapiti",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "455f4865e9f28f3188ca8f3e4ee9199d43da901c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-arabic/ISO-8859-6.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "25bee9eb08e43af72fb20a1930ab45267426aefa",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-arabic/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1111c8093e3e119d7680d640e9cafc10fcb7c4f9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-arabic/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3d8db3274dd3b33c8b351032a6a665e4c4924847",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/Adobe-GB1.cidToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bed3f12e6495a3f80337717cdfc1eee312de66e2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-0",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c96113ad786567fb9cf4e18bcf0d5b85b53b97ad",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-1",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8cde432ee3a6cffbe4f0125ad6662098bbb9e929",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ee205248148aa4dc85e6b7c2231bcd7e9b7afb7b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-3",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "96fd45a6e3c3ae360804a2af46fed374ccf76b4a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-4",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ecb9212730c6e252bcd79f2b7185bc8d668a8adf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8a9ee3ee1035dad2fcbd89863ed4fe9eeb5fec07",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4611e4d5149bccf5f4797f72be10f05b492021c4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f28d6f1135ea9294e02dc0d5ecb09205867d61d9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d6c9ba76d827a5d9ee58a47730d1fcb3d9471d5c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0c84cff673a589d8e56c3edd4319aab6d088cc3e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c88725325f411b6caa8a09ccbef1d1ad5c6a93ec",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ddb94e9f0457fe5560711a218556516103a56129",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK-EUC-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ea633f29f7af8e7851440e011f49942d90462c1f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7e5b586fb2eca868dce6dbfa2ce8bc1599f61792",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK2K-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fe15bc780a68c465bb2112e53edd5ddb83c8ff0a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK2K-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5ba0359d1360b984f9433d22a09b18e70d10202f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBKp-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "15d15a49ded29b5995738a22d768bbf4af82798c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBKp-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9bcb51d848506c2ea49fd1679964ee68d43c79bf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e82b1ef0b5b4eab71f6f23e2f1cc5986b85da87d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0b8c4b0bced6e9887d10387fb8ae3805e84a9f88",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9aa834eb0623a38e3fac7288ca25d134d7fe463c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c0bab3d590df40b841862dcc2eb84859610c3070",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBTpc-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a5be785960f371ead7dddb79dc6fe4176370cf37",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBTpc-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bcc5f4713a914977860c668e9e6d7953992d9d8a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "84f0e64a7a566183828e8fb6e7479fef10c9ea75",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "147f491c8d4f8783e2323653b92ac60547e698fc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-UCS2C",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6ce652a88df53726156c14b8e3aac17afdfdf0b6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "851888210989436ace1415082fcd484cb1cfda25",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/LICENSE.md",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "adeab22f9b694884dd3c3c49f83dcdd1d5a89906",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UCS2-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c7b40cda0527ed5d990bacceabc13164bf999fa2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UCS2-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e0f0fb56ed168c035169be8e72fdcc361ef9186d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF16-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9575b1d7f276eb5e6af16878be82a575e8a61cf7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF16-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0f302482564c3e90d9ed8d7959ae3273c2354fbc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "765869daab2df9015f4861d832c900d2de00d51e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "664a362ecd705e2e1ac506bb94eb6780358f1bd9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF8-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8d2af6ba95c707c1d038ed6e68e9c46fbe49c685",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF8-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1c100efdeee5464beebcf24c1c1a7d2f249e8a90",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/EUC-CN.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7cc16e654cc03d73a7132df668a924361a18abf4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/GBK.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1d2a95fd36da219f91482dcc0d485557c41a102d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/ISO-2022-CN.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c41eb28a83907d1bba287c1c70a909e4e2c70d08",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6c7c95b8342814f2cbf03d6d8fb78d5d691ae654",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-simplified/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "764deb8f739c980ef9e2d7bbf26fc4a1a6c00119",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/Adobe-CNS1.cidToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c0755cab07ad60fc4418f58b692847457a20493e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/Big5.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ec1dbc02a336defe017d881fe4d72c238a2b5493",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/Big5ascii.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cbcd04488ff33ba575ba90d8188a19e248b6ea98",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-0",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9a037f85b8df021b333eb0501fe695e2e924ecbd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-1",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "24c193aac7aa0bc5aac12ebf2379e1e64e98f66c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "544b73fc79d6db0fad73cfb392e0c4338bf4619c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-3",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f380656311673f79f95bf96aab5114e7f2258c39",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-4",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d9f2f65d14ef703aeca66fcc36c0802f0ca80cb2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7aa30aabbbfcca044c4c0b671eca3d7b9f3ed616",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-6",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7529a97aacacd0c76ab0c3f429f8c794da29b585",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-7",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "17cec369e448e234a11206c29aff265e7c76d8e4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2185acc54d3907437c01fbbd93a065e8c36d6832",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "08f05cc372f1372b90ad9a43cca1a686bb975afd",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2b0482d0387d5f6ec69a7922e40c31b63885acba",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "277ede77969762723ba531c698d5447724387a4f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "206affe9cf85540bf502ac43f2a6277d23438d68",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-UCS2C",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "703ad2966de37b8ea7cfd2ef50f3a373efe02b98",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "70f89e7ab425e12f33b39f4ff089cef8731d0281",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8e8936bf14a4d485a72019d39379fff6d40611f7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "62c458029881a185249af114c2c0a74e00a2e9a1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS1-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "eefb687598b2783ce9be1dd4c9b26cc0d591c2ee",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS1-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fec58cd1e36e85082594a1fbcbdfd3e1331180cc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS2-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "832b710a7bb75d25e2150b64b9d93b9d0b22aadc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS2-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ee519fab4b293e19f013251e57b51a892c668de3",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETHK-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "974945adf77484b3121687352d972fcbb6c54983",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETHK-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "57d776389096381999a607dcceddb3c5e665710a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETen-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a25ea5ccbc2cf3ddf9dd0039a1cde5d6ffc2c747",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETen-B5-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "03dbc249ee39a4a8e1b33ce644c76cdae1eb0a29",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETen-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "736fb4a403b94b9e6ce25f0a12675848c8dd5481",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETenms-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6a3395011aaef3e921ab44c1e535223ea6679734",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETenms-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4a5c611fed53ddd6880f19b641233d89572f1c76",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdla-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "199f52e58ebedf5da4c585994d89f13c72041721",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdla-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cf1e5501d88934b7229736554cfd2bab70ee8d96",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdlb-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1721d6ea0bc07c0a4e1f5bf7615d82934d7a90cc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdlb-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a6960b22df4115caef5126be85d209d2ed21540d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKgccs-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d92536a2c1bf3f4b65f935524393e3378a912817",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKgccs-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "298cb275c68458ee93ea969251553e1daca28b34",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm314-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cfc47917b53f57044460b4639c48543281d1919f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm314-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0f47a62e9400732840d5f40c51068c10bd6c7f0a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm471-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "543de49adcb83b8585fc7ec8a98ca80d0eaecbb1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm471-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8782ca6b4ccbfd7a9e9ee23b21a5b4b186e72ee3",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKscs-B5-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ea6e1c881ba1bb465b2b1d81bccefde9b602c977",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKscs-B5-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "da4f9bfe122fe49ab04878addf03f0ce95e57015",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/LICENSE.md",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "adeab22f9b694884dd3c3c49f83dcdd1d5a89906",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UCS2-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "73ca664a26ba7835d0c06a1ae13f1c8b5ed16812",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UCS2-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9927ba9fb7cb7bcc46ade671f95a845ac39156d9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF16-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "76c15677f9fc536e83d4263a3fb26b785db9eecf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF16-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "37e13a5a9605070f98291b396806d04c6ddcfd09",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "beee8bb2efd85b85fb5457c1f048732bdde7d0a2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "123ec46ca25b8649658b17cec29fab62cda29a8f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF8-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1b5fb46b21b49d1d5b143a4abca2afa7c5c62ad3",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF8-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ba1840bdb24e959384853adce5fba014ca4e308b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "11075e077162a3170faf9cb1684f1da9b81ea09e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-chinese-traditional/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b68150654459501d50b6a3d107ef370c82892301",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-cyrillic/Bulgarian.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1f2229b2a90a2934a722a921acd056fff54ff770",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-cyrillic/KOI8-R.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8869ede78ba20cbb8f820b583643177bd92202d5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-cyrillic/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7ab951b35d135aab4a752c25336912c7465dcd0e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-cyrillic/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "385bc6094c0a64c05c2ba049ad397a2546803021",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-greek/Greek.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "351d111ee5119f2c47e0782b0a3d48151cfd905b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-greek/ISO-8859-7.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3a4768911667adbe157a0e2196f554956c1b140c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-greek/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5f971fbac00241d41c7137ec258102ff2f1ebcb9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-greek/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cf998eef21ddd4b48180363052544e94673c5750",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-hebrew/ISO-8859-8.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "970a7cdf0aaacec2fc4ff0fbb76beaf35fea45a5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-hebrew/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c3b8990ab45d8185a1a162c40e7a279ac5310e04",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-hebrew/Windows-1255.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f792be75b5fd724821506ea28676823947d4b80c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-hebrew/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a5e1ce24ad6f780d7017fda65e54c335da7d83eb",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/Adobe-Japan1.cidToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7687a5e0d7f5d7f6888f1113d5ccba4f7bad47b2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d30c5e8832eeb027cbc5715a0eedea6fe230b24a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "69fe9c26eb688d4651e5d5d939f0ca38d4072e28",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1c7cc2d10bd847a2806a16677d46f741278ea843",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d77d6308b1a3e4b3f65775dcf9f3274ad4b3df96",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e68ca260312bd53965c407baf39b37a11b1ed49e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "465b79f995a725aedceb1e606104f8badf312e05",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78ms-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ca78cae23fd2f0e7e33bf5e4b28f3b289b126683",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78ms-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "03685c696791e40af7e369dea45fad938c035a79",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/83pv-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d80b465fa79480caa1e9606fb89716fbc370d1ed",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90ms-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "89c83394e93d6568ba031f349b46fd883e76f755",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90ms-RKSJ-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3e45ad326d514a0dca56527cc37c40220c852b0b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90ms-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "eeb6a28a93d970d0d74c7000cc185a117aaaddf0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90msp-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "158f3f661cc7d0529d21adfbe92bcaaee5f8f756",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90msp-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7081845f4fc2c965debd8906a557a6d772b5c87a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0b68fba1392f9b6e5cff078f1642d29bc6a496e7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "55a2f996355f522daebdf406123a74303f148347",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-UCS2C",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "11fb957c3a0de8a8a5aa848503dc84e14d2c7f3c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "32b993422ad421f7b22aaed08f19ccc22d2a3e98",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a5889e51bebbc7188cc531c86fa1958e4ba73b0e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ff0b793bdb63feb6d09e01233cdd87b39f1660c0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "db50cbcbf098a2e4603190d51f41fbc1c69f1008",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "053dbff78d0793e80e8dfda5d52a76b03c13b97e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-0",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7e172144da548b3dc9c706f9cd44c69f8c51f741",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-1",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f61f714cce4cd01615f95e67a7f4173fac2b2fb2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d7767f65fcfd31c6f2a3551cf3b8942ef2d9ab72",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-3",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a5507b65ad1ed355e7c44f41f132b5d27844439c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-4",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f6a4cf813712748a7351bea4919222d300f5b2a6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e7991319e3b7e7e34bdcd6d554d9501c23f758c4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-6",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "38e95eae7a7b595197357a17309bd96b0232deb9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-7",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6f195ced13be18738b7dd7ef33d66fd6fab48d23",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7410fb92961716eca03ed2dbd63304d4fa59cc08",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1167675bd41d5fa35bc35dbd02b7483070220b29",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b3796b7443f306b81c0b857b6d9d472f3f1faa84",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a67d3409ce7ec59d34ee7bd5aff3e703af5dce84",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fd6be155157daf82d09189b376fcca7b8facfeca",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "06f2ce07c5ac084b25786fa7d8a4514c1f1e15b5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "dfe6d14face1eb9ad49b05f07403d8c60611eca1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f8efc4ed68400d9de0ab017c977b9ff15597fdf1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Hankaku",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "24cfcca3ff60c00add8b12a0d1cf47d03bc0deb9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Hiragana",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f4983034846b44c8e6df204857ff37697a05dc64",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Katakana",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7dbaffb7d3293c534070fbcb31794f10bdf74eb1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/LICENSE.md",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "adeab22f9b694884dd3c3c49f83dcdd1d5a89906",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/NWP-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4b8f7eb7d9b1765b18323be8c7aa1c7173b1f7cf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/NWP-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f44a34082bcf05655b4f4489a3a18b3089973c2c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/RKSJ-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "46fd6237fd77d10bdf6925654253e4ab3e4b3950",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/RKSJ-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7740b49416eb6b590a275fd67a3b80a7cfc22a60",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Roman",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "74eb81051b0a6af02c0585dcb2ddbf2b3f5fd234",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bf5331822801a655b922e0efaf786e1250b4216d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-HW-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ab516ed8a851126f4332608f19327bdc418fd8b8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-HW-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "311d584a1c207bd63e0967a8068590f98b72e896",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7ade3d475e827114ca79d12640ada7bb48693a19",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF16-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f8a14d10a8b2680946b96a8809506247f8bc5919",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF16-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "38defb79cd430b072925a8ffb65fba8c6906bd7e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9a27792a3186e0b1d2281a4c1aa9826435e3cec7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "21be2e3d04f601e5459be3e78e42dc662eef76b1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF8-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bf19018db12bf1e253c63f78778624715b99d423",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF8-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "791d2905ae6173ebd54aa7adfd88704806f2a7b0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF16-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "190e1844f4656105f1cc3ced2b3deea60af7ae5c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF16-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "dabbabdf225ae524960bb8327459086635248c90",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "78b15e44527f60e30f0316609baf40d5a443db5f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "642a180ca02ec9ce532c1310dfefd3393c47b712",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF8-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "535186509203c29fbdcd225ad663ca8ebc56ba5f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF8-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6e62396cd5b7b504eddad45d07f50c7483ed8e0d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISPro-UCS2-HW-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bb4b1208814e9829481d1b33b1b179c80ee3c5d1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISPro-UCS2-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "59d2d3d2fa01c0227b80989190490762a42bfe15",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISPro-UTF8-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "654601bcfd62c5c007dbb386b75708cbcb211a06",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX0213-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "99bdb248973bc13073c24cd262f509f0355105fa",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX0213-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c2222c677eec3af51237d897ea9aedf5646538e7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX02132004-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6206685a8b2b96b6a31237d5a69f404666b66d05",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX02132004-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e6d2c74e12542f5ffd286006a73d506e68ea657f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e508e19ecf70faf17b5da0bfeec5b49b6dd38cbf",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/CMap/WP-Symbol",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a450c2ad0ee4ee935b6f11b7c5d3703094629d76",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/EUC-JP.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4ed2544bcca799f5c12bfe2088e5579ded6f1dda",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/ISO-2022-JP.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1c6af6a400bfade812f5c33d95d40cc37365f4ef",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a52bc3027fbc5ed6c8b58ca92cec6b27fdf19350",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/Shift-JIS.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a55e584143533c881b3d7a932cb051319af87550",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-japanese/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "186e5080536d40e9e0575c1b4aeaf83f520458f8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/Adobe-KR.cidToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bf28e833d7f0fbb1a926d159db1d8fefe8c79b36",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/Adobe-Korea1.cidToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1683ebf4fad46bf80e7fe2e72dbf1ae349fc7e12",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-0",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e87bc485e0587addee08b1ced23f5fc5465110a5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-1",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "210a09224ed51f9c172aaaf6614173b16190f79b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6d6ee62aed11e7bc607871b9f7b72434c576a831",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-3",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "75503388388d9f4f48c2a475b98555ffffc0335b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-4",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b16a34168049afe7b86f416c8ca826f77b790cf4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-5",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "abd3b546f7e815e0431eaeb7bca6f2c793cb0d38",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-6",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cde3707f562c88bfc3f4b6e07b1afa121fec5a71",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-7",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "654c5443c861e1f9c9fa0966d6beedb993df8d1a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-8",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8c80219e66deb00a3ccb445b99f59cfe40e19392",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-9",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7f1f9a499a737b32f21152c20205032093328739",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-0",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "903ef2fe13e5480fad45828130e08146b06b7025",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-1",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e6f3bba58f85de84ad05af9a64f3b598452f7d2f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "26c8ff78e06ac23862fb841becef6d60c462a2b6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cf15d612e5082c2b4a4be30c59e35a693eb766d5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1b877a902a8d40c683c730102258a70ca548247d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "46b28ed5d57068c733839c4a61fd07d835f0017f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d7c42cddc29b8888d7e9e95685bc3b4aebd3b786",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-Johab-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a08cc92b2288dbb715ae1d4da7253e099194b389",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-Johab-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6245a72b819abfd1da1f2040fca1c17e93770e08",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b0ee2ba209d7123bed8ae9af68a4ff46257f90d0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "84dbbdc3cb433d9fb8ab0169c8bc8b08c05c49fe",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-HW-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6e89d5bd3672ec0104a14f98a653142e4decce07",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-HW-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "32f182f71dd824b9b00b93910ae7f4d536408cfb",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8ff2aa3b6e276882bf130f3f8ac67d7b2d213d83",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8939350e036f64f861a50283c8db4afaedba6003",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a5aae5a37a3359954e09d1effee1e9ccafd7d96b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-UCS2",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2b4a78d3030d6d66ee2b237aa53c4ab5a4f7f098",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-UCS2C",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2aee34492b584d81baa17d9321a6a2ee5efb56a9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c9615a341e09bf193af8307f9cbbba2008d07972",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/LICENSE.md",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "adeab22f9b694884dd3c3c49f83dcdd1d5a89906",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniAKR-UTF16-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d47b5f6a8631f74607b4421a4421e95a19da8ec6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniAKR-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b5f7d8d3c2a8c99ecedfecdcfbaca4e704e27b4f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniAKR-UTF8-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9448f2833b197f1f9a7a8fd2a0cc91f8e0f9220e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UCS2-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a7f64bd7c8e01039795a8d7eac11d90ad8500cf7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UCS2-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4ecc9df8bec428f27eab46a7f0aa3a3b4101ff14",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF16-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "61cab822075091ad36ed7abc975416bc8c408d3f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF16-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "049fd21f02ab5eb253a3d3e594729eb4f396ebac",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF32-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "4f6c419826124b8b950cb39304e0a56cebc7a1b0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF32-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fe2fd2c28bce5892ce18330372be678f3588368e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF8-H",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "148162cdc5ae02edf172f5b25e744f507f0bbd48",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF8-V",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e06985999662b52e67b48601581e671b4c447153",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/ISO-2022-KR.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7e37b4909260a96b5461e745cee1524c872bc7d4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "37fdc9ee4c2c592648b879c892ae8596c155e8e9",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-korean/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "90dde1bd67f4d5da6779a4a654665a597df86453",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-latin2/Latin2.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "993931e680ccd3f56b2505bd7966eea412e4eec7",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-latin2/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "c46a2e6d41e3e6354ff439e36fd5a49c9638c438",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-latin2/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f895b00a47b90207ad20b0c6a970710a7da05f1c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/fitted.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9aba076d9f5f8decaf686f9aab3d894d2ff71d3a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/ligatures.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "bb8bb37092479df87206d7e2df9d23c79ae6156a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/oldstyle.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7af14c9a8073f07035e9a6f7ef8879856cc2fd5c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/others.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "9851bb556c048c5498a2b6aec916c8f017296e21",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/sc.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8418b37b3001159d9daa94933563864a9452016c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/symbols.unicodeRemapping",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e72cb1acb86b89abf5772d956a114babad87035e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-others/taboldstyle.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "109343956071ad652b121b06cece3e9a41f54f43",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-thai/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "65e9ddc4759879e368c18fc7707474cad07961e4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-thai/TIS-620.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b336e8782e4c6cc473f85c13f374019e2df6d016",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-thai/Thai.nameToUnicode",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8fdc894b7ad86439d7b42968ed3a9811ea5613d1",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-thai/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "337b5e21d7d1d03470ec4873c1fef9b34621d180",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-turkish/ISO-8859-9.unicodeMap",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6326ca669d36251f85cf80237cd240916eae298e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-turkish/README",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "b6f7b8d48d65a0797e5dd8fe347c1746a8c32486",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdf-turkish/add-to-xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "183cbd46f05e351415ebb34f2b61d34a35728e86",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/languages/xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e3d527bb624552a66a1f52d00ddcd029682d2d8a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/lin-64/pdfalto",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "df203de18041beda2c3e0bc3482080a7a5e3623e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/lin-64/pdfalto_server",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "8b0b38f09fbdca84a4a08ccbf064515be78e2528",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/lin-64/xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6c997423ea98d2c87ec76b365291c8c04a4a4268",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/lin_arm-64/pdfalto",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "67f3108d3ea65e97c87cf445f728a0eabed24ba4",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/lin_arm-64/pdfalto_server",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "8b0b38f09fbdca84a4a08ccbf064515be78e2528",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/lin_arm-64/xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6c997423ea98d2c87ec76b365291c8c04a4a4268",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/mac-64/pdfalto",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "97ce51b5cbb2f30553818377355146f623c609f6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/mac-64/pdfalto_server",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "9fc0a4703158ca27e29d46a2d4bb8b180ca3af83",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/mac-64/xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e0dc52b5084aacd58b9d2549d64192aa4487b72f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/mac_arm-64/pdfalto",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "8e1b03ca435c0c6512e8835af8af95fde0d24b94",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/mac_arm-64/pdfalto_server",
+      "git_mode": "100755",
+      "git_type": "blob",
+      "git_object": "9fc0a4703158ca27e29d46a2d4bb8b180ca3af83",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/pdfalto/mac_arm-64/xpdfrc",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a9bf2236ac6ef41c473bef3fc2a58295f3318fdc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/openNLP/en-sent.bin",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e89076be5ab24adc12ad9cdf14fe1299c4ff5e00",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/abbreviation_replacer.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "cd4d13e2af62084ed1d3e8266210af16b81756ef",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/between_punctuation.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "856e718f1eb57846757d97623fbb97082d4d3c60",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/cleaner.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "619cfe6273cae52c87bc254b31162cb84de7c746",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/cleaner/rules.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2273e2e3b57b259612b7bf5bbfed2780aefaad43",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/exclamation_words.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3ee15e603c0a525356d345be79ed54efc2eb734e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "63f99f2bdafda37a5be04e2d676aa2193059af05",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/amharic.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6958d5d548d4e7c7adcb4740356a6df037a20a7f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/arabic.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0dc498bd0853fa037234c01d9bb5bcc1f6572db0",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/armenian.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "29cbcebf7eea5fb23a5d55252109e8396b38ec6c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/bulgarian.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6556c89b2395c55f446ae214bc8e201ec253bad8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/burmese.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ac271db1f442bc522d4e91f9e64cea48b832cec8",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/chinese.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "dd88e97e64c1e885d9e9c2da2430f79b4ee69ceb",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/common.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "5b55ed1adc81a52df66dda9be731275ca2598b39",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/common/ellipsis.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e86132c364b9782a84bd8392c368af32bf062813",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/common/numbers.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "f363b74514379564b12d2bc8edda906f28163029",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/danish.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "fd782ad986a2612426c97b708292829d867e6996",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/deutsch.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "70f30c0912737dc1b6138321bbbb8a40ec58973f",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/dutch.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "d8a1edf3eb97f80f0ccba20c41b880d94148a6fa",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/english.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ea78af57117e94b748e7db8995554e4113441db2",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/french.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6c031f26d427616a95baf9faff5934ffb515186c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/greek.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2f56c30de922872754c3bc5e95e7d4728a2628d6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/hindi.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3efdf5498a3577934aefb71d7ec2704568449529",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/italian.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a89eddc7b01cff4763db0b027625fedb83d14e0c",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/japanese.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "2e41cfd4300b6fd59f626cabff06671a9f9ef1c6",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/kazakh.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "1bade4723487005ccc0baaa23421fb53c71f5c2a",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/persian.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e6f16be1758047c7d6def591b1265484fa1d4d50",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/polish.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "8e219b918683534813bf22eee6be7b7c4533264e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/russian.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7f05e3e0f231220b4808f0194b68e924e2a0aba5",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/spanish.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "7ce7322807dbc4f96356dc01332e7a4432270194",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/urdu.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ba9d78050761cb9b7237357ada3c690af85974bc",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/lib/unicode.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "faf4936000502ca649a562101102b077c1bf3ede",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/list.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "a4d8b3b58f3b1dde603388c897ead7d12a28b4da",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/processor.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "ead4f46817b8608f7bcdb51f709116eb87bfee9b",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/punctuation_replacer.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "e49b967aa9dc66c1223f3adfca47bc93eef3240e",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/segmenter.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "3d500c14f58477f58a9b30f3d10eb3a87d6d31fa",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/types.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "0d2c347ceef1be76743835324b5c2db591fce17d",
+      "runtime_sha256": null
+    },
+    {
+      "path": "grobid-home/sentence-segmentation/pragmatic_segmenter/version.rb",
+      "git_mode": "100644",
+      "git_type": "blob",
+      "git_object": "6d18da80d2f661aed9cc8cdd1e880f4140c05f5d",
+      "runtime_sha256": null
+    }
+  ]
+}

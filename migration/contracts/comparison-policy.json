@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "strict_initial_policy",
+  "default": "bytes",
+  "optional_comparators": [
+    "xml_c14n_preserve_whitespace",
+    "json_structure_no_duplicate_keys",
+    "zip_safe_logical_members"
+  ],
+  "global_masks": [],
+  "volatile_field_rules": [],
+  "coordinate_tolerances": [],
+  "known_candidates_requiring_runtime_proof": [
+    "TEI encodingDesc/appInfo/application/@when",
+    "generated IDs with bijective reference-preserving remapping",
+    "TEI producer build metadata (declared implementation difference)",
+    "PDF/ZIP container metadata"
+  ],
+  "requirements": [
+    "Retain raw bytes",
+    "Run repeated Java captures before a rule",
+    "Test rule with adversarial mutations",
+    "Review comparator changes separately from port fixes",
+    "Version the policy and record all deviations"
+  ],
+  "implemented_in_starter_harness": [
+    "bytes",
+    "xml",
+    "json",
+    "zip"
+  ],
+  "not_implemented_in_starter_harness": [
+    "volatile field masks",
+    "generated-ID graph bijection",
+    "PDF object/render comparator",
+    "stage trace comparison",
+    "quality evaluator",
+    "load generator"
+  ],
+  "xml_namespace_policy": "Preserve all namespace declaration bindings with their element positions in addition to C14N; declaration order at one element may differ. Relocation/redundancy remains conservatively unequal."
+}

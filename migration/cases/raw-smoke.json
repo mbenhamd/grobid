@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "suite_id": "raw-smoke-v1",
+  "profile": "crf-offline",
+  "description": "Source-derived starter requests. T005 must observe statuses/outputs; this is not complete route coverage or a captured golden.",
+  "cases": [
+    {
+      "id": "alive",
+      "method": "GET",
+      "path": "/api/isalive",
+      "encoding": "none",
+      "headers": [
+        [
+          "Accept",
+          "text/plain"
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "date-post",
+      "method": "POST",
+      "path": "/api/processDate",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "text/plain"
+        ]
+      ],
+      "fields": [
+        [
+          "date",
+          "19 November 1999"
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "date-put",
+      "method": "PUT",
+      "path": "/api/processDate",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "text/plain"
+        ]
+      ],
+      "fields": [
+        [
+          "date",
+          "19 November 1999"
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "header-names",
+      "method": "POST",
+      "path": "/api/processHeaderNames",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "text/plain"
+        ]
+      ],
+      "fields": [
+        [
+          "names",
+          "John Smith and María García"
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "citation-names",
+      "method": "POST",
+      "path": "/api/processCitationNames",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "text/plain"
+        ]
+      ],
+      "fields": [
+        [
+          "names",
+          "Smith, J.; García, M."
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "affiliations",
+      "method": "POST",
+      "path": "/api/processAffiliations",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "text/plain"
+        ]
+      ],
+      "fields": [
+        [
+          "affiliations",
+          "Université Paris-Saclay, France"
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "citation-xml",
+      "method": "POST",
+      "path": "/api/processCitation",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "application/xml"
+        ]
+      ],
+      "fields": [
+        [
+          "citations",
+          "L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley, 1994."
+        ],
+        [
+          "consolidateCitations",
+          "0"
+        ]
+      ],
+      "comparator": "xml",
+      "expected_status": 200
+    },
+    {
+      "id": "citation-bibtex",
+      "method": "POST",
+      "path": "/api/processCitation",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "application/x-bibtex"
+        ]
+      ],
+      "fields": [
+        [
+          "citations",
+          "L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley, 1994."
+        ],
+        [
+          "consolidateCitations",
+          "0"
+        ]
+      ],
+      "comparator": "bytes",
+      "expected_status": 200
+    },
+    {
+      "id": "citation-list",
+      "method": "POST",
+      "path": "/api/processCitationList",
+      "encoding": "form",
+      "headers": [
+        [
+          "Accept",
+          "application/xml"
+        ]
+      ],
+      "fields": [
+        [
+          "citations",
+          "L. Lamport. LaTeX: A Document Preparation System. Addison-Wesley, 1994."
+        ],
+        [
+          "citations",
+          "A. Einstein. On the Electrodynamics of Moving Bodies. 1905."
+        ],
+        [
+          "consolidateCitations",
+          "0"
+        ]
+      ],
+      "comparator": "xml",
+      "expected_status": 200
+    }
+  ]
+}

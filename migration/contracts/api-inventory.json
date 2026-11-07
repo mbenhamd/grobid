@@ -1,0 +1,3135 @@
+{
+  "schema_version": "1.0.0",
+  "repository": "https://github.com/grobidOrg/grobid",
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "audit_type": "static source inspection",
+  "runtime_validated": false,
+  "counts": {
+    "resource_handlers": 45,
+    "rest_service_handlers": 44,
+    "health_handlers": 1,
+    "distinct_resource_paths": 28,
+    "method_path_pairs": 38,
+    "handlers_by_http_method": {
+      "GET": 6,
+      "POST": 26,
+      "PUT": 12,
+      "DELETE": 1
+    }
+  },
+  "path_resolution": {
+    "jersey_prefix": "/api",
+    "main_resource_path": "/",
+    "source": {
+      "file": "grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java",
+      "line_start": 47,
+      "line_end": 115,
+      "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java#L47-L115"
+    }
+  },
+  "endpoints": [
+    {
+      "id": "get_isalive_text",
+      "method": "GET",
+      "path": "/api/isalive",
+      "java_method": "isAlive",
+      "consumes": [
+        "*/*"
+      ],
+      "consumes_explicit": false,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 153,
+        "line_end": 158,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L153-L158"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "200 true/503 false text/plain based on service initialized and no tagger failures; weaker than /health."
+      ]
+    },
+    {
+      "id": "get_version_json",
+      "method": "GET",
+      "path": "/api/version",
+      "java_method": "getVersion",
+      "consumes": [
+        "*/*"
+      ],
+      "consumes_explicit": false,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 160,
+        "line_end": 165,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L160-L165"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "ServiceInfo contains version and revision from GrobidProperties."
+      ]
+    },
+    {
+      "id": "get_grobid_html",
+      "method": "GET",
+      "path": "/api/grobid",
+      "java_method": "getDescription_html",
+      "consumes": [
+        "*/*"
+      ],
+      "consumes_explicit": false,
+      "produces": [
+        "text/html"
+      ],
+      "parameters": [],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 170,
+        "line_end": 175,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L170-L175"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "HTML description route is /api/grobid; it is not the application root."
+      ]
+    },
+    {
+      "id": "post_processHeaderDocument_xml",
+      "method": "POST",
+      "path": "/api/processHeaderDocument",
+      "java_method": "processHeaderDocumentReturnXml_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeDiscardedText",
+          "in": "multipart",
+          "java_name": "includeDiscardedText",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "2",
+          "effective_default": "2",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 177,
+        "line_end": 203,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L177-L203"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "XML default start=0/end=2; BibTeX omits includeDiscardedText and forces it false.",
+        "debugMode overrides normal representation with text/plain or 204."
+      ]
+    },
+    {
+      "id": "post_processHeaderFundingDocument_xml",
+      "method": "POST",
+      "path": "/api/processHeaderFundingDocument",
+      "java_method": "processHeaderFundingDocumentReturnXml_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateFunders",
+          "in": "multipart",
+          "java_name": "consolidateFunders",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeDiscardedText",
+          "in": "multipart",
+          "java_name": "includeDiscardedText",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 205,
+        "line_end": 225,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L205-L225"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Only POST; no pages/debug/models parameters; header+funding pipeline differs from header-only."
+      ]
+    },
+    {
+      "id": "put_processHeaderDocument_xml",
+      "method": "PUT",
+      "path": "/api/processHeaderDocument",
+      "java_method": "processStatelessHeaderDocumentReturnXml",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeDiscardedText",
+          "in": "multipart",
+          "java_name": "includeDiscardedText",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "2",
+          "effective_default": "2",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 227,
+        "line_end": 251,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L227-L251"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "XML default start=0/end=2; BibTeX omits includeDiscardedText and forces it false.",
+        "debugMode overrides normal representation with text/plain or 204."
+      ]
+    },
+    {
+      "id": "post_processHeaderDocument_bibtex",
+      "method": "POST",
+      "path": "/api/processHeaderDocument",
+      "java_method": "processHeaderDocumentReturnBibTeX_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "2",
+          "effective_default": "2",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 253,
+        "line_end": 278,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L253-L278"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "XML default start=0/end=2; BibTeX omits includeDiscardedText and forces it false.",
+        "debugMode overrides normal representation with text/plain or 204."
+      ]
+    },
+    {
+      "id": "put_processHeaderDocument_bibtex",
+      "method": "PUT",
+      "path": "/api/processHeaderDocument",
+      "java_method": "processStatelessHeaderDocumentReturnBibTeX",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "2",
+          "effective_default": "2",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 280,
+        "line_end": 302,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L280-L302"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "XML default start=0/end=2; BibTeX omits includeDiscardedText and forces it false.",
+        "debugMode overrides normal representation with text/plain or 204."
+      ]
+    },
+    {
+      "id": "post_processFulltextDocument_xml",
+      "method": "POST",
+      "path": "/api/processFulltextDocument",
+      "java_method": "processFulltextDocument_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "flavor",
+          "in": "multipart",
+          "java_name": "flavor",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidateCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateFunders",
+          "in": "multipart",
+          "java_name": "consolidateFunders",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeDiscardedText",
+          "in": "multipart",
+          "java_name": "includeDiscardedText",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "generateIDs",
+          "in": "multipart",
+          "java_name": "generateIDs",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "segmentSentences",
+          "in": "multipart",
+          "java_name": "segmentSentences",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "teiCoordinates",
+          "in": "multipart",
+          "java_name": "coordinates",
+          "java_type": "List<FormDataBodyPart>",
+          "declared_default": null,
+          "effective_default": "empty/repeated binding: runtime probe required",
+          "repeated": true,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 304,
+        "line_end": 342,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L304-L342"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "BLANK flavor forwards only input/pages and hardcodes generateIDs=false, segmentSentences=false, coordinates=[]; skips other flags/debug.",
+        "debugMode overrides XML with text/plain or 204 for non-BLANK."
+      ]
+    },
+    {
+      "id": "put_processFulltextDocument_xml",
+      "method": "PUT",
+      "path": "/api/processFulltextDocument",
+      "java_method": "processFulltextDocument",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "flavor",
+          "in": "multipart",
+          "java_name": "flavor",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidateCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateFunders",
+          "in": "multipart",
+          "java_name": "consolidateFunders",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeDiscardedText",
+          "in": "multipart",
+          "java_name": "includeDiscardedText",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "generateIDs",
+          "in": "multipart",
+          "java_name": "generateIDs",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "segmentSentences",
+          "in": "multipart",
+          "java_name": "segmentSentences",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "teiCoordinates",
+          "in": "multipart",
+          "java_name": "coordinates",
+          "java_type": "List<FormDataBodyPart>",
+          "declared_default": null,
+          "effective_default": "empty/repeated binding: runtime probe required",
+          "repeated": true,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 344,
+        "line_end": 382,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L344-L382"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "BLANK flavor forwards only input/pages and hardcodes generateIDs=false, segmentSentences=false, coordinates=[]; skips other flags/debug.",
+        "debugMode overrides XML with text/plain or 204 for non-BLANK."
+      ]
+    },
+    {
+      "id": "post_processFulltextAssetDocument_zip",
+      "method": "POST",
+      "path": "/api/processFulltextAssetDocument",
+      "java_method": "processFulltextAssetDocument_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/zip"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "flavor",
+          "in": "multipart",
+          "java_name": "flavor",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidateCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateFunders",
+          "in": "multipart",
+          "java_name": "consolidateFunders",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "generateIDs",
+          "in": "multipart",
+          "java_name": "generateIDs",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "segmentSentences",
+          "in": "multipart",
+          "java_name": "segmentSentences",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "teiCoordinates",
+          "in": "multipart",
+          "java_name": "coordinates",
+          "java_type": "List<FormDataBodyPart>",
+          "declared_default": null,
+          "effective_default": "empty/repeated binding: runtime probe required",
+          "repeated": true,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 480,
+        "line_end": 516,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L480-L516"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Resource-to-helper argument order swaps effective includeRawCopyrights and includeRawCitations for both POST and PUT.",
+        "No includeDiscardedText binding; ZIP contains tei.xml and nonrecursive lowercase jpg/png files in filesystem enumeration order.",
+        "debugMode replaces ZIP with text/plain/204. No BLANK shortcut in resource helper."
+      ]
+    },
+    {
+      "id": "put_processFulltextAssetDocument_zip",
+      "method": "PUT",
+      "path": "/api/processFulltextAssetDocument",
+      "java_method": "processStatelessFulltextAssetDocument",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/zip"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "flavor",
+          "in": "multipart",
+          "java_name": "flavor",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidateCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateFunders",
+          "in": "multipart",
+          "java_name": "consolidateFunders",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCopyrights",
+          "in": "multipart",
+          "java_name": "includeRawCopyrights",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "start",
+          "in": "multipart",
+          "java_name": "startPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "end",
+          "in": "multipart",
+          "java_name": "endPage",
+          "java_type": "int",
+          "declared_default": "-1",
+          "effective_default": "-1",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "generateIDs",
+          "in": "multipart",
+          "java_name": "generateIDs",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "segmentSentences",
+          "in": "multipart",
+          "java_name": "segmentSentences",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "teiCoordinates",
+          "in": "multipart",
+          "java_name": "coordinates",
+          "java_type": "List<FormDataBodyPart>",
+          "declared_default": null,
+          "effective_default": "empty/repeated binding: runtime probe required",
+          "repeated": true,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 518,
+        "line_end": 554,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L518-L554"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Resource-to-helper argument order swaps effective includeRawCopyrights and includeRawCitations for both POST and PUT.",
+        "No includeDiscardedText binding; ZIP contains tei.xml and nonrecursive lowercase jpg/png files in filesystem enumeration order.",
+        "debugMode replaces ZIP with text/plain/204. No BLANK shortcut in resource helper."
+      ]
+    },
+    {
+      "id": "post_processCitationPatentST36_xml",
+      "method": "POST",
+      "path": "/api/processCitationPatentST36",
+      "java_method": "processCitationPatentST36",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "pInputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 610,
+        "line_end": 624,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L610-L624"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Input sniffed for gzip magic; no ZIP archive decompression in this endpoint."
+      ]
+    },
+    {
+      "id": "post_processCitationPatentPDF_xml",
+      "method": "POST",
+      "path": "/api/processCitationPatentPDF",
+      "java_method": "processCitationPatentPDF",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "pInputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 626,
+        "line_end": 637,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L626-L637"
+      },
+      "runtime_observed": false,
+      "notes": []
+    },
+    {
+      "id": "post_processCitationPatentTXT_xml",
+      "method": "POST",
+      "path": "/api/processCitationPatentTXT",
+      "java_method": "processCitationPatentTXT_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "form",
+          "java_name": "text",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 639,
+        "line_end": 650,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L639-L650"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Text form field is input; only TAB normalized to space."
+      ]
+    },
+    {
+      "id": "post_processDate_text",
+      "method": "POST",
+      "path": "/api/processDate",
+      "java_method": "processDate_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "date",
+          "in": "form",
+          "java_name": "date",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 655,
+        "line_end": 661,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L655-L661"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "LF and TAB replaced by spaces; TEI fragments returned as text/plain;charset=UTF-8."
+      ]
+    },
+    {
+      "id": "put_processDate_text",
+      "method": "PUT",
+      "path": "/api/processDate",
+      "java_method": "processDate",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "date",
+          "in": "form",
+          "java_name": "date",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 666,
+        "line_end": 672,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L666-L672"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "LF and TAB replaced by spaces; TEI fragments returned as text/plain;charset=UTF-8."
+      ]
+    },
+    {
+      "id": "post_processHeaderNames_text",
+      "method": "POST",
+      "path": "/api/processHeaderNames",
+      "java_method": "processNamesHeader_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "names",
+          "in": "form",
+          "java_name": "names",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 677,
+        "line_end": 683,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L677-L683"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "LF and TAB replaced by spaces; concatenated person TEI fragments returned as text/plain."
+      ]
+    },
+    {
+      "id": "put_processHeaderNames_text",
+      "method": "PUT",
+      "path": "/api/processHeaderNames",
+      "java_method": "processNamesHeader",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "names",
+          "in": "form",
+          "java_name": "names",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 688,
+        "line_end": 694,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L688-L694"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "LF and TAB replaced by spaces; concatenated person TEI fragments returned as text/plain."
+      ]
+    },
+    {
+      "id": "post_processCitationNames_text",
+      "method": "POST",
+      "path": "/api/processCitationNames",
+      "java_method": "processNamesCitation_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "names",
+          "in": "form",
+          "java_name": "names",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 699,
+        "line_end": 705,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L699-L705"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "LF and TAB replaced by spaces; concatenated person TEI fragments returned as text/plain."
+      ]
+    },
+    {
+      "id": "put_processCitationNames_text",
+      "method": "PUT",
+      "path": "/api/processCitationNames",
+      "java_method": "processNamesCitation",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "names",
+          "in": "form",
+          "java_name": "names",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 710,
+        "line_end": 716,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L710-L716"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "LF and TAB replaced by spaces; concatenated person TEI fragments returned as text/plain."
+      ]
+    },
+    {
+      "id": "post_processAffiliations_text",
+      "method": "POST",
+      "path": "/api/processAffiliations",
+      "java_method": "processAffiliations_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "affiliations",
+          "in": "form",
+          "java_name": "affiliations",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 721,
+        "line_end": 727,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L721-L727"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Only TAB replaced; newlines retained. One affiliation is bare TEI, multiple/empty nonnull lists use xml wrapper."
+      ]
+    },
+    {
+      "id": "put_processAffiliations_text",
+      "method": "PUT",
+      "path": "/api/processAffiliations",
+      "java_method": "processAffiliations",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "affiliations",
+          "in": "form",
+          "java_name": "affiliation",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 732,
+        "line_end": 738,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L732-L738"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Only TAB replaced; newlines retained. One affiliation is bare TEI, multiple/empty nonnull lists use xml wrapper."
+      ]
+    },
+    {
+      "id": "post_processCitation_xml",
+      "method": "POST",
+      "path": "/api/processCitation",
+      "java_method": "processCitationReturnXml_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "citations",
+          "in": "form",
+          "java_name": "citation",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 740,
+        "line_end": 753,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L740-L753"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Single citation form field is plural citations.",
+        "XML/BibTeX negotiated by Accept, BibTeX qs=0.5."
+      ]
+    },
+    {
+      "id": "put_processCitation_xml",
+      "method": "PUT",
+      "path": "/api/processCitation",
+      "java_method": "processCitationReturnXml",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "citations",
+          "in": "form",
+          "java_name": "citation",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 755,
+        "line_end": 764,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L755-L764"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Single citation form field is plural citations.",
+        "XML/BibTeX negotiated by Accept, BibTeX qs=0.5."
+      ]
+    },
+    {
+      "id": "post_processCitation_bibtex",
+      "method": "POST",
+      "path": "/api/processCitation",
+      "java_method": "processCitationReturnBibTeX_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "citations",
+          "in": "form",
+          "java_name": "citation",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 766,
+        "line_end": 779,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L766-L779"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Single citation form field is plural citations.",
+        "XML/BibTeX negotiated by Accept, BibTeX qs=0.5."
+      ]
+    },
+    {
+      "id": "put_processCitation_bibtex",
+      "method": "PUT",
+      "path": "/api/processCitation",
+      "java_method": "processCitationReturnBibTeX",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "citations",
+          "in": "form",
+          "java_name": "citation",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 781,
+        "line_end": 790,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L781-L790"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Single citation form field is plural citations.",
+        "XML/BibTeX negotiated by Accept, BibTeX qs=0.5."
+      ]
+    },
+    {
+      "id": "post_processCitationList_xml",
+      "method": "POST",
+      "path": "/api/processCitationList",
+      "java_method": "processCitationListReturnXml_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "citations",
+          "in": "form",
+          "java_name": "citations",
+          "java_type": "List<String>",
+          "declared_default": null,
+          "effective_default": "empty/repeated binding: runtime probe required",
+          "repeated": true,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 792,
+        "line_end": 805,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L792-L805"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Repeated citations form values; POST only.",
+        "Null items serialized as biblStruct xml:id=bN or @misc{bN,...}; non-null BibTeX entries use generated keys."
+      ]
+    },
+    {
+      "id": "post_processCitationList_bibtex",
+      "method": "POST",
+      "path": "/api/processCitationList",
+      "java_method": "processCitationListReturnBibTeX_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "citations",
+          "in": "form",
+          "java_name": "citations",
+          "java_type": "List<String>",
+          "declared_default": null,
+          "effective_default": "empty/repeated binding: runtime probe required",
+          "repeated": true,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "form",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "form",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 807,
+        "line_end": 820,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L807-L820"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Repeated citations form values; POST only.",
+        "Null items serialized as biblStruct xml:id=bN or @misc{bN,...}; non-null BibTeX entries use generated keys."
+      ]
+    },
+    {
+      "id": "post_processReferences_xml",
+      "method": "POST",
+      "path": "/api/processReferences",
+      "java_method": "processStatelessReferencesDocumentReturnXml_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 822,
+        "line_end": 841,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L822-L841"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "debugMode replaces XML/BibTeX with text/plain/204."
+      ]
+    },
+    {
+      "id": "put_processReferences_xml",
+      "method": "PUT",
+      "path": "/api/processReferences",
+      "java_method": "processStatelessReferencesDocumentReturnXml",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/xml"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 843,
+        "line_end": 859,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L843-L859"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "debugMode replaces XML/BibTeX with text/plain/204."
+      ]
+    },
+    {
+      "id": "post_processReferences_bibtex",
+      "method": "POST",
+      "path": "/api/processReferences",
+      "java_method": "processStatelessReferencesDocumentReturnBibTeX_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 861,
+        "line_end": 880,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L861-L880"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "debugMode replaces XML/BibTeX with text/plain/204."
+      ]
+    },
+    {
+      "id": "put_processReferences_bibtex",
+      "method": "PUT",
+      "path": "/api/processReferences",
+      "java_method": "processStatelessReferencesDocumentReturnBibTeX",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/x-bibtex;qs=0.5"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "debugMode",
+          "in": "multipart",
+          "java_name": "debugMode",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "models",
+          "in": "multipart",
+          "java_name": "models",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 882,
+        "line_end": 898,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L882-L898"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "debugMode replaces XML/BibTeX with text/plain/204."
+      ]
+    },
+    {
+      "id": "post_annotatePDF_pdf",
+      "method": "POST",
+      "path": "/api/annotatePDF",
+      "java_method": "processAnnotatePDF",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/pdf"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputBodyPart",
+          "java_type": "FormDataBodyPart",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidateCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawAffiliations",
+          "in": "multipart",
+          "java_name": "includeRawAffiliations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "type",
+          "in": "multipart",
+          "java_name": "type",
+          "java_type": "int",
+          "declared_default": null,
+          "effective_default": "primitive injection default: runtime probe required",
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 900,
+        "line_end": 925,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L900-L925"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "type:0=CITATION,1=BLOCK,2=FIGURE,otherwise null; missing primitive binding must be runtime-probed.",
+        "Original filename used in response Content-Disposition.",
+        "Possible null output close in finally can mask 204/error and skip engine return; treat as suspected source bug, not a requirement to reproduce a leak.",
+        "Annotation helper invokes DocumentSource.fromPdf twice."
+      ]
+    },
+    {
+      "id": "post_referenceAnnotations_json",
+      "method": "POST",
+      "path": "/api/referenceAnnotations",
+      "java_method": "processPDFReferenceAnnotation",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateHeader",
+          "in": "multipart",
+          "java_name": "consolidateHeader",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidateCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeFiguresTables",
+          "in": "multipart",
+          "java_name": "includeFiguresTables",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 927,
+        "line_end": 943,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L927-L943"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Forces TEI coordinates ref and biblStruct; includeFiguresTables selects JSON additions.",
+        "Computes MD5 string but does not pass it into fullTextToTEIDoc."
+      ]
+    },
+    {
+      "id": "post_citationPatentAnnotations_json",
+      "method": "POST",
+      "path": "/api/citationPatentAnnotations",
+      "java_method": "annotatePDFPatentCitation",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "consolidateCitations",
+          "in": "multipart",
+          "java_name": "consolidate",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": "0",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "includeRawCitations",
+          "in": "multipart",
+          "java_name": "includeRawCitations",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 945,
+        "line_end": 956,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L945-L956"
+      },
+      "runtime_observed": false,
+      "notes": []
+    },
+    {
+      "id": "post_processFundingAcknowledgement_text",
+      "method": "POST",
+      "path": "/api/processFundingAcknowledgement",
+      "java_method": "processFundingAcknowledgementPost",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "text/plain"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "in": "form",
+          "java_name": "text",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "generateIDs",
+          "in": "form",
+          "java_name": "generateIDs",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "segmentSentences",
+          "in": "form",
+          "java_name": "segmentSentences",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 970,
+        "line_end": 981,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L970-L981"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Declared produces=text/plain but processor success Content-Type=application/json;charset=UTF-8.",
+        "TAB replaced by spaces."
+      ]
+    },
+    {
+      "id": "post_modelTraining_json",
+      "method": "POST",
+      "path": "/api/modelTraining",
+      "java_method": "trainModel",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [
+        {
+          "name": "model",
+          "in": "form",
+          "java_name": "model",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "architecture",
+          "in": "form",
+          "java_name": "architecture",
+          "java_type": "String",
+          "declared_default": "crf",
+          "effective_default": "crf",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "type",
+          "in": "form",
+          "java_name": "type",
+          "java_type": "String",
+          "declared_default": "split",
+          "effective_default": "split",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "ratio",
+          "in": "form",
+          "java_name": "ratio",
+          "java_type": "double",
+          "declared_default": "0.9",
+          "effective_default": "0.9",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "n",
+          "in": "form",
+          "java_name": "n",
+          "java_type": "int",
+          "declared_default": "10",
+          "effective_default": "10",
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "incremental",
+          "in": "form",
+          "java_name": "incremental",
+          "java_type": "String",
+          "declared_default": "0",
+          "effective_default": false,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 985,
+        "line_end": 998,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L985-L998"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Defaults architecture=crf,type=split,ratio=0.9,n=10,incremental=0. architecture accepted but not used to select training in this method.",
+        "Same lowercased model concurrent claim rejected 409; flavors have separate claims.",
+        "Returns 200 token before asynchronous full/holdout/split/nfold work completes; invalid type becomes asynchronous failed status."
+      ]
+    },
+    {
+      "id": "post_trainingResult_json",
+      "method": "POST",
+      "path": "/api/trainingResult",
+      "java_method": "resultTraining",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [
+        {
+          "name": "token",
+          "in": "form",
+          "java_name": "token",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 1000,
+        "line_end": 1006,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L1000-L1006"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Token null/blank or containing .., slash, backslash rejected 400.",
+        "ongoing ->200 status; any other status requires report.txt or returns 400 (including failed/killed/full-without-report)."
+      ]
+    },
+    {
+      "id": "get_allTraining_json",
+      "method": "GET",
+      "path": "/api/allTraining",
+      "java_method": "allTraining",
+      "consumes": [
+        "*/*"
+      ],
+      "consumes_explicit": false,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 1008,
+        "line_end": 1013,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L1008-L1013"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Reports in-memory live token registry, not historical on-disk ongoing status; order unspecified."
+      ]
+    },
+    {
+      "id": "delete_killTraining_json",
+      "method": "DELETE",
+      "path": "/api/killTraining",
+      "java_method": "killTraining",
+      "consumes": [
+        "*/*"
+      ],
+      "consumes_explicit": false,
+      "produces": [
+        "application/json"
+      ],
+      "parameters": [
+        {
+          "name": "token",
+          "in": "query",
+          "java_name": "token",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 1015,
+        "line_end": 1020,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L1015-L1020"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "Validates token; only interrupts Future; native trainers may continue. Killed status is optimistic.",
+        "Releases owner-checked per-model claim; stale on-disk ongoing can be marked killed."
+      ]
+    },
+    {
+      "id": "get_model_zip",
+      "method": "GET",
+      "path": "/api/model",
+      "java_method": "getModel",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/zip"
+      ],
+      "parameters": [
+        {
+          "name": "model",
+          "in": "query",
+          "java_name": "model",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "architecture",
+          "in": "query",
+          "java_name": "architecture",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": "crf (processor fallback for null or empty)",
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 1022,
+        "line_end": 1030,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L1022-L1030"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "GET query and POST form variants; GET also declares consumes application/x-www-form-urlencoded.",
+        "Missing/empty architecture processor defaults crf; model lowercased with hyphens replaced by slash.",
+        "ZIP: CRF model.wapiti; non-CRF directory files hdf5/json/pkl/txt only. filename=model.zip."
+      ]
+    },
+    {
+      "id": "post_model_zip",
+      "method": "POST",
+      "path": "/api/model",
+      "java_method": "getModel_post",
+      "consumes": [
+        "application/x-www-form-urlencoded"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/zip"
+      ],
+      "parameters": [
+        {
+          "name": "model",
+          "in": "form",
+          "java_name": "model",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "architecture",
+          "in": "form",
+          "java_name": "architecture",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": "crf (processor fallback for null or empty)",
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 1032,
+        "line_end": 1040,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L1032-L1040"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "GET query and POST form variants; GET also declares consumes application/x-www-form-urlencoded.",
+        "Missing/empty architecture processor defaults crf; model lowercased with hyphens replaced by slash.",
+        "ZIP: CRF model.wapiti; non-CRF directory files hdf5/json/pkl/txt only. filename=model.zip."
+      ]
+    },
+    {
+      "id": "post_createTraining_zip",
+      "method": "POST",
+      "path": "/api/createTraining",
+      "java_method": "createTraining_post",
+      "consumes": [
+        "multipart/form-data"
+      ],
+      "consumes_explicit": true,
+      "produces": [
+        "application/zip"
+      ],
+      "parameters": [
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputStream",
+          "java_type": "InputStream",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "input",
+          "in": "multipart",
+          "java_name": "inputBodyPart",
+          "java_type": "FormDataBodyPart",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        },
+        {
+          "name": "flavor",
+          "in": "multipart",
+          "java_name": "flavor",
+          "java_type": "String",
+          "declared_default": null,
+          "effective_default": null,
+          "repeated": false,
+          "required": null
+        }
+      ],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/GrobidRestService.java",
+        "line_start": 1042,
+        "line_end": 1056,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java#L1042-L1056"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "POST multipart only; input binary and same-part filename metadata required by code path.",
+        "Sanitizes basename; blank filename ->input.pdf; adds .pdf if absent; training filenames/XML IDs depend on filename.",
+        "ZIP filename=input basename.zip; may return empty ZIP 200; generated files directly enumerated."
+      ]
+    },
+    {
+      "id": "get_health_json",
+      "method": "GET",
+      "path": "/api/health",
+      "java_method": "alive",
+      "consumes": [
+        "*/*"
+      ],
+      "consumes_explicit": false,
+      "produces": [
+        "application/json;charset=UTF-8"
+      ],
+      "parameters": [],
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/resources/HealthResource.java",
+        "line_start": 51,
+        "line_end": 100,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/resources/HealthResource.java#L51-L100"
+      },
+      "runtime_observed": false,
+      "notes": [
+        "ready requires initialized, initialized pool, nonnull grobidHome, no model failures;200/503 JSON.",
+        "Pool active/idle/maxActive, loaded/failed model details and optional initializationError; no sample inference or free-capacity guarantee."
+      ]
+    }
+  ],
+  "separate_surfaces": [
+    {
+      "path": "/",
+      "kind": "static_assets",
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java",
+        "line_start": 71,
+        "line_end": 72,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java#L71-L72"
+      },
+      "notes": "AssetsBundle(/web,/,index.html,grobidAssets), not a JAX-RS method"
+    },
+    {
+      "path": "/metrics/prometheus",
+      "kind": "admin_servlet",
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java",
+        "line_start": 96,
+        "line_end": 99,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java#L96-L99"
+      },
+      "notes": "Admin connector; stock config 8071. Runtime method dispatch not audited."
+    },
+    {
+      "name": "health-check",
+      "kind": "dropwizard_admin_healthcheck",
+      "source": {
+        "file": "grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java",
+        "line_start": 80,
+        "line_end": 81,
+        "url": "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java#L80-L81"
+      },
+      "notes": "Dropwizard admin health-check registration; framework URL/runtime semantics require probe."
+    }
+  ],
+  "inactive_symbols": [
+    "PATH_ADM",
+    "PATH_HEADER_HTML",
+    "PATH_FULL_TEXT_HTML",
+    "PATH_SHA1",
+    "PATH_ALL_PROPS",
+    "PATH_CHANGE_PROPERTY_VALUE",
+    "PATH_CITATION_PATENT_TEI (commented route)",
+    "PATH_CITATION_ANNOTATION (commented constant)",
+    "PATH_ADMIN (commented constant)"
+  ],
+  "runtime_questions": [
+    "Framework HEAD/OPTIONS/405/406/415 behavior and wildcard Accept preferences",
+    "Exact multipart missing/duplicate/malformed parameter injection responses",
+    "Error path mapper versus processor-catch precedence on real failures",
+    "Charset headers after container serialization",
+    "Native trainer cancellation and restart behavior",
+    "ZIP ordering/timestamps and nondeterministic generated IDs",
+    "Actual loaded model/config/flavor availability"
+  ]
+}

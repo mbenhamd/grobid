@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "baseline": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "completion_status": "not_implemented",
+  "primary_objective": "JVM-free Rust server and functional repository parity with measured performance improvement",
+  "claims": {
+    "S0_ORACLE_READY": "Pinned executable Java reference with reproducible captures",
+    "S1_RUST_CRF_SERVICE": "Default CRF plus applicable flavors and all corresponding service behavior; no runtime JVM",
+    "S2_RUST_FULL_SERVICE": "All active optional/full profiles, services and integrations; no runtime JVM",
+    "S3_REPOSITORY_SURFACES": "Training/evaluation/CLI and explicit Java embedding disposition",
+    "S4_FASTER_VERIFIED_RELEASE": "S3 plus complete quality/platform/robustness and predeclared equal-work performance gates"
+  },
+  "required_categories": [
+    "HTTP method/media/default/error variants",
+    "raw parsers",
+    "PDF/ALTO/layout/features/models",
+    "metadata/author affiliation links",
+    "references/citation contexts",
+    "fulltext/figures/tables/formulas/notes/annex",
+    "funding/availability/conflict/contribution",
+    "coordinates/annotations/assets",
+    "flavors/debug",
+    "language/sentence algorithms",
+    "consolidation",
+    "training/data generation/evaluation",
+    "model lifecycle/download",
+    "config/health/CORS/metrics/UI/admin",
+    "CLI and Java embedding disposition",
+    "packaging/platforms/notices"
+  ],
+  "initially_reused": [
+    "pinned pdfalto subprocess",
+    "pinned Wapiti native engine",
+    "pinned DeLFT Python/TensorFlow assets"
+  ],
+  "not_authorized_as_silent_replacements": [
+    "OCR or another PDF parser",
+    "retrained/new/quantized models",
+    "generic tokenizer/sentence/matcher substitutes",
+    "Java fallback in production",
+    "scope narrowing to a subset of endpoints"
+  ],
+  "legacy_rows_require_disposition": [
+    "CRF++ compiled branches",
+    "enum-only/asset-missing flavors and models",
+    "deprecated Java embedding and batch APIs",
+    "inactive/branch-specific workflows"
+  ],
+  "platforms": [
+    "linux-x86_64",
+    "linux-aarch64",
+    "macos-x86_64",
+    "macos-aarch64"
+  ],
+  "unknown_input_space": "Finite corpus coverage is empirical; arbitrary-document equivalence remains unproven",
+  "deviations": []
+}

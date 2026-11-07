@@ -1,0 +1,1907 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "policy": "Each task requires independent reviewed evidence. Tasks are bounded work units, not time estimates. Split a large task further before implementation without dropping acceptance criteria.",
+  "tasks": [
+    {
+      "id": "T000",
+      "title": "Freeze source and environment",
+      "depends_on": [],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/contracts",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Create isolated oracle checkout at pinned SHA; record clean revision and complete build environment.",
+        "Verify eight critical source hashes and enumerate native/model dependency closure.",
+        "Record source-derived versus runtime-unresolved fields; no fabricated digest."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/GrobidProperties.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T001",
+      "title": "Reconcile full feature and API scope",
+      "depends_on": [
+        "T000"
+      ],
+      "phase": 0,
+      "owner_role": "coordinate",
+      "skill": "grobid-coordinate",
+      "owned_paths": [
+        "migration/contracts",
+        "migration/FEATURE_MATRIX.csv"
+      ],
+      "acceptance": [
+        "Reconcile annotated handlers with actual resource registration and documentation.",
+        "Classify current, optional, deprecated, inactive and asset-missing features including CLI/Java embedding.",
+        "Map each route/media variant and feature row to required runtime cases and tasks."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T002",
+      "title": "Build and start the Java oracle",
+      "depends_on": [
+        "T000"
+      ],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/oracle",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Build exact source with JDK 21 and pinned build inputs; record dependency failures and test discovery/pass/skip counts.",
+        "Start CRF service and establish isalive/health/model readiness; assert no partial model failures.",
+        "Record reproducible source-build/image digest; do not substitute an older release image."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/build.gradle"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T003",
+      "title": "Lock effective profiles and runtime assets",
+      "depends_on": [
+        "T002"
+      ],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/contracts",
+        "migration/oracle",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "SHA-256 actual model/native/lexicon/detector/embedding assets selected on each platform.",
+        "Dump effective config via the same getters for default/full/evaluation and flavors, including missing asset fallback.",
+        "Probe DeLFT underscore-name runtime lookup and disabled classifier behavior; preserve evidence."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/GrobidProperties.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T004",
+      "title": "Build legal versioned corpus and holdout",
+      "depends_on": [
+        "T000"
+      ],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/fixtures",
+        "migration/contracts/corpus-manifest.json",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Pin external dataset revision and actual eligible document/gold counts; retain licenses.",
+        "Select upstream, synthetic edge and optional user-authorized production examples with hashes and coverage tags.",
+        "Separate iterative development and held-out sets; no empty corpus counts as done."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/doc/End-to-end-evaluation.md"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T005",
+      "title": "Capture raw-text and HTTP baseline",
+      "depends_on": [
+        "T002",
+        "T003"
+      ],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/cases",
+        "migration/evidence",
+        "migration/oracle"
+      ],
+      "acceptance": [
+        "Capture raw date/name/affiliation/citation services and negotiation/default/error cases three times.",
+        "Verify request identity, expected statuses, meaningful headers and raw response hashes.",
+        "Validate starter harness with real Java cases and record baseline volatility."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessString.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T006",
+      "title": "Capture extractor and stage oracles",
+      "depends_on": [
+        "T003",
+        "T004"
+      ],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/oracle",
+        "migration/evidence",
+        "migration/fixtures"
+      ],
+      "acceptance": [
+        "Capture pdfalto argv/environment/sidecars, LayoutToken properties and feature/label/cluster structures.",
+        "Assert debugMode model names/invocation counts; instrument missing paths without changing outputs.",
+        "Repeat representative PDFs and isolate nondeterminism or malformed-input behavior."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/document/Document.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T007",
+      "title": "Implement reviewed semantic output comparators",
+      "depends_on": [
+        "T005",
+        "T006"
+      ],
+      "phase": 0,
+      "owner_role": "compare-output",
+      "skill": "grobid-compare-output",
+      "owned_paths": [
+        "migration/tools",
+        "migration/contracts/comparison-policy.json"
+      ],
+      "acceptance": [
+        "Add only proven exact TEI provenance volatility; preserve publication dates and mixed content.",
+        "Implement generated-ID bijection/link invariants and PDF annotation object/render comparison as needed.",
+        "Add deliberate content/coordinate/link/asset mutations that fail; retain unnormalized evidence."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/document/TEIFormatter.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T008",
+      "title": "Capture complete service option matrix",
+      "depends_on": [
+        "T001",
+        "T003",
+        "T004",
+        "T007"
+      ],
+      "phase": 0,
+      "owner_role": "capture-oracle",
+      "skill": "grobid-capture-oracle",
+      "owned_paths": [
+        "migration/cases",
+        "migration/evidence",
+        "migration/contracts"
+      ],
+      "acceptance": [
+        "Cover all active routes, method/media variants and option/default/error boundaries including patents/training/admin.",
+        "Create pairwise interaction coverage plus exhaustive risky boundaries; list uncovered combinations.",
+        "Freeze response and stage manifests; no missing/empty/skipped mandatory cases."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T009",
+      "title": "Profile the real Java workload",
+      "depends_on": [
+        "T006",
+        "T008"
+      ],
+      "phase": 0,
+      "owner_role": "profile-performance",
+      "skill": "grobid-profile-performance",
+      "owned_paths": [
+        "migration/benchmarks",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Measure cold/warm and stage times, queueing, total-process memory/CPU and external latency.",
+        "Declare primary workload/profile/hardware and acceptance before optimization.",
+        "Rank measured bottlenecks; do not infer Java is dominant from language choice."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/jni/JEPThreadPool.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T010",
+      "title": "Scaffold Rust workspace and CI",
+      "depends_on": [
+        "T000",
+        "T001"
+      ],
+      "phase": 1,
+      "owner_role": "coordinate",
+      "skill": "grobid-coordinate",
+      "owned_paths": [
+        "Cargo.toml",
+        "Cargo.lock",
+        "rust-toolchain.toml",
+        "crates",
+        "migration/ci"
+      ],
+      "acceptance": [
+        "Select available stable toolchain/dependencies and commit exact versions/lockfile.",
+        "Create architectural boundaries, release build, formatting/lints and meaningful test entrypoint.",
+        "Keep no stub endpoint/model behavior marked implemented; preserve upstream build separately."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/settings.gradle"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T011",
+      "title": "Port Java string and Unicode semantics",
+      "depends_on": [
+        "T005",
+        "T010"
+      ],
+      "phase": 1,
+      "owner_role": "port-text",
+      "skill": "grobid-port-text",
+      "owned_paths": [
+        "crates/grobid-compat"
+      ],
+      "acceptance": [
+        "Implement typed UTF-16/byte/scalar conversions and fixture-backed normalization/case/regex/number behavior.",
+        "Cover astral, combining, ligature, whitespace, RTL/CJK and prefix/suffix boundary cases.",
+        "Match Java utility outputs exactly before pipeline reuse."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/TextUtilities.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T012",
+      "title": "Port config and model/flavor resolution",
+      "depends_on": [
+        "T003",
+        "T010"
+      ],
+      "phase": 1,
+      "owner_role": "port-inference",
+      "skill": "grobid-port-inference",
+      "owned_paths": [
+        "crates/grobid-config"
+      ],
+      "acceptance": [
+        "Load source-compatible configuration and reproduce per-getter inheritance/defaults.",
+        "Match effective engine/architecture/files and base fallback for every profile/flavor.",
+        "Validate missing assets, mixed engines and invalid paths against oracle; no generic deep merge."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/GrobidModels.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T013",
+      "title": "Define lossless document and layout types",
+      "depends_on": [
+        "T006",
+        "T011"
+      ],
+      "phase": 1,
+      "owner_role": "port-layout",
+      "skill": "grobid-port-layout",
+      "owned_paths": [
+        "crates/grobid-types"
+      ],
+      "acceptance": [
+        "Represent pages/blocks/tokens/graphics, all layout/style flags and typed spans.",
+        "Round-trip oracle snapshots without dropping order, null/empty values or coordinate precision.",
+        "Freeze reviewed shared interfaces before parallel parser work."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/layout/LayoutToken.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T014",
+      "title": "Audit Wapiti fork ABI and ownership",
+      "depends_on": [
+        "T003",
+        "T010"
+      ],
+      "phase": 1,
+      "owner_role": "port-inference",
+      "skill": "grobid-port-inference",
+      "owned_paths": [
+        "crates/grobid-wapiti-sys",
+        "migration/native"
+      ],
+      "acceptance": [
+        "Resolve actual native source revision corresponding to the binary and JNI wrapper.",
+        "Document callable C surface, allocators, lifetime, shared mutation and threading.",
+        "Choose safe shim/process boundary and minimal build; no unsupported Send/Sync assumptions."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/jni/WapitiWrapper.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T015",
+      "title": "Implement Wapiti label adapter",
+      "depends_on": [
+        "T012",
+        "T014"
+      ],
+      "phase": 1,
+      "owner_role": "port-inference",
+      "skill": "grobid-port-inference",
+      "owned_paths": [
+        "crates/grobid-wapiti-sys",
+        "crates/grobid-models"
+      ],
+      "acceptance": [
+        "Load same models and compare feature\u2192label streams including output trimming/separators.",
+        "Test invalid assets, lifecycle/reload, concurrent calls and native error ownership.",
+        "Prove unsafe boundary with sanitizer/concurrency evidence where platform supports it."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/jni/WapitiModel.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T016",
+      "title": "Port tokenizer lexicons and feature primitives",
+      "depends_on": [
+        "T011",
+        "T013"
+      ],
+      "phase": 1,
+      "owner_role": "port-text",
+      "skill": "grobid-port-text",
+      "owned_paths": [
+        "crates/grobid-features"
+      ],
+      "acceptance": [
+        "Preserve token delimiters/whitespace and exact lexicon membership.",
+        "Port emitted feature column order, categories, prefixes/suffixes and numeric bins.",
+        "Golden-test sequence/line/block separators and encoding into the model boundary."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/features"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T017",
+      "title": "Port date and name parsers",
+      "depends_on": [
+        "T005",
+        "T015",
+        "T016"
+      ],
+      "phase": 2,
+      "owner_role": "port-text",
+      "skill": "grobid-port-text",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/date",
+        "crates/grobid-pipeline/src/names"
+      ],
+      "acceptance": [
+        "Match header-name and citation-name models separately.",
+        "Preserve date normalized/textual fields and malformed/empty behavior.",
+        "Compare features, labels, parsed objects and raw service output fixtures."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/DateParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T018",
+      "title": "Port affiliation and address parser",
+      "depends_on": [
+        "T017"
+      ],
+      "phase": 2,
+      "owner_role": "port-text",
+      "skill": "grobid-port-text",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/affiliations"
+      ],
+      "acceptance": [
+        "Port exact institution/department/address/country/email/token clustering behavior.",
+        "Retain raw text and nested fields with source spans.",
+        "Compare international, multi-affiliation, missing/ambiguous and whitespace examples."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/AffiliationAddressParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T019",
+      "title": "Port citation parser and bibliographic objects",
+      "depends_on": [
+        "T018"
+      ],
+      "phase": 2,
+      "owner_role": "port-text",
+      "skill": "grobid-port-text",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/citations",
+        "crates/grobid-types/src/biblio"
+      ],
+      "acceptance": [
+        "Match citation feature/label/data-object outputs including DOI/PMID/dates/authors.",
+        "Port required BiblioItem/Person normalization and null/empty semantics.",
+        "Verify individual/list citations, nonbreaking-space-only input and BibTeX cases."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/CitationParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T020",
+      "title": "Implement HTTP transport and admission shell",
+      "depends_on": [
+        "T005",
+        "T010"
+      ],
+      "phase": 2,
+      "owner_role": "port-service",
+      "skill": "grobid-port-service",
+      "owned_paths": [
+        "crates/grobid-service"
+      ],
+      "acceptance": [
+        "Implement observed routing/negotiation/form/multipart/error shell with bounded work admission.",
+        "Preserve repeated fields and request defaults; capture loopback transport comparisons.",
+        "Development Java fallback if used is explicit and cannot count as S1."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T021",
+      "title": "Complete raw-text service vertical slices",
+      "depends_on": [
+        "T017",
+        "T018",
+        "T019",
+        "T020"
+      ],
+      "phase": 2,
+      "owner_role": "port-service",
+      "skill": "grobid-port-service",
+      "owned_paths": [
+        "crates/grobid-service/src/raw",
+        "crates/grobid-tei/src/biblio"
+      ],
+      "acceptance": [
+        "Run date/name/affiliation/citation/list endpoints against Java with all media variants.",
+        "Compare status/headers and semantic/raw bodies including errors.",
+        "Confirm these handlers run without a JVM and do not use fixture-specific responses."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessString.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T022",
+      "title": "Port pdfalto subprocess lifecycle",
+      "depends_on": [
+        "T006",
+        "T010",
+        "T012"
+      ],
+      "phase": 3,
+      "owner_role": "port-layout",
+      "skill": "grobid-port-layout",
+      "owned_paths": [
+        "crates/grobid-pdf/src/process"
+      ],
+      "acceptance": [
+        "Reproduce flags/environment/temp/page/image/annotation options and mode-specific error mapping.",
+        "Handle exits 4/5/98, timeout, output limits and child group cleanup.",
+        "Test interrupted requests, full disk and cleanup without changing extractor."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/document/DocumentSource.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T023",
+      "title": "Port ALTO and sidecar parsers",
+      "depends_on": [
+        "T013",
+        "T022"
+      ],
+      "phase": 3,
+      "owner_role": "port-layout",
+      "skill": "grobid-port-layout",
+      "owned_paths": [
+        "crates/grobid-pdf/src/alto",
+        "crates/grobid-pdf/src/sidecars"
+      ],
+      "acceptance": [
+        "Match ordered pages/blocks/layout tokens, whitespace/fonts/coordinates and UTF-16 widths.",
+        "Handle annotations/outline/metadata and Java permissive-decoding cases.",
+        "Compare complete stage snapshots on edge and representative PDFs."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/sax/PDFALTOSaxHandler.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T024",
+      "title": "Port document segmentation",
+      "depends_on": [
+        "T015",
+        "T016",
+        "T023"
+      ],
+      "phase": 3,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/segmentation"
+      ],
+      "acceptance": [
+        "Match line-level features/document statistics and model outputs.",
+        "Preserve discontinuous zones, headers/footers/annex/bibliography boundaries.",
+        "Test long/empty/unusual block layouts and exact token-span mapping."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/Segmentation.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T025",
+      "title": "Port header extraction pipeline",
+      "depends_on": [
+        "T018",
+        "T024"
+      ],
+      "phase": 3,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/header"
+      ],
+      "acceptance": [
+        "Match selected pages/header vs fulltext differences and nested parsers.",
+        "Preserve titles/abstract/keywords/metadata/raw fields and coordinates.",
+        "Compare intermediate objects, fulltext-structured abstract and field-level output."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/HeaderParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T026",
+      "title": "Port reference segmentation and bibliography",
+      "depends_on": [
+        "T019",
+        "T024"
+      ],
+      "phase": 3,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/references"
+      ],
+      "acceptance": [
+        "Match reference line\u2192entry segmentation and nested citation parsing.",
+        "Preserve marker/raw text/order/coordinates and empty/unrecognized entries.",
+        "Verify multiline, multi-page, missing and duplicate bibliographies."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/ReferenceSegmenterParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T027",
+      "title": "Port citation callout resolution",
+      "depends_on": [
+        "T011",
+        "T026"
+      ],
+      "phase": 3,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/callouts"
+      ],
+      "acceptance": [
+        "Reproduce numeric/author-year/unknown styles, bounded ranges and candidate ranking.",
+        "Match Lucene analyzer/query/tie behavior on ambiguous cases or keep gate blocked.",
+        "Assert every citation edge and target correspondence, not only citation text."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/matching/ReferenceMarkerMatcher.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T028",
+      "title": "Port body and annex fulltext parser",
+      "depends_on": [
+        "T025",
+        "T026",
+        "T027"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/fulltext"
+      ],
+      "acceptance": [
+        "Match token features, labels, clustering, section/paragraph/notes/callout structure.",
+        "Preserve body and annex ordering, statement labels and discarded-region rules.",
+        "Compare complete intermediate trees before serialization."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/FullTextParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T029",
+      "title": "Port figures tables equations and relabeling",
+      "depends_on": [
+        "T028"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/figures",
+        "crates/grobid-pipeline/src/tables",
+        "crates/grobid-pipeline/src/formulas"
+      ],
+      "acceptance": [
+        "Port Kotlin LabelUtils and Java validation/reversion/ID behavior.",
+        "Preserve geometry, captions, table structures, equation labels and figure/table links.",
+        "Test adjacent starts, incomplete structures, annex overlap and retained paragraph text."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/kotlin/org/grobid/core/utilities/LabelUtils.kt"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T030",
+      "title": "Port author affiliation and metadata linking",
+      "depends_on": [
+        "T021",
+        "T025"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/header_links"
+      ],
+      "acceptance": [
+        "Match marker/name/email/ORCID affiliation assignment and ambiguity behavior.",
+        "Retain intended-but-unimplemented upstream cases as observations, not desired expectations.",
+        "Compare linked objects and author-affiliation evaluation fixtures."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/data/util/AuthorAffiliationAssigner.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T031",
+      "title": "Complete TEI and bibliography serializers",
+      "depends_on": [
+        "T028",
+        "T029",
+        "T030"
+      ],
+      "phase": 4,
+      "owner_role": "compare-output",
+      "skill": "grobid-compare-output",
+      "owned_paths": [
+        "crates/grobid-tei"
+      ],
+      "acceptance": [
+        "Preserve mixed text/tails, namespaces, meaningful order, IDs/targets and provenance.",
+        "Port dates/raw fields/coordinates/BibTeX and all produced bibliographic variants.",
+        "Run strict/approved comparators and mutation controls across complete documents."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/document/TEIFormatter.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T032",
+      "title": "Port coordinates and PDF annotations",
+      "depends_on": [
+        "T031"
+      ],
+      "phase": 4,
+      "owner_role": "port-service",
+      "skill": "grobid-port-service",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/annotations",
+        "crates/grobid-service/src/annotations"
+      ],
+      "acceptance": [
+        "Match coordinate tags, page offsets, two-decimal textual and JSON numeric forms.",
+        "Implement annotation/link destinations and invalid-page behavior.",
+        "Compare PDF objects/overlays and annotation JSON with reviewed comparator."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/visualization"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T033",
+      "title": "Port extracted assets and ZIP responses",
+      "depends_on": [
+        "T022",
+        "T029",
+        "T031"
+      ],
+      "phase": 4,
+      "owner_role": "port-layout",
+      "skill": "grobid-port-layout",
+      "owned_paths": [
+        "crates/grobid-pdf/src/assets",
+        "crates/grobid-service/src/assets"
+      ],
+      "acceptance": [
+        "Preserve image conversion/member names/links and relevant SVG handling.",
+        "Match complete archive content and attachment headers.",
+        "Test duplicate/traversal resistance, limits and cleanup; record intentional safer differences."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/document/Document.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T034",
+      "title": "Complete blank light and SDO flavors",
+      "depends_on": [
+        "T024",
+        "T025",
+        "T028",
+        "T031"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/flavors",
+        "migration/cases/flavors"
+      ],
+      "acceptance": [
+        "Verify blank/article-light/article-light-ref/IETF and asset-missing fallback semantics.",
+        "Trace actual model invocations, not only loaded models.",
+        "Compare all configured flavor/profile combinations; classify 3GPP separately by actual assets."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/GrobidModels.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T035",
+      "title": "Complete funding and backmatter statements",
+      "depends_on": [
+        "T028",
+        "T031"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/funding",
+        "crates/grobid-pipeline/src/statements"
+      ],
+      "acceptance": [
+        "Match funding acknowledgements and availability/conflict/contribution extraction.",
+        "Preserve funder/grant/entity links and TEI placement.",
+        "Run rare-label fixtures and all statement-quality fields without aggregate masking."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/FundingAcknowledgementParser.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T036",
+      "title": "Port default language and sentence behavior",
+      "depends_on": [
+        "T011",
+        "T023",
+        "T031"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-integrations/src/language",
+        "crates/grobid-integrations/src/sentences"
+      ],
+      "acceptance": [
+        "Reproduce default Cybozu/OpenNLP and layout-aware protected-span corrections.",
+        "Verify spans, mixed TEI sentence boundaries and superscript citation placement.",
+        "Prove JVM-free runtime for these enabled helpers; block milestone if unavailable."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/SentenceUtilities.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T037",
+      "title": "Port consolidation with recorded responses",
+      "depends_on": [
+        "T019",
+        "T020",
+        "T025",
+        "T026"
+      ],
+      "phase": 4,
+      "owner_role": "port-service",
+      "skill": "grobid-port-service",
+      "owned_paths": [
+        "crates/grobid-integrations/src/consolidation",
+        "migration/fixtures/consolidation"
+      ],
+      "acceptance": [
+        "Match Crossref/glutton request/enrichment/validation/mode/default behavior.",
+        "Cover replayed timeouts/rate limits/no-match/partial data and batch order.",
+        "Keep live integration separate, credentials absent from logs and benchmark modes matched."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/Consolidation.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T038",
+      "title": "Build pinned JVM-free DeLFT worker",
+      "depends_on": [
+        "T003",
+        "T010",
+        "T012"
+      ],
+      "phase": 3,
+      "owner_role": "port-inference",
+      "skill": "grobid-port-inference",
+      "owned_paths": [
+        "workers/delft",
+        "crates/grobid-models/src/delft"
+      ],
+      "acceptance": [
+        "Pin Python/TensorFlow/DeLFT/embeddings/model preprocessing and framed IPC.",
+        "Preserve name/runtime overrides, label conversion/row reconstruction and serialized initial execution.",
+        "Test worker startup/crash/cancel/limits and complete process-tree resources."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/jni/DeLFTModel.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T039",
+      "title": "Verify full DeLFT cascade profiles",
+      "depends_on": [
+        "T016",
+        "T017",
+        "T018",
+        "T019",
+        "T025",
+        "T026",
+        "T035",
+        "T038"
+      ],
+      "phase": 5,
+      "owner_role": "port-inference",
+      "skill": "grobid-port-inference",
+      "owned_paths": [
+        "crates/grobid-models",
+        "migration/cases/delft"
+      ],
+      "acceptance": [
+        "Match all six configured base DeLFT sequence models and inherited flavors.",
+        "Compare exact features/labels and end-to-end output at sequence/truncation/batch boundaries.",
+        "Keep evaluation config distinct; do not call full-profile skipped when dependencies fail."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-home/config/grobid-full.yaml"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T040",
+      "title": "Implement optional detectors and classifiers",
+      "depends_on": [
+        "T036",
+        "T039"
+      ],
+      "phase": 5,
+      "owner_role": "port-inference",
+      "skill": "grobid-port-inference",
+      "owned_paths": [
+        "crates/grobid-integrations",
+        "crates/grobid-models/src/classifiers"
+      ],
+      "acceptance": [
+        "Cover Lingua/Pragmatic/BlingFire and enabled copyright/license classifier profiles.",
+        "Preserve default-disabled classifier behavior and threshold semantics.",
+        "Prove JVM-free execution or leave named optional profiles blocked."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/LicenseClassifier.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T041",
+      "title": "Integrate remaining HTTP and debug features",
+      "depends_on": [
+        "T021",
+        "T032",
+        "T033",
+        "T034",
+        "T035",
+        "T036",
+        "T037",
+        "T039",
+        "T043"
+      ],
+      "phase": 5,
+      "owner_role": "port-service",
+      "skill": "grobid-port-service",
+      "owned_paths": [
+        "crates/grobid-service",
+        "migration/cases"
+      ],
+      "acceptance": [
+        "Wire all document/patent/annotation/assets/debug operations to real Rust behavior.",
+        "Preserve debug model output/count/error behavior and method/media variants.",
+        "Run route coverage against inventory; expose every still-missing handler."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T042",
+      "title": "Complete health metrics config and lifecycle",
+      "depends_on": [
+        "T012",
+        "T020",
+        "T041"
+      ],
+      "phase": 5,
+      "owner_role": "port-service",
+      "skill": "grobid-port-service",
+      "owned_paths": [
+        "crates/grobid-service/src/admin",
+        "crates/grobid-service/src/lifecycle"
+      ],
+      "acceptance": [
+        "Match readiness/liveness, config validation, model failure, CORS and overload semantics.",
+        "Handle graceful shutdown/startup/admin ports and service console assets.",
+        "Report runtime-specific metrics honestly with explicit deviation record."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/main/GrobidServiceApplication.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T043",
+      "title": "Port patent citation extraction and annotation",
+      "depends_on": [
+        "T019",
+        "T023",
+        "T028"
+      ],
+      "phase": 4,
+      "owner_role": "port-pipeline",
+      "skill": "grobid-port-pipeline",
+      "owned_paths": [
+        "crates/grobid-pipeline/src/patents"
+      ],
+      "acceptance": [
+        "Match TXT/ST36/PDF extraction, patent/nonpatent citations and annotation behavior.",
+        "Cover XML/gzip input semantics, context spans and normalization.",
+        "Run previously ignored upstream patent cases plus observed error mapping."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/engines/patent"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T044",
+      "title": "Port training data and annotation generation",
+      "depends_on": [
+        "T024",
+        "T025",
+        "T026",
+        "T028",
+        "T029",
+        "T035"
+      ],
+      "phase": 5,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "crates/grobid-training/src/data"
+      ],
+      "acceptance": [
+        "Match model-specific SAX/TEI alignment, templates, feature rows and file naming.",
+        "Preserve example order, labels, raw inputs and XML ID/language behavior.",
+        "Compare generated training archives from PDF and direct corpora."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/main/java/org/grobid/trainer"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T045",
+      "title": "Port trainer registry CLI and metrics",
+      "depends_on": [
+        "T010",
+        "T012",
+        "T016"
+      ],
+      "phase": 5,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "crates/grobid-training/src/registry",
+        "crates/grobid-training/src/metrics",
+        "crates/grobid-cli"
+      ],
+      "acceptance": [
+        "Cover 26 recognized names/aliases/flavors and applicable command controls.",
+        "Implement metrics on fixed predictions including denominator/empty cases.",
+        "Inventory ineffective/legacy CLI branches with oracle probes and disposition."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/main/java/org/grobid/trainer/TrainerRegistry.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T046",
+      "title": "Implement Wapiti training and model promotion",
+      "depends_on": [
+        "T015",
+        "T044",
+        "T045"
+      ],
+      "phase": 6,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "crates/grobid-training/src/wapiti",
+        "crates/grobid-training/src/models"
+      ],
+      "acceptance": [
+        "Preserve training params, incremental model input and artifacts/loadability.",
+        "Test default/custom paths and .new/.old promotion/failure on disposable directories.",
+        "Train a tiny model and compare fixed-weight predictions in both implementations."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/main/java/org/grobid/trainer/AbstractTrainer.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T047",
+      "title": "Implement DeLFT training and artifacts",
+      "depends_on": [
+        "T038",
+        "T044",
+        "T045"
+      ],
+      "phase": 6,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "workers/delft/training",
+        "crates/grobid-training/src/delft"
+      ],
+      "acceptance": [
+        "Match deterministic data/config/preprocessor/model artifact interfaces.",
+        "Run representative tiny training and successful reload/inference.",
+        "Measure repeatability separately from inference parity; do not require unjustified weight byte equality."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/main/java/org/grobid/trainer/DeLFTTrainer.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T048",
+      "title": "Complete split n-fold and evaluation runners",
+      "depends_on": [
+        "T046",
+        "T047"
+      ],
+      "phase": 6,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "crates/grobid-training/src/evaluation",
+        "crates/grobid-cli"
+      ],
+      "acceptance": [
+        "Match recorded split membership or Java seeded shuffle exactly.",
+        "Implement train/eval/split/nfold and custom-path behavior with explicit quirk decisions.",
+        "Validate expected report/document counts, per-field metrics and no silent zero-exit failure."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-trainer/src/main/java/org/grobid/trainer/TrainerRunner.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T049",
+      "title": "Port async training job and lock lifecycle",
+      "depends_on": [
+        "T020",
+        "T046",
+        "T047"
+      ],
+      "phase": 6,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "crates/grobid-service/src/training",
+        "crates/grobid-training/src/jobs"
+      ],
+      "acceptance": [
+        "Match enqueue/token/list/status/alias-model locks and restart/stale job semantics.",
+        "Exercise cancel/kill/native worker lifetime and declared safety changes.",
+        "Reject traversal/bad tokens and verify states after success/failure/restart."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessTraining.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T050",
+      "title": "Complete model and training artifact downloads",
+      "depends_on": [
+        "T033",
+        "T049"
+      ],
+      "phase": 6,
+      "owner_role": "port-training",
+      "skill": "grobid-port-training",
+      "owned_paths": [
+        "crates/grobid-service/src/models",
+        "crates/grobid-training/src/export"
+      ],
+      "acceptance": [
+        "Match model ZIP format, filenames, media/status and missing model behavior.",
+        "Verify trained artifacts can load in appropriate reference/candidate engine.",
+        "Cover training-data ZIP file selection and cleanup."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/process/GrobidRestProcessTraining.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T051",
+      "title": "Resolve batch CLI and Java embedding surfaces",
+      "depends_on": [
+        "T041",
+        "T048",
+        "T050"
+      ],
+      "phase": 6,
+      "owner_role": "coordinate",
+      "skill": "grobid-coordinate",
+      "owned_paths": [
+        "crates/grobid-cli",
+        "bindings",
+        "migration/contracts/scope.json"
+      ],
+      "acceptance": [
+        "Inventory exposed legacy Java APIs and CLI commands with observable contracts.",
+        "Implement promised facade/FFI/CLI support or retain explicit scope decision/blocker.",
+        "Ensure optional Java client compatibility does not become a production server dependency."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/doc/Grobid-java-library.md"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T052",
+      "title": "Close complete service and feature coverage",
+      "depends_on": [
+        "T040",
+        "T041",
+        "T042",
+        "T043",
+        "T050"
+      ],
+      "phase": 6,
+      "owner_role": "review-parity",
+      "skill": "grobid-review-parity",
+      "owned_paths": [
+        "migration/contracts",
+        "migration/FEATURE_MATRIX.csv",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Require every current/optional route and feature row to map to executed cases.",
+        "Run full method/media/default/error/options matrix and all profiles without Java fallback.",
+        "List deviations and legacy decisions separately; no skipped mandatory feature is verified."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-service/src/main/java/org/grobid/service/GrobidRestService.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T053",
+      "title": "Run full labeled quality and held-out parity",
+      "depends_on": [
+        "T034",
+        "T039",
+        "T040",
+        "T051",
+        "T052"
+      ],
+      "phase": 7,
+      "owner_role": "review-parity",
+      "skill": "grobid-review-parity",
+      "owned_paths": [
+        "migration/evidence",
+        "migration/quality"
+      ],
+      "acceptance": [
+        "Run immutable four-corpus evaluation with actual expected counts on Java and Rust.",
+        "Require zero unexplained deterministic per-document drift and no hidden per-field regression.",
+        "Run held-out adverse cases and record every failure/mismatch/skip."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/.github/workflows/evaluation.yml"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T054",
+      "title": "Fuzz and harden parser native boundaries",
+      "depends_on": [
+        "T015",
+        "T022",
+        "T023"
+      ],
+      "phase": 7,
+      "owner_role": "review-parity",
+      "skill": "grobid-review-parity",
+      "owned_paths": [
+        "fuzz",
+        "migration/fixtures/reproducers",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Bounded fuzz ALTO/XML/features/multipart/ZIP/config and native ownership APIs.",
+        "Persist minimized reproducers and meaningful regression tests.",
+        "Validate no uncontrolled subprocess/resource behavior; document safety deviations."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/document/DocumentSource.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T055",
+      "title": "Optimize measured dominant stages",
+      "depends_on": [
+        "T009",
+        "T053"
+      ],
+      "phase": 7,
+      "owner_role": "profile-performance",
+      "skill": "grobid-profile-performance",
+      "owned_paths": [
+        "crates",
+        "workers",
+        "migration/benchmarks"
+      ],
+      "acceptance": [
+        "Select measured cost and one behavior-preserving optimization at a time.",
+        "Rerun relevant stage/output and full quality gates after each change.",
+        "Document failed hypotheses and memory/concurrency tradeoffs; no feature/model reduction."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/jni/JEPThreadPool.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T056",
+      "title": "Validate performance claims across profiles",
+      "depends_on": [
+        "T053",
+        "T055"
+      ],
+      "phase": 7,
+      "owner_role": "profile-performance",
+      "skill": "grobid-profile-performance",
+      "owned_paths": [
+        "migration/benchmarks",
+        "migration/evidence"
+      ],
+      "acceptance": [
+        "Run at least ten paired matched-work release rounds and confidence intervals.",
+        "Meet predeclared successful throughput/latency/memory/error targets or report parity-only result.",
+        "Include all processes, cold/warm and external-service modes; preserve raw observations."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/doc/benchmarks/Benchmarking.md"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T057",
+      "title": "Build platform artifacts notices and rollback",
+      "depends_on": [
+        "T051",
+        "T052",
+        "T054",
+        "T056"
+      ],
+      "phase": 7,
+      "owner_role": "coordinate",
+      "skill": "grobid-coordinate",
+      "owned_paths": [
+        "packaging",
+        "migration/release",
+        "migration/contracts"
+      ],
+      "acceptance": [
+        "Build/reproduce supported Linux/macOS architectures and asset/dependency manifests.",
+        "Include licenses/notices for code/models/data/native dependencies; verify JVM-free server image.",
+        "Create local release/rollback instructions and artifact hashes without unauthorized publishing."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/.github/workflows/ci-build-unstable.yml"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T058",
+      "title": "Run sustained soak and recovery",
+      "depends_on": [
+        "T056",
+        "T057"
+      ],
+      "phase": 7,
+      "owner_role": "profile-performance",
+      "skill": "grobid-profile-performance",
+      "owned_paths": [
+        "migration/evidence",
+        "migration/benchmarks"
+      ],
+      "acceptance": [
+        "Run representative 24-hour soak then planned longer candidate workload with budgets.",
+        "Exercise overload/cancel/restart/worker failure and collect RSS/FD/child/temp/queue trends.",
+        "Require complete request accounting and bounded resources; do not mistake agent uptime for server soak."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/factory/GrobidPoolingFactory.java"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    },
+    {
+      "id": "T059",
+      "title": "Independently certify bounded release scope",
+      "depends_on": [
+        "T053",
+        "T056",
+        "T057",
+        "T058"
+      ],
+      "phase": 8,
+      "owner_role": "review-parity",
+      "skill": "grobid-review-parity",
+      "owned_paths": [
+        "migration/release",
+        "migration/state",
+        "migration/FEATURE_MATRIX.csv"
+      ],
+      "acceptance": [
+        "Fresh reviewer reconstructs provenance and reruns decisive held-out/contract/build checks.",
+        "Trace all required feature/profile rows to immutable evidence, review deviations and unsupported space.",
+        "Produce honest S0\u2013S4 claim, actual measured speed, remaining risks and rollout/rollback package."
+      ],
+      "source_refs": [
+        "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/Readme.md"
+      ],
+      "required_evidence": [
+        "exact source/result commits",
+        "decisive commands and raw hashed logs",
+        "input/profile/model provenance where applicable",
+        "executed/failed/skipped counts",
+        "hashed result artifacts",
+        "independent review"
+      ]
+    }
+  ]
+}

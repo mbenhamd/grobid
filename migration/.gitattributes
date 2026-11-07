@@ -1,0 +1,2 @@
+# Kit manifest (DISTRIBUTION.json) pins byte-exact hashes; keep CRLF as-is.
+FEATURE_MATRIX.csv -text

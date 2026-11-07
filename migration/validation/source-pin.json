@@ -1,0 +1,17 @@
+{
+  "status": "static_source_verified",
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "checked_source_files": [
+    "gradle.properties",
+    "build.gradle",
+    "gradle/wrapper/gradle-wrapper.properties",
+    "Dockerfile.crf",
+    "Dockerfile.delft",
+    "grobid-home/config/grobid.yaml",
+    "grobid-home/config/grobid-full.yaml",
+    "grobid-home/config/grobid-evaluation.yaml"
+  ],
+  "runtime_verified": false,
+  "model_assets_verified": false,
+  "note": "This check does not build, load models, run GROBID, or prove parity."
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/grobidOrg/grobid.git",
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "commit_time": "2026-11-04T09:45:14+01:00",
+  "audit_date": "2026-11-06",
+  "declared_version": "0.9.2-SNAPSHOT",
+  "branch_observed": "master",
+  "evidence_level": "static_source_audit",
+  "runtime_baseline_status": "not_captured",
+  "source_hashes": {
+    "gradle.properties": "f65f8bbe7b6896e5153d12b6021271274d7e7926e90df857c350c321c2bf5a47",
+    "build.gradle": "ab41eca1a3febef17b8b32400abb0b958daab3aa6ee9ceddbf0337e4cfc9813a",
+    "gradle/wrapper/gradle-wrapper.properties": "c94d41b634a5e0ff8a2f812023697b1337eebac18e9962610356a1793f72896d",
+    "Dockerfile.crf": "27845af16a2241705c6310ad44f50aabedc2609e9c74a4fd2f6578deb4d05620",
+    "Dockerfile.delft": "ce8380e28e9401c085910b7814993a63ff6f1882789d2728d09a36b9e6340e3a",
+    "grobid-home/config/grobid.yaml": "3c0f62ea53e96bceac3c9a7f85c61005b3f4d314af8786f7603f59b8083fa053",
+    "grobid-home/config/grobid-full.yaml": "70f7677f8d4295e4d443b348b1340371bda7a41841f52b2c2bdf00ee5b1534ae",
+    "grobid-home/config/grobid-evaluation.yaml": "f9c3a1b769c2c946b688dab6ae007f5771bdf4cb6d435f0f5bb682883d6892f7"
+  },
+  "external_assets_status": "not_resolved",
+  "container_digests": {},
+  "required_runtime_fingerprints": [
+    "model files",
+    "pdfalto executable and language/xpdfrc data",
+    "Wapiti fork/shared libraries",
+    "DeLFT/TensorFlow/Python and embeddings",
+    "lexicons and CRF templates",
+    "language and sentence detector resources",
+    "effective config per getter/profile",
+    "Java/Rust toolchain and build",
+    "container/OS/CPU/GPU environment",
+    "immutable corpus revision and item hashes"
+  ]
+}
