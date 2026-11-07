@@ -1,0 +1,97 @@
+{
+ "task_id": "T000",
+ "worker": "claude-coordinator",
+ "base_commit": "622a521076ba63b96835b240e7f81d10af4c8ed4",
+ "result_commit": "8b6e922815f8bc86dd1866b04308b1f01a3cf05b",
+ "changed_paths": [
+  "migration/evidence/T000",
+  "migration/contracts/host-environment-lock.json"
+ ],
+ "source_refs": [
+  "https://github.com/grobidOrg/grobid/tree/f313f7010773fe8113cbb0f7a774960450a850d0",
+  "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/grobid-core/src/main/java/org/grobid/core/utilities/GrobidProperties.java",
+  "https://github.com/grobidOrg/grobid/blob/f313f7010773fe8113cbb0f7a774960450a850d0/gradle/wrapper/gradle-wrapper.properties"
+ ],
+ "commands": [
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "migration/evidence/T000/capture_t000.py",
+    "--oracle",
+    "/Users/mbenhamd/Projects/grobid-oracle",
+    "--kit-root",
+    ".",
+    "--java-home",
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home",
+    "--out",
+    "migration/evidence/T000",
+    "--lock-out",
+    "migration/contracts/host-environment-lock.json"
+   ],
+   "exit_code": 0,
+   "started_at": "2026-11-07T14:06:40Z",
+   "finished_at": "2026-11-07T14:06:42Z",
+   "log": "migration/evidence/T000/capture-run.log",
+   "log_sha256": "8738e929a593d8331b102c3e76f76f7f7f5049f4bfa0ad48e2830148a50f8374",
+   "note": "Runs 65 sub-commands; each logged under migration/evidence/T000/logs with hash in commands.json. Non-zero sub-command exits are only those declared expected (pdfalto -v exits 99; codesign/brew may exit 1) and none occurred unexpectedly."
+  }
+ ],
+ "artifacts": [
+  {
+   "path": "migration/evidence/T000/t000-report.json",
+   "sha256": "8839a1da40352963a7e37a8c4eee3380044245cadf2b758aa72dd37cd853d128"
+  },
+  {
+   "path": "migration/evidence/T000/commands.json",
+   "sha256": "e9f0de2f7c7a4e990ae98206b8e576ffa787006e63317422528acb8b8c9134d0"
+  },
+  {
+   "path": "migration/evidence/T000/grobid-home-manifest.json",
+   "sha256": "49f748cddc185a07bf9aaddf65fe4e68dc319c8688e424996c7857ba512969ca"
+  },
+  {
+   "path": "migration/evidence/T000/capture_t000.py",
+   "sha256": "d82bfa1f877aaaf3e5303e7268603274b9615d3af5efd3d6c8217e1a73500d26"
+  },
+  {
+   "path": "migration/contracts/host-environment-lock.json",
+   "sha256": "4ed6a5b9c7cb8353900b49d24ef1bf4d41bb67318d8b72224a833076323f10fe"
+  }
+ ],
+ "case_counts": {
+  "executed": 517,
+  "failed": 0,
+  "skipped": 0,
+  "definition": "8 critical source hashes + 506 asset-index blob identities + oracle HEAD, tree and clean-status checks"
+ },
+ "skip_justifications": [],
+ "limitations": [
+  "Oracle checkout is a shallow (depth 1) fetch; commit and tree ids are verified, full history is not present.",
+  "grobid-home manifest hashes are checkout bytes on this host, not runtime-loaded asset hashes (T003).",
+  "Maven/Gradle dependency closure and built artifact hashes not captured; Gradle 9.6.1 distribution was only downloaded for --version (T002).",
+  "pdfalto mac_arm-64 links Homebrew fontconfig/freetype/gettext/libpng/brotli outside grobid-home; any brew upgrade invalidates host-environment-lock.json.",
+  "Only the mac_arm-64 natives were linkage-inspected (otool); linux/windows natives are hashed and file-typed only.",
+  "DeLFT/TensorFlow/embeddings environment not captured: S1 scope is CRF-first by user decision 2026-11-07.",
+  "Host identifiers (hostname, username paths) appear in logs of this public fork."
+ ],
+ "profile_provenance": [
+  {
+   "profile": "grobid-home/config/grobid.yaml",
+   "source_sha256": "3c0f62ea53e96bceac3c9a7f85c61005b3f4d314af8786f7603f59b8083fa053"
+  },
+  {
+   "profile": "grobid-home/config/grobid-full.yaml",
+   "source_sha256": "70f7677f8d4295e4d443b348b1340371bda7a41841f52b2c2bdf00ee5b1534ae"
+  },
+  {
+   "profile": "grobid-home/config/grobid-evaluation.yaml",
+   "source_sha256": "f9c3a1b769c2c946b688dab6ae007f5771bdf4cb6d435f0f5bb682883d6892f7"
+  }
+ ],
+ "known_findings": [
+  "libwapiti.dylib (mac_arm-64) exports 161 symbols, 67 JNI (_Java_*) and 94 plain C (e.g. _labelFromModel, _freeModel): candidate C surface for ADR 0005, ownership/concurrency unproven.",
+  "Kit asset index covers 506 of 527 grobid-home files; the 21 others are config/schemas/scripts."
+ ],
+ "next_task": "T002 (build and start Java oracle), T001 and T004 are dependency-ready after T000 approval."
+}
