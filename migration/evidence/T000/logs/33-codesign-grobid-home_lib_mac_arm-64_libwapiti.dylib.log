@@ -1,0 +1,15 @@
+# argv: ["codesign", "-dv", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+
+# --- stderr
+Executable=/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib
+Identifier=libwapiti.dylib
+Format=Mach-O thin (arm64)
+CodeDirectory v=20400 size=1256 flags=0x20002(adhoc,linker-signed) hashes=36+0 location=embedded
+Signature=adhoc
+Info.plist=not bound
+TeamIdentifier=not set
+Sealed Resources=none
+Internal requirements=none

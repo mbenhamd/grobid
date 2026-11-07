@@ -1,0 +1,8 @@
+{
+ "failures": [],
+ "commands": 65,
+ "unexpected_exit": [],
+ "grobid_home_files": 527,
+ "native": 25,
+ "model_dirs": 33
+}

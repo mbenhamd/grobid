@@ -1,0 +1,8 @@
+# argv: ["git", "-C", "/Users/mbenhamd/Projects/grobid-oracle", "remote", "-v"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+upstream	https://github.com/grobidOrg/grobid.git (fetch)
+upstream	https://github.com/grobidOrg/grobid.git (push)
+
+# --- stderr

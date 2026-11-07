@@ -1,0 +1,7 @@
+# argv: ["file", "-b", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/libgcc_s.so.1"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=fba6ea9391497465df2cd980873e4851746052e6, stripped
+
+# --- stderr

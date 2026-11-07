@@ -1,0 +1,7 @@
+# argv: ["cargo", "-V"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+cargo 1.88.0 (873a06493 2025-05-10)
+
+# --- stderr

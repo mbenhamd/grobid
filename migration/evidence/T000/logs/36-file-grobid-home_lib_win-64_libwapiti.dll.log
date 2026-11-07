@@ -1,0 +1,7 @@
+# argv: ["file", "-b", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/win-64/libwapiti.dll"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+PE32+ executable (DLL) (console) x86-64, for MS Windows
+
+# --- stderr

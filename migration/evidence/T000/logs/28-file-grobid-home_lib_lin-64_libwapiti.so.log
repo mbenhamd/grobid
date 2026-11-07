@@ -1,0 +1,7 @@
+# argv: ["file", "-b", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-64/libwapiti.so"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=3ef486c6de46831e3616c02c80732ecf3e10cb55, not stripped
+
+# --- stderr

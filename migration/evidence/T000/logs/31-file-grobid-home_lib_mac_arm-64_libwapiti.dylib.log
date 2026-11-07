@@ -1,0 +1,7 @@
+# argv: ["file", "-b", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+Mach-O 64-bit dynamically linked shared library arm64
+
+# --- stderr

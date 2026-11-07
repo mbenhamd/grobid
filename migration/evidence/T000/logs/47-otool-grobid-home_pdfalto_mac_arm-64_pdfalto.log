@@ -1,0 +1,10 @@
+# argv: ["otool", "-L", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto:
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)
+	/opt/homebrew/opt/fontconfig/lib/libfontconfig.1.dylib (compatibility version 18.0.0, current version 18.0.0)
+	/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)
+
+# --- stderr

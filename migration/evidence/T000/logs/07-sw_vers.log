@@ -1,0 +1,9 @@
+# argv: ["sw_vers"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+ProductName:		macOS
+ProductVersion:		26.4
+BuildVersion:		25E246
+
+# --- stderr

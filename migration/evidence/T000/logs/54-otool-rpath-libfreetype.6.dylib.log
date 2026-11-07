@@ -1,0 +1,246 @@
+# argv: ["otool", "-l", "/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib:
+Load command 0
+      cmd LC_SEGMENT_64
+  cmdsize 472
+  segname __TEXT
+   vmaddr 0x0000000000000000
+   vmsize 0x0000000000084000
+  fileoff 0
+ filesize 540672
+  maxprot 0x00000005
+ initprot 0x00000005
+   nsects 5
+    flags 0x0
+Section
+  sectname __text
+   segname __TEXT
+      addr 0x0000000000002200
+      size 0x0000000000066d04
+    offset 8704
+     align 2^2 (4)
+    reloff 0
+    nreloc 0
+     flags 0x80000400
+ reserved1 0
+ reserved2 0
+Section
+  sectname __stubs
+   segname __TEXT
+      addr 0x0000000000068f04
+      size 0x0000000000000354
+    offset 429828
+     align 2^2 (4)
+    reloff 0
+    nreloc 0
+     flags 0x80000408
+ reserved1 0 (index into indirect symbol table)
+ reserved2 12 (size of stubs)
+Section
+  sectname __cstring
+   segname __TEXT
+      addr 0x0000000000069258
+      size 0x0000000000001041
+    offset 430680
+     align 2^0 (1)
+    reloff 0
+    nreloc 0
+     flags 0x00000002
+ reserved1 0
+ reserved2 0
+Section
+  sectname __const
+   segname __TEXT
+      addr 0x000000000006a2a0
+      size 0x0000000000016550
+    offset 434848
+     align 2^4 (16)
+    reloff 0
+    nreloc 0
+     flags 0x00000000
+ reserved1 0
+ reserved2 0
+Section
+  sectname __unwind_info
+   segname __TEXT
+      addr 0x00000000000807f0
+      size 0x0000000000000ff8
+    offset 526320
+     align 2^2 (4)
+    reloff 0
+    nreloc 0
+     flags 0x00000000
+ reserved1 0
+ reserved2 0
+Load command 1
+      cmd LC_SEGMENT_64
+  cmdsize 232
+  segname __DATA_CONST
+   vmaddr 0x0000000000084000
+   vmsize 0x0000000000008000
+  fileoff 540672
+ filesize 32768
+  maxprot 0x00000003
+ initprot 0x00000003
+   nsects 2
+    flags 0x10
+Section
+  sectname __const
+   segname __DATA_CONST
+      addr 0x0000000000084000
+      size 0x00000000000063e8
+    offset 540672
+     align 2^3 (8)
+    reloff 0
+    nreloc 0
+     flags 0x00000000
+ reserved1 0
+ reserved2 0
+Section
+  sectname __got
+   segname __DATA_CONST
+      addr 0x000000000008a3e8
+      size 0x0000000000000248
+    offset 566248
+     align 2^3 (8)
+    reloff 0
+    nreloc 0
+     flags 0x00000006
+ reserved1 71 (index into indirect symbol table)
+ reserved2 0
+Load command 2
+      cmd LC_SEGMENT_64
+  cmdsize 72
+  segname __LINKEDIT
+   vmaddr 0x000000000008c000
+   vmsize 0x0000000000018000
+  fileoff 573440
+ filesize 87808
+  maxprot 0x00000001
+ initprot 0x00000001
+   nsects 0
+    flags 0x0
+Load command 3
+          cmd LC_ID_DYLIB
+      cmdsize 80
+         name /opt/homebrew/opt/freetype/lib/libfreetype.6.dylib (offset 24)
+   time stamp 1 Thu Jan  1 01:00:01 1970
+      current version 27.7.0
+compatibility version 27.0.0
+Load command 4
+      cmd LC_DYLD_CHAINED_FIXUPS
+  cmdsize 16
+  dataoff 573440
+ datasize 1472
+Load command 5
+      cmd LC_DYLD_EXPORTS_TRIE
+  cmdsize 16
+  dataoff 574912
+ datasize 4512
+Load command 6
+     cmd LC_SYMTAB
+ cmdsize 24
+  symoff 581584
+   nsyms 1997
+  stroff 614112
+ strsize 41752
+Load command 7
+            cmd LC_DYSYMTAB
+        cmdsize 80
+      ilocalsym 0
+      nlocalsym 1704
+     iextdefsym 1704
+     nextdefsym 220
+      iundefsym 1924
+      nundefsym 73
+         tocoff 0
+           ntoc 0
+      modtaboff 0
+        nmodtab 0
+   extrefsymoff 0
+    nextrefsyms 0
+ indirectsymoff 613536
+  nindirectsyms 144
+      extreloff 0
+        nextrel 0
+      locreloff 0
+        nlocrel 0
+Load command 8
+     cmd LC_UUID
+ cmdsize 24
+    uuid 4A9767CC-E8F5-344F-9FBF-10BDE81E2ADB
+Load command 9
+      cmd LC_BUILD_VERSION
+  cmdsize 32
+ platform 1
+    minos 26.0
+      sdk 26.5
+   ntools 1
+     tool 3
+  version 27037.1
+Load command 10
+      cmd LC_SOURCE_VERSION
+  cmdsize 16
+  version 0.0
+Load command 11
+          cmd LC_LOAD_DYLIB
+      cmdsize 48
+         name /usr/lib/libz.1.dylib (offset 24)
+   time stamp 2 Thu Jan  1 01:00:02 1970
+      current version 1.2.12
+compatibility version 1.0.0
+Load command 12
+          cmd LC_LOAD_DYLIB
+      cmdsize 56
+         name /usr/lib/libbz2.1.0.dylib (offset 24)
+   time stamp 2 Thu Jan  1 01:00:02 1970
+      current version 1.0.8
+compatibility version 1.0.0
+Load command 13
+          cmd LC_LOAD_DYLIB
+      cmdsize 72
+         name /opt/homebrew/opt/libpng/lib/libpng16.16.dylib (offset 24)
+   time stamp 2 Thu Jan  1 01:00:02 1970
+      current version 76.0.0
+compatibility version 76.0.0
+Load command 14
+          cmd LC_LOAD_DYLIB
+      cmdsize 80
+         name /opt/homebrew/opt/brotli/lib/libbrotlidec.1.dylib (offset 24)
+   time stamp 2 Thu Jan  1 01:00:02 1970
+      current version 1.2.0
+compatibility version 1.0.0
+Load command 15
+          cmd LC_LOAD_DYLIB
+      cmdsize 48
+         name /usr/lib/libhvf.dylib (offset 24)
+   time stamp 2 Thu Jan  1 01:00:02 1970
+      current version 0.0.0
+compatibility version 0.0.0
+Load command 16
+          cmd LC_LOAD_DYLIB
+      cmdsize 56
+         name /usr/lib/libSystem.B.dylib (offset 24)
+   time stamp 2 Thu Jan  1 01:00:02 1970
+      current version 1356.0.0
+compatibility version 1.0.0
+Load command 17
+      cmd LC_FUNCTION_STARTS
+  cmdsize 16
+  dataoff 579424
+ datasize 2160
+Load command 18
+      cmd LC_DATA_IN_CODE
+  cmdsize 16
+  dataoff 581584
+ datasize 0
+Load command 19
+      cmd LC_CODE_SIGNATURE
+  cmdsize 16
+  dataoff 655872
+ datasize 5376
+
+# --- stderr

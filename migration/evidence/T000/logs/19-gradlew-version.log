@@ -1,0 +1,21 @@
+# argv: ["/Users/mbenhamd/Projects/grobid-oracle/gradlew", "--version", "--no-daemon"]
+# cwd: /Users/mbenhamd/Projects/grobid-oracle
+# exit: 0
+# --- stdout
+
+------------------------------------------------------------
+Gradle 9.6.1
+------------------------------------------------------------
+
+Build time:    2026-06-26 14:25:50 UTC
+Revision:      309d128bd9fe8c0b71311878fc660b9cbaa07c51
+
+Kotlin:        2.3.21
+Groovy:        4.0.32
+Ant:           Apache Ant(TM) version 1.10.17 compiled on April 6 2026
+Launcher JVM:  21.0.13.0.3 (Homebrew 21.0.13.0.3)
+Daemon JVM:    /opt/homebrew/Cellar/openjdk@21/21.0.13.0.3/libexec/openjdk.jdk/Contents/Home (no Daemon JVM specified, using current Java home)
+OS:            Mac OS X 26.4 aarch64
+
+
+# --- stderr

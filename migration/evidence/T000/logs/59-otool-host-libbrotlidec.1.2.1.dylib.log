@@ -1,0 +1,10 @@
+# argv: ["otool", "-L", "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib:
+	/opt/homebrew/opt/brotli/lib/libbrotlidec.1.dylib (compatibility version 1.0.0, current version 1.2.1)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)
+	@rpath/libbrotlicommon.1.dylib (compatibility version 1.0.0, current version 1.2.1)
+
+# --- stderr

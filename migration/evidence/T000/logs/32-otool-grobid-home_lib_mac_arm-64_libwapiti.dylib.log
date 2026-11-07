@@ -1,0 +1,10 @@
+# argv: ["otool", "-L", "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib:
+	@rpath/libwapiti.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 1900.180.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1351.0.0)
+
+# --- stderr

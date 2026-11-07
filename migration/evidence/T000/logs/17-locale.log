@@ -1,0 +1,14 @@
+# argv: ["locale"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+LANG="C.UTF-8"
+LC_COLLATE="C.UTF-8"
+LC_CTYPE="UTF-8"
+LC_MESSAGES="C.UTF-8"
+LC_MONETARY="C.UTF-8"
+LC_NUMERIC="C.UTF-8"
+LC_TIME="C.UTF-8"
+LC_ALL=
+
+# --- stderr

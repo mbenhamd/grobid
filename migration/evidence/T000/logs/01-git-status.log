@@ -1,0 +1,6 @@
+# argv: ["git", "-C", "/Users/mbenhamd/Projects/grobid-oracle", "status", "--porcelain", "--ignored"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+
+# --- stderr

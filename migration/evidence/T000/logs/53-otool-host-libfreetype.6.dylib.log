@@ -1,0 +1,14 @@
+# argv: ["otool", "-L", "/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib:
+	/opt/homebrew/opt/freetype/lib/libfreetype.6.dylib (compatibility version 27.0.0, current version 27.7.0)
+	/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)
+	/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)
+	/opt/homebrew/opt/libpng/lib/libpng16.16.dylib (compatibility version 76.0.0, current version 76.0.0)
+	/opt/homebrew/opt/brotli/lib/libbrotlidec.1.dylib (compatibility version 1.0.0, current version 1.2.0)
+	/usr/lib/libhvf.dylib (compatibility version 0.0.0, current version 0.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)
+
+# --- stderr

@@ -1,0 +1,7 @@
+# argv: ["/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto", "-v"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 99
+# --- stdout
+
+# --- stderr
+pdfalto version 0.6.2

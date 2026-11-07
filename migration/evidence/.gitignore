@@ -1,0 +1,3 @@
+# Evidence logs are hashed in evidence packets and must be committed;
+# the repository root .gitignore excludes *.log.
+!*.log

@@ -1,0 +1,8 @@
+# argv: ["git", "-C", "/Users/mbenhamd/Projects/grobid-oracle", "rev-parse", "HEAD", "HEAD^{tree}"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+f313f7010773fe8113cbb0f7a774960450a850d0
+a59943da478e6d53e9a7833631768817a44960cb
+
+# --- stderr

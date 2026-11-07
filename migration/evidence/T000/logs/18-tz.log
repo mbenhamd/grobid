@@ -1,0 +1,7 @@
+# argv: ["date", "+%Z %z"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+CET +0100
+
+# --- stderr

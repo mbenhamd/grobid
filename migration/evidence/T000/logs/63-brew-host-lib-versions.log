@@ -1,0 +1,10 @@
+# argv: ["brew", "list", "--versions", "fontconfig", "freetype", "libpng", "openjdk@21"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+fontconfig 2.18.3
+freetype 2.15.0
+libpng 1.6.59
+openjdk@21 21.0.13.0.3
+
+# --- stderr

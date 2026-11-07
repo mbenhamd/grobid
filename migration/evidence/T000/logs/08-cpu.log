@@ -1,0 +1,9 @@
+# argv: ["sysctl", "-n", "machdep.cpu.brand_string", "hw.ncpu", "hw.memsize"]
+# cwd: /Users/mbenhamd/Projects/grobid-wt/T000
+# exit: 0
+# --- stdout
+Apple M5 Pro
+18
+51539607552
+
+# --- stderr
