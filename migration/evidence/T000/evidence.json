@@ -2,8 +2,9 @@
  "task_id": "T000",
  "worker": "claude-coordinator",
  "base_commit": "622a521076ba63b96835b240e7f81d10af4c8ed4",
- "result_commit": "8b6e922815f8bc86dd1866b04308b1f01a3cf05b",
+ "result_commit": "4382437ae7a41a5898187ebc4ea73f9c717614bb",
  "changed_paths": [
+  "migration/evidence/.gitignore",
   "migration/evidence/T000",
   "migration/contracts/host-environment-lock.json"
  ],
@@ -73,7 +74,8 @@
   "pdfalto mac_arm-64 links Homebrew fontconfig/freetype/gettext/libpng/brotli outside grobid-home; any brew upgrade invalidates host-environment-lock.json.",
   "Only the mac_arm-64 natives were linkage-inspected (otool); linux/windows natives are hashed and file-typed only.",
   "DeLFT/TensorFlow/embeddings environment not captured: S1 scope is CRF-first by user decision 2026-11-07.",
-  "Host identifiers (hostname, username paths) appear in logs of this public fork."
+  "Host identifiers (hostname, username paths) appear in logs of this public fork.",
+  "First result commit 8b6e922 omitted all *.log files due to root .gitignore; superseded by 4382437ae which adds them unchanged."
  ],
  "profile_provenance": [
   {
