@@ -1,0 +1,1650 @@
+[
+ {
+  "name": "git-head",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "rev-parse",
+   "HEAD",
+   "HEAD^{tree}"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:08.384562Z",
+  "finished_at": "2026-11-07T14:10:08.396714Z",
+  "log": "logs/00-git-head.log",
+  "log_sha256": "20a5b7c8a46ec279435e61a095e3faf95919ba60847f91e81335259bf14272c2"
+ },
+ {
+  "name": "git-status",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "status",
+   "--porcelain",
+   "--ignored"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:08.397086Z",
+  "finished_at": "2026-11-07T14:10:08.435776Z",
+  "log": "logs/01-git-status.log",
+  "log_sha256": "12172b55ce2c6ea79d761706c22566755ffb9df8534f53da8a9b04273ccfaae7"
+ },
+ {
+  "name": "git-shallow",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "rev-parse",
+   "--is-shallow-repository"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:08.436140Z",
+  "finished_at": "2026-11-07T14:10:08.446477Z",
+  "log": "logs/02-git-shallow.log",
+  "log_sha256": "2ec9a238b2c3640bdef23c1956111254739cc2c6ba9f5411ce15a3f80c3f6114"
+ },
+ {
+  "name": "git-remotes",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "remote",
+   "-v"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:08.446773Z",
+  "finished_at": "2026-11-07T14:10:08.456726Z",
+  "log": "logs/03-git-remotes.log",
+  "log_sha256": "907ed51223c1ee60b082a2bac46f02e49e748f8075d6883659faf15bcf914d68"
+ },
+ {
+  "name": "git-ls-tree-grobid-home",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "ls-tree",
+   "-r",
+   "-l",
+   "HEAD",
+   "grobid-home"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:08.457313Z",
+  "finished_at": "2026-11-07T14:10:08.476245Z",
+  "log": "logs/04-git-ls-tree-grobid-home.log",
+  "log_sha256": "53974aea6d7e4fd10af1e75c1af87d3c1cffa338b10fdf804d9cd5d8f45bb7c7"
+ },
+ {
+  "name": "git-hash-object-no-filters",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "hash-object",
+   "--no-filters",
+   "--",
+   "grobid-home/config/grobid-evaluation.yaml",
+   "grobid-home/config/grobid-full.yaml",
+   "grobid-home/config/grobid.properties",
+   "grobid-home/config/grobid.yaml",
+   "grobid-home/config/resources-registry.json",
+   "grobid-home/language-detection/cybozu/profiles/af",
+   "grobid-home/language-detection/cybozu/profiles/ar",
+   "grobid-home/language-detection/cybozu/profiles/bg",
+   "grobid-home/language-detection/cybozu/profiles/bn",
+   "grobid-home/language-detection/cybozu/profiles/cs",
+   "grobid-home/language-detection/cybozu/profiles/da",
+   "grobid-home/language-detection/cybozu/profiles/de",
+   "grobid-home/language-detection/cybozu/profiles/el",
+   "grobid-home/language-detection/cybozu/profiles/en",
+   "grobid-home/language-detection/cybozu/profiles/es",
+   "grobid-home/language-detection/cybozu/profiles/et",
+   "grobid-home/language-detection/cybozu/profiles/fa",
+   "grobid-home/language-detection/cybozu/profiles/fi",
+   "grobid-home/language-detection/cybozu/profiles/fr",
+   "grobid-home/language-detection/cybozu/profiles/gu",
+   "grobid-home/language-detection/cybozu/profiles/he",
+   "grobid-home/language-detection/cybozu/profiles/hi",
+   "grobid-home/language-detection/cybozu/profiles/hr",
+   "grobid-home/language-detection/cybozu/profiles/hu",
+   "grobid-home/language-detection/cybozu/profiles/id",
+   "grobid-home/language-detection/cybozu/profiles/it",
+   "grobid-home/language-detection/cybozu/profiles/ja",
+   "grobid-home/language-detection/cybozu/profiles/kn",
+   "grobid-home/language-detection/cybozu/profiles/ko",
+   "grobid-home/language-detection/cybozu/profiles/lt",
+   "grobid-home/language-detection/cybozu/profiles/lv",
+   "grobid-home/language-detection/cybozu/profiles/mk",
+   "grobid-home/language-detection/cybozu/profiles/ml",
+   "grobid-home/language-detection/cybozu/profiles/mr",
+   "grobid-home/language-detection/cybozu/profiles/ne",
+   "grobid-home/language-detection/cybozu/profiles/nl",
+   "grobid-home/language-detection/cybozu/profiles/no",
+   "grobid-home/language-detection/cybozu/profiles/pa",
+   "grobid-home/language-detection/cybozu/profiles/pl",
+   "grobid-home/language-detection/cybozu/profiles/pt",
+   "grobid-home/language-detection/cybozu/profiles/ro",
+   "grobid-home/language-detection/cybozu/profiles/ru",
+   "grobid-home/language-detection/cybozu/profiles/sk",
+   "grobid-home/language-detection/cybozu/profiles/sl",
+   "grobid-home/language-detection/cybozu/profiles/so",
+   "grobid-home/language-detection/cybozu/profiles/sq",
+   "grobid-home/language-detection/cybozu/profiles/sv",
+   "grobid-home/language-detection/cybozu/profiles/sw",
+   "grobid-home/language-detection/cybozu/profiles/ta",
+   "grobid-home/language-detection/cybozu/profiles/te",
+   "grobid-home/language-detection/cybozu/profiles/th",
+   "grobid-home/language-detection/cybozu/profiles/tl",
+   "grobid-home/language-detection/cybozu/profiles/tr",
+   "grobid-home/language-detection/cybozu/profiles/uk",
+   "grobid-home/language-detection/cybozu/profiles/ur",
+   "grobid-home/language-detection/cybozu/profiles/vi",
+   "grobid-home/language-detection/cybozu/profiles/zh-cn",
+   "grobid-home/language-detection/cybozu/profiles/zh-tw",
+   "grobid-home/lexicon/countries/CountryCodes.xml",
+   "grobid-home/lexicon/countries/location.country",
+   "grobid-home/lexicon/journals/abbrev_journals.txt",
+   "grobid-home/lexicon/journals/journals.txt",
+   "grobid-home/lexicon/journals/proceedings.txt",
+   "grobid-home/lexicon/names/VincentNgPeopleTitles.txt",
+   "grobid-home/lexicon/names/firstname.5k",
+   "grobid-home/lexicon/names/lastname.5k",
+   "grobid-home/lexicon/names/names.family",
+   "grobid-home/lexicon/names/names.female",
+   "grobid-home/lexicon/names/names.male",
+   "grobid-home/lexicon/names/people.family_name",
+   "grobid-home/lexicon/names/people.person",
+   "grobid-home/lexicon/names/people.person.lastnames",
+   "grobid-home/lexicon/names/suffix.txt",
+   "grobid-home/lexicon/organisations/WikiOrganizations.lst",
+   "grobid-home/lexicon/organisations/WikiOrganizationsRedirects.lst",
+   "grobid-home/lexicon/organisations/collaborations.txt",
+   "grobid-home/lexicon/organisations/corporations.txt",
+   "grobid-home/lexicon/organisations/education.university",
+   "grobid-home/lexicon/organisations/fr-esr-feuille-de-route-infrastructures-recherche-historique.csv",
+   "grobid-home/lexicon/organisations/funders.txt",
+   "grobid-home/lexicon/organisations/government.government_agency",
+   "grobid-home/lexicon/organisations/inspire_collaborations.txt",
+   "grobid-home/lexicon/organisations/inspire_ranked_collaborations.txt",
+   "grobid-home/lexicon/organisations/known_corporations.lst",
+   "grobid-home/lexicon/organisations/orgClosings.txt",
+   "grobid-home/lexicon/organisations/research_infrastructures.txt",
+   "grobid-home/lexicon/organisations/research_infrastructures_map.txt",
+   "grobid-home/lexicon/organisations/ris-data-table.csv",
+   "grobid-home/lexicon/organisations/venture_capital.venture_funded_company",
+   "grobid-home/lexicon/patent/ar.local",
+   "grobid-home/lexicon/patent/de.local",
+   "grobid-home/lexicon/patent/en.local",
+   "grobid-home/lexicon/patent/es.local",
+   "grobid-home/lexicon/patent/fr.local",
+   "grobid-home/lexicon/patent/it.local",
+   "grobid-home/lexicon/patent/ja.local",
+   "grobid-home/lexicon/patent/ko.local",
+   "grobid-home/lexicon/patent/pt.local",
+   "grobid-home/lexicon/patent/zh.local",
+   "grobid-home/lexicon/places/WikiLocations.lst",
+   "grobid-home/lexicon/places/WikiLocationsRedirects.lst",
+   "grobid-home/lexicon/places/cities15000.txt",
+   "grobid-home/lexicon/places/dataenCities.txt",
+   "grobid-home/lexicon/places/location.txt",
+   "grobid-home/lexicon/publishers/publishers.txt",
+   "grobid-home/lexicon/senses/descriptions.txt",
+   "grobid-home/lexicon/wordforms/english.wf",
+   "grobid-home/lexicon/wordforms/german.wf",
+   "grobid-home/lib/lin-32/ld-linux.so.2",
+   "grobid-home/lib/lin-32/libc.so.6",
+   "grobid-home/lib/lin-32/libgcc_s.so.1",
+   "grobid-home/lib/lin-32/libm.so.6",
+   "grobid-home/lib/lin-32/libstdc++.so.6",
+   "grobid-home/lib/lin-32/libwapiti.so",
+   "grobid-home/lib/lin-64/libcrfpp.so",
+   "grobid-home/lib/lin-64/libwapiti.so",
+   "grobid-home/lib/lin_arm-64/libwapiti.so",
+   "grobid-home/lib/mac-64/libwapiti.dylib",
+   "grobid-home/lib/mac_arm-64/libwapiti.dylib",
+   "grobid-home/lib/win-32/libcrfpp.dll",
+   "grobid-home/lib/win-64/libwapiti.dll",
+   "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/affiliation-address/model.wapiti",
+   "grobid-home/models/citation-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/config.json",
+   "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/citation-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+   "grobid-home/models/citation/model.wapiti",
+   "grobid-home/models/copyright_gru/config.json",
+   "grobid-home/models/copyright_gru/model_weights.hdf5",
+   "grobid-home/models/date-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/date-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/date-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/date/model.wapiti",
+   "grobid-home/models/figure-BidLSTM_CRF/config.json",
+   "grobid-home/models/figure-BidLSTM_CRF/model_weights.hdf5",
+   "grobid-home/models/figure-BidLSTM_CRF/preprocessor.json",
+   "grobid-home/models/figure-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/figure-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/figure-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/figure/model.wapiti",
+   "grobid-home/models/fulltext/article/light-ref/model.wapiti",
+   "grobid-home/models/fulltext/article/light/model.wapiti",
+   "grobid-home/models/fulltext/model.wapiti",
+   "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/funding-acknowledgement/model.wapiti",
+   "grobid-home/models/header-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/header-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/header-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/config.json",
+   "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+   "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/header-article-light-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/config.json",
+   "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/header-article-light-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+   "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/header-article-light-ref-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/config.json",
+   "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/header-article-light-ref-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+   "grobid-home/models/header/article/light-ref/model.wapiti",
+   "grobid-home/models/header/article/light-ref/placeholder.txt",
+   "grobid-home/models/header/article/light/model.wapiti",
+   "grobid-home/models/header/article/light/placeholder.txt",
+   "grobid-home/models/header/model.wapiti",
+   "grobid-home/models/header/sdo/ietf/model.wapiti",
+   "grobid-home/models/license_gru/config.json",
+   "grobid-home/models/license_gru/model_weights.hdf5",
+   "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/name-citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/name-header-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/name/citation/model.wapiti",
+   "grobid-home/models/name/header/model.wapiti",
+   "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/patent-citation-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/patent/citation/model.wapiti",
+   "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/config.json",
+   "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/preprocessor.json",
+   "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/config.json",
+   "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5",
+   "grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/preprocessor.json",
+   "grobid-home/models/reference-segmenter/model.wapiti",
+   "grobid-home/models/segmentation/article/light-ref/model.wapiti",
+   "grobid-home/models/segmentation/article/light-ref/placeholder.txt",
+   "grobid-home/models/segmentation/article/light/model.wapiti",
+   "grobid-home/models/segmentation/article/light/placeholder.txt",
+   "grobid-home/models/segmentation/model.wapiti",
+   "grobid-home/models/segmentation/sdo/ietf/model.wapiti",
+   "grobid-home/models/table-BidLSTM_CRF/config.json",
+   "grobid-home/models/table-BidLSTM_CRF/model_weights.hdf5",
+   "grobid-home/models/table-BidLSTM_CRF/preprocessor.json",
+   "grobid-home/models/table/model.wapiti",
+   "grobid-home/pdfalto/languages/xpdf-arabic/ISO-8859-6.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-arabic/README",
+   "grobid-home/pdfalto/languages/xpdf-arabic/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/Adobe-GB1.cidToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-0",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-1",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-3",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-4",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-5",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/Adobe-GB1-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GB-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK-EUC-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK2K-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBK2K-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBKp-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBKp-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBT-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBTpc-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBTpc-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-UCS2C",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/GBpc-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/LICENSE.md",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UCS2-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UCS2-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF16-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF16-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF8-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/CMap/UniGB-UTF8-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/EUC-CN.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/GBK.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/ISO-2022-CN.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/README",
+   "grobid-home/pdfalto/languages/xpdf-chinese-simplified/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/Adobe-CNS1.cidToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/Big5.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/Big5ascii.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-0",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-1",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-3",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-4",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-5",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-6",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-7",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/Adobe-CNS1-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-UCS2C",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/B5pc-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS1-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS1-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS2-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/CNS2-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETHK-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETHK-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETen-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETen-B5-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETen-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETenms-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/ETenms-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdla-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdla-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdlb-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKdlb-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKgccs-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKgccs-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm314-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm314-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm471-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKm471-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKscs-B5-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/HKscs-B5-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/LICENSE.md",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UCS2-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UCS2-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF16-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF16-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF8-H",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/CMap/UniCNS-UTF8-V",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/README",
+   "grobid-home/pdfalto/languages/xpdf-chinese-traditional/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-cyrillic/Bulgarian.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-cyrillic/KOI8-R.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-cyrillic/README",
+   "grobid-home/pdfalto/languages/xpdf-cyrillic/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-greek/Greek.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-greek/ISO-8859-7.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-greek/README",
+   "grobid-home/pdfalto/languages/xpdf-greek/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-hebrew/ISO-8859-8.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-hebrew/README",
+   "grobid-home/pdfalto/languages/xpdf-hebrew/Windows-1255.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-hebrew/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-japanese/Adobe-Japan1.cidToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78ms-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/78ms-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/83pv-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90ms-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90ms-RKSJ-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90ms-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90msp-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90msp-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-UCS2C",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/90pv-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Add-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-0",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-1",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-2",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-3",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-4",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-5",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-6",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-7",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Adobe-Japan1-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Ext-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Hankaku",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Hiragana",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Katakana",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/LICENSE.md",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/NWP-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/NWP-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/RKSJ-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/RKSJ-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/Roman",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-HW-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-HW-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UCS2-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF16-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF16-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF8-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS-UTF8-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF16-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF16-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF8-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJIS2004-UTF8-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISPro-UCS2-HW-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISPro-UCS2-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISPro-UTF8-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX0213-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX0213-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX02132004-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/UniJISX02132004-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/V",
+   "grobid-home/pdfalto/languages/xpdf-japanese/CMap/WP-Symbol",
+   "grobid-home/pdfalto/languages/xpdf-japanese/EUC-JP.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-japanese/ISO-2022-JP.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-japanese/README",
+   "grobid-home/pdfalto/languages/xpdf-japanese/Shift-JIS.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-japanese/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-korean/Adobe-KR.cidToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-korean/Adobe-Korea1.cidToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-0",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-1",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-2",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-3",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-4",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-5",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-6",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-7",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-8",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-KR-9",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-0",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-1",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-2",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/Adobe-Korea1-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-Johab-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-Johab-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSC-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-HW-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-HW-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCms-UHC-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-UCS2",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-UCS2C",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/KSCpc-EUC-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/LICENSE.md",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniAKR-UTF16-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniAKR-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniAKR-UTF8-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UCS2-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UCS2-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF16-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF16-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF32-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF32-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF8-H",
+   "grobid-home/pdfalto/languages/xpdf-korean/CMap/UniKS-UTF8-V",
+   "grobid-home/pdfalto/languages/xpdf-korean/ISO-2022-KR.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-korean/README",
+   "grobid-home/pdfalto/languages/xpdf-korean/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-latin2/Latin2.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-latin2/README",
+   "grobid-home/pdfalto/languages/xpdf-latin2/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-others/fitted.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-others/ligatures.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-others/oldstyle.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-others/others.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-others/sc.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-others/symbols.unicodeRemapping",
+   "grobid-home/pdfalto/languages/xpdf-others/taboldstyle.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-thai/README",
+   "grobid-home/pdfalto/languages/xpdf-thai/TIS-620.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-thai/Thai.nameToUnicode",
+   "grobid-home/pdfalto/languages/xpdf-thai/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdf-turkish/ISO-8859-9.unicodeMap",
+   "grobid-home/pdfalto/languages/xpdf-turkish/README",
+   "grobid-home/pdfalto/languages/xpdf-turkish/add-to-xpdfrc",
+   "grobid-home/pdfalto/languages/xpdfrc",
+   "grobid-home/pdfalto/lin-64/pdfalto",
+   "grobid-home/pdfalto/lin-64/pdfalto_server",
+   "grobid-home/pdfalto/lin-64/xpdfrc",
+   "grobid-home/pdfalto/lin_arm-64/pdfalto",
+   "grobid-home/pdfalto/lin_arm-64/pdfalto_server",
+   "grobid-home/pdfalto/lin_arm-64/xpdfrc",
+   "grobid-home/pdfalto/mac-64/pdfalto",
+   "grobid-home/pdfalto/mac-64/pdfalto_server",
+   "grobid-home/pdfalto/mac-64/xpdfrc",
+   "grobid-home/pdfalto/mac_arm-64/pdfalto",
+   "grobid-home/pdfalto/mac_arm-64/pdfalto_server",
+   "grobid-home/pdfalto/mac_arm-64/xpdfrc",
+   "grobid-home/schemas/doc/Grobid_doc.html",
+   "grobid-home/schemas/dtd/Grobid.dtd",
+   "grobid-home/schemas/odd/Grobid.compiled.odd",
+   "grobid-home/schemas/odd/Grobid.odd",
+   "grobid-home/schemas/rng/Grobid.rnc",
+   "grobid-home/schemas/rng/Grobid.rng",
+   "grobid-home/schemas/xsd/Grobid.w3c",
+   "grobid-home/schemas/xsd/Grobid.xsd",
+   "grobid-home/schemas/xsd/dcr.xsd",
+   "grobid-home/schemas/xsd/tei.xsd",
+   "grobid-home/schemas/xsd/xlink.xsd",
+   "grobid-home/schemas/xsd/xml.xsd",
+   "grobid-home/scripts/install_jep_lib.sh",
+   "grobid-home/scripts/preload_embeddings.py",
+   "grobid-home/scripts/run_evaluation.sh",
+   "grobid-home/scripts/select_error_cases.py",
+   "grobid-home/sentence-segmentation/openNLP/en-sent.bin",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/abbreviation_replacer.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/between_punctuation.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/cleaner.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/cleaner/rules.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/exclamation_words.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/amharic.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/arabic.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/armenian.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/bulgarian.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/burmese.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/chinese.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/common.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/common/ellipsis.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/common/numbers.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/danish.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/deutsch.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/dutch.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/english.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/french.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/greek.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/hindi.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/italian.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/japanese.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/kazakh.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/persian.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/polish.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/russian.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/spanish.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/languages/urdu.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/lib/unicode.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/list.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/processor.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/punctuation_replacer.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/segmenter.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/types.rb",
+   "grobid-home/sentence-segmentation/pragmatic_segmenter/version.rb"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:08.476826Z",
+  "finished_at": "2026-11-07T14:10:10.804929Z",
+  "log": "logs/05-git-hash-object-no-filters.log",
+  "log_sha256": "ace45b4d7c70fa1ba4b58f2b1df4eaad97258f75b7bb17267c86e01212abbdf9"
+ },
+ {
+  "name": "uname",
+  "argv": [
+   "uname",
+   "-a"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.104021Z",
+  "finished_at": "2026-11-07T14:10:11.107365Z",
+  "log": "logs/06-uname.log",
+  "log_sha256": "2d5ed3320c9f7ce71a06b4b334c92f0a4dd4a40887415ec401189a29022bc091"
+ },
+ {
+  "name": "sw_vers",
+  "argv": [
+   "sw_vers"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.107656Z",
+  "finished_at": "2026-11-07T14:10:11.117291Z",
+  "log": "logs/07-sw_vers.log",
+  "log_sha256": "5f8e4eb9952d17d9eb8c934e45f4ac1d45417ba26ddc53cbf436ef0dca4fb38b"
+ },
+ {
+  "name": "cpu",
+  "argv": [
+   "sysctl",
+   "-n",
+   "machdep.cpu.brand_string",
+   "hw.ncpu",
+   "hw.memsize"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.117599Z",
+  "finished_at": "2026-11-07T14:10:11.120569Z",
+  "log": "logs/08-cpu.log",
+  "log_sha256": "b800e607250057e788b36dd58a53c6e214f5f0c8ebe917bb072c234e903210f1"
+ },
+ {
+  "name": "java-version",
+  "argv": [
+   "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+   "-version"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.120837Z",
+  "finished_at": "2026-11-07T14:10:11.222697Z",
+  "log": "logs/09-java-version.log",
+  "log_sha256": "7a9355f55d4b9c5eb5b3a9c9ec0f85cfe55de1c75b135d00c90fc2ec1c64f0d4"
+ },
+ {
+  "name": "javac-version",
+  "argv": [
+   "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+   "-version"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.223052Z",
+  "finished_at": "2026-11-07T14:10:11.313416Z",
+  "log": "logs/10-javac-version.log",
+  "log_sha256": "f10c9aa2f5a60dec03836fd0e0d7b046b0fc0645b5a56f9bd4617c2baaea488d"
+ },
+ {
+  "name": "rustc-version",
+  "argv": [
+   "rustc",
+   "-vV"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.313854Z",
+  "finished_at": "2026-11-07T14:10:11.419869Z",
+  "log": "logs/11-rustc-version.log",
+  "log_sha256": "b547b113fb5dd3f7cca76cfb18a6a340fc81e7d0061b5337869eb0d69e06493b"
+ },
+ {
+  "name": "cargo-version",
+  "argv": [
+   "cargo",
+   "-V"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.420240Z",
+  "finished_at": "2026-11-07T14:10:11.447080Z",
+  "log": "logs/12-cargo-version.log",
+  "log_sha256": "eae85d724091605338e1cd6793dca1b89783ee7d4177ae88453f3e74c657c0f6"
+ },
+ {
+  "name": "python-version",
+  "argv": [
+   "/opt/homebrew/opt/python@3.14/bin/python3.14",
+   "-VV"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.447377Z",
+  "finished_at": "2026-11-07T14:10:11.455469Z",
+  "log": "logs/13-python-version.log",
+  "log_sha256": "8a08897197ee0968eef987cf4e460e04738497fe41a8aa112a73a0fa923e5323"
+ },
+ {
+  "name": "clang-version",
+  "argv": [
+   "cc",
+   "--version"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.455765Z",
+  "finished_at": "2026-11-07T14:10:11.470021Z",
+  "log": "logs/14-clang-version.log",
+  "log_sha256": "40392451729c1003c28c094e95fc1af2fcdec317ae48d82e23d11cc23d48313f"
+ },
+ {
+  "name": "make-version",
+  "argv": [
+   "make",
+   "--version"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.470345Z",
+  "finished_at": "2026-11-07T14:10:11.477412Z",
+  "log": "logs/15-make-version.log",
+  "log_sha256": "287f1600dbfef465ba5e5df303d689625dc4bae6e79c80d4005250240eeb9bba"
+ },
+ {
+  "name": "git-version",
+  "argv": [
+   "git",
+   "--version"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.477697Z",
+  "finished_at": "2026-11-07T14:10:11.487468Z",
+  "log": "logs/16-git-version.log",
+  "log_sha256": "7d2cb9996f2769f4b21452beda453f56aceb2bb23d13f466f76b91e65453d126"
+ },
+ {
+  "name": "locale",
+  "argv": [
+   "locale"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.487757Z",
+  "finished_at": "2026-11-07T14:10:11.490624Z",
+  "log": "logs/17-locale.log",
+  "log_sha256": "5f23d86b799fcc67516d4e1d11fdbda65dca495d1a7a203f06b90a480eaa5e4c"
+ },
+ {
+  "name": "tz",
+  "argv": [
+   "date",
+   "+%Z %z"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.490838Z",
+  "finished_at": "2026-11-07T14:10:11.493581Z",
+  "log": "logs/18-tz.log",
+  "log_sha256": "52a85ab264a8b3c7c3373ec116e4da17e719d53d9ee8e08fcc72dd14bc133a7a"
+ },
+ {
+  "name": "gradlew-version",
+  "argv": [
+   "/Users/mbenhamd/Projects/grobid-oracle/gradlew",
+   "--version",
+   "--no-daemon"
+  ],
+  "cwd": "/Users/mbenhamd/Projects/grobid-oracle",
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.493831Z",
+  "finished_at": "2026-11-07T14:10:11.813508Z",
+  "log": "logs/19-gradlew-version.log",
+  "log_sha256": "710772d75556a3a8d24d94fb93b55b4b280ec424d507ebe0165f9b780917ecee"
+ },
+ {
+  "name": "git-status-after-gradle",
+  "argv": [
+   "git",
+   "-C",
+   "/Users/mbenhamd/Projects/grobid-oracle",
+   "status",
+   "--porcelain"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.813882Z",
+  "finished_at": "2026-11-07T14:10:11.855300Z",
+  "log": "logs/20-git-status-after-gradle.log",
+  "log_sha256": "f9d9359c6b04892b9a808939d908d5839984e660fca356000fdc3bb33dcf7ce7"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-32_ld-linux.so.2",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/ld-linux.so.2"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.855696Z",
+  "finished_at": "2026-11-07T14:10:11.859308Z",
+  "log": "logs/21-file-grobid-home_lib_lin-32_ld-linux.so.2.log",
+  "log_sha256": "9fa818a7217871d8227b27db49b8bbdb3cef142b72103a0bdf64946c4c281e01"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-32_libc.so.6",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/libc.so.6"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.859714Z",
+  "finished_at": "2026-11-07T14:10:11.862690Z",
+  "log": "logs/22-file-grobid-home_lib_lin-32_libc.so.6.log",
+  "log_sha256": "a779073bb4a52f06ffb07ebb7cb05e319242d690874b65219aa9f2e76aa47419"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-32_libgcc_s.so.1",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/libgcc_s.so.1"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.863738Z",
+  "finished_at": "2026-11-07T14:10:11.866379Z",
+  "log": "logs/23-file-grobid-home_lib_lin-32_libgcc_s.so.1.log",
+  "log_sha256": "ec041e19247d6138df180c09d50c25a8ea778e2f07c9cb5a76cd521ccbd606d9"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-32_libm.so.6",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/libm.so.6"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.866735Z",
+  "finished_at": "2026-11-07T14:10:11.869147Z",
+  "log": "logs/24-file-grobid-home_lib_lin-32_libm.so.6.log",
+  "log_sha256": "d26a82acace059595f8c6d43a8c70d89ea10c2b99171d089a1251c3e45fee5c7"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-32_libstdc++.so.6",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/libstdc++.so.6"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.869500Z",
+  "finished_at": "2026-11-07T14:10:11.871906Z",
+  "log": "logs/25-file-grobid-home_lib_lin-32_libstdc++.so.6.log",
+  "log_sha256": "0b945f60d4938cd493b7ae155c5a9beae12b5e38b6d568cbf97db057be1255fd"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-32_libwapiti.so",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-32/libwapiti.so"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.872539Z",
+  "finished_at": "2026-11-07T14:10:11.875136Z",
+  "log": "logs/26-file-grobid-home_lib_lin-32_libwapiti.so.log",
+  "log_sha256": "6fa4f5447cfd5b28583e095bd5bfab9a9fffa861ae6bae2e011e95c180d727bc"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-64_libcrfpp.so",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-64/libcrfpp.so"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.875479Z",
+  "finished_at": "2026-11-07T14:10:11.878158Z",
+  "log": "logs/27-file-grobid-home_lib_lin-64_libcrfpp.so.log",
+  "log_sha256": "f1d8dfb44a16e133e0ff70c980d6cf35f26fe59e355fad34aabca552af7aea0e"
+ },
+ {
+  "name": "file-grobid-home_lib_lin-64_libwapiti.so",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin-64/libwapiti.so"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.878653Z",
+  "finished_at": "2026-11-07T14:10:11.881563Z",
+  "log": "logs/28-file-grobid-home_lib_lin-64_libwapiti.so.log",
+  "log_sha256": "81850becd31fae0fac87233c08b565b804a4f9e90c774d3e33bf3d051d533745"
+ },
+ {
+  "name": "file-grobid-home_lib_lin_arm-64_libwapiti.so",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/lin_arm-64/libwapiti.so"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.881953Z",
+  "finished_at": "2026-11-07T14:10:11.884792Z",
+  "log": "logs/29-file-grobid-home_lib_lin_arm-64_libwapiti.so.log",
+  "log_sha256": "c7377a7ae9f38489c83bb25878dd06a7e4e133a112d81defeeed55af287fe53f"
+ },
+ {
+  "name": "file-grobid-home_lib_mac-64_libwapiti.dylib",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac-64/libwapiti.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.885188Z",
+  "finished_at": "2026-11-07T14:10:11.887943Z",
+  "log": "logs/30-file-grobid-home_lib_mac-64_libwapiti.dylib.log",
+  "log_sha256": "f7176756194e492fe865298220060ec2225a9b4907ab7d445d2f12836d3f5ee3"
+ },
+ {
+  "name": "file-grobid-home_lib_mac_arm-64_libwapiti.dylib",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.888296Z",
+  "finished_at": "2026-11-07T14:10:11.890795Z",
+  "log": "logs/31-file-grobid-home_lib_mac_arm-64_libwapiti.dylib.log",
+  "log_sha256": "b2892328251c27d9dc76beba876593788ccbabda284f15e39328024dc1008836"
+ },
+ {
+  "name": "otool-grobid-home_lib_mac_arm-64_libwapiti.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.891163Z",
+  "finished_at": "2026-11-07T14:10:11.902856Z",
+  "log": "logs/32-otool-grobid-home_lib_mac_arm-64_libwapiti.dylib.log",
+  "log_sha256": "61a13b37654f11fdf9ddc60f90e8c00be8d4c0f518b31f83737727f1300b366c"
+ },
+ {
+  "name": "codesign-grobid-home_lib_mac_arm-64_libwapiti.dylib",
+  "argv": [
+   "codesign",
+   "-dv",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0,
+   1
+  ],
+  "started_at": "2026-11-07T14:10:11.903205Z",
+  "finished_at": "2026-11-07T14:10:11.907374Z",
+  "log": "logs/33-codesign-grobid-home_lib_mac_arm-64_libwapiti.dylib.log",
+  "log_sha256": "f48c85dc3eafcdc54a0311dc64c3bc4e40548ef694986184c18323f0ce2df915"
+ },
+ {
+  "name": "nm-grobid-home_lib_mac_arm-64_libwapiti.dylib",
+  "argv": [
+   "nm",
+   "-gU",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.907658Z",
+  "finished_at": "2026-11-07T14:10:11.918015Z",
+  "log": "logs/34-nm-grobid-home_lib_mac_arm-64_libwapiti.dylib.log",
+  "log_sha256": "727908bd3424a6de8d52c500d72cdf91b85e51a56cee15faecd32a3faaf344fc"
+ },
+ {
+  "name": "file-grobid-home_lib_win-32_libcrfpp.dll",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/win-32/libcrfpp.dll"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.918430Z",
+  "finished_at": "2026-11-07T14:10:11.921482Z",
+  "log": "logs/35-file-grobid-home_lib_win-32_libcrfpp.dll.log",
+  "log_sha256": "92010d60025dda85d119f349b286a2e09584c8f36dd044760a9821dc4ea290f9"
+ },
+ {
+  "name": "file-grobid-home_lib_win-64_libwapiti.dll",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/win-64/libwapiti.dll"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.921925Z",
+  "finished_at": "2026-11-07T14:10:11.924978Z",
+  "log": "logs/36-file-grobid-home_lib_win-64_libwapiti.dll.log",
+  "log_sha256": "b69db93df11642824fe3ed287f4e06219734b1ff82856a5125e7b49400f29c1a"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_lin-64_pdfalto",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/lin-64/pdfalto"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.925560Z",
+  "finished_at": "2026-11-07T14:10:11.928385Z",
+  "log": "logs/37-file-grobid-home_pdfalto_lin-64_pdfalto.log",
+  "log_sha256": "ddd1f4b12729ed1192e6f0e2fd7b834bebdf2fa8f2195cb43fda8d4353d1de4d"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_lin-64_pdfalto_server",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/lin-64/pdfalto_server"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.942958Z",
+  "finished_at": "2026-11-07T14:10:11.946507Z",
+  "log": "logs/38-file-grobid-home_pdfalto_lin-64_pdfalto_server.log",
+  "log_sha256": "5de9174a65da17d2ec04420e2e8681dd11f0b6e85b07cdc2f2f7fb39dad5f9dc"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_lin-64_xpdfrc",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/lin-64/xpdfrc"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.946866Z",
+  "finished_at": "2026-11-07T14:10:11.951987Z",
+  "log": "logs/39-file-grobid-home_pdfalto_lin-64_xpdfrc.log",
+  "log_sha256": "d59f8dfb121e7337f51f7a9388b0ef8d3845a5e3c0f42e35364ea7d7ddc5720d"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_lin_arm-64_pdfalto",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/lin_arm-64/pdfalto"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.952278Z",
+  "finished_at": "2026-11-07T14:10:11.954876Z",
+  "log": "logs/40-file-grobid-home_pdfalto_lin_arm-64_pdfalto.log",
+  "log_sha256": "50c16474f0f2e9a130e6dd94e828e81c162802455ed9ac57fdb3fb476408b055"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_lin_arm-64_pdfalto_server",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/lin_arm-64/pdfalto_server"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.970137Z",
+  "finished_at": "2026-11-07T14:10:11.973522Z",
+  "log": "logs/41-file-grobid-home_pdfalto_lin_arm-64_pdfalto_server.log",
+  "log_sha256": "a110a2da00b05133d51d4fb4d92e6403d697418ec80561dd21175d4fc55de436"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_lin_arm-64_xpdfrc",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/lin_arm-64/xpdfrc"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.973817Z",
+  "finished_at": "2026-11-07T14:10:11.978820Z",
+  "log": "logs/42-file-grobid-home_pdfalto_lin_arm-64_xpdfrc.log",
+  "log_sha256": "86dea5e4f9dadb38a5f1c80123ee8b8d84bdb4ca88b643b45cf0308cf76cd63a"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_mac-64_pdfalto",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac-64/pdfalto"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.979119Z",
+  "finished_at": "2026-11-07T14:10:11.981784Z",
+  "log": "logs/43-file-grobid-home_pdfalto_mac-64_pdfalto.log",
+  "log_sha256": "a9d0d6b626b93e4c0c907f935b481ad7bf609b9af5a8f7ba37056ddb6d3714a1"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_mac-64_pdfalto_server",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac-64/pdfalto_server"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.996168Z",
+  "finished_at": "2026-11-07T14:10:11.999531Z",
+  "log": "logs/44-file-grobid-home_pdfalto_mac-64_pdfalto_server.log",
+  "log_sha256": "d1795b247465357b34b902f563f295fdb56c46c56a7f12f5cc1377ae9c53cff6"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_mac-64_xpdfrc",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac-64/xpdfrc"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:11.999826Z",
+  "finished_at": "2026-11-07T14:10:12.005070Z",
+  "log": "logs/45-file-grobid-home_pdfalto_mac-64_xpdfrc.log",
+  "log_sha256": "b9148eeda1a26bcca450fb5450350a8b5760ab5265f9c81f89c1c66f6974f049"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_mac_arm-64_pdfalto",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.005371Z",
+  "finished_at": "2026-11-07T14:10:12.008154Z",
+  "log": "logs/46-file-grobid-home_pdfalto_mac_arm-64_pdfalto.log",
+  "log_sha256": "aac48fa0d11c9af09a309bd0322d3e86c1769952838c19b0161352bb34961ded"
+ },
+ {
+  "name": "otool-grobid-home_pdfalto_mac_arm-64_pdfalto",
+  "argv": [
+   "otool",
+   "-L",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.022489Z",
+  "finished_at": "2026-11-07T14:10:12.033878Z",
+  "log": "logs/47-otool-grobid-home_pdfalto_mac_arm-64_pdfalto.log",
+  "log_sha256": "824d34396fa5c302b24b4573402e47d6bb97a97d5bee42eb66a261dbfbf45f5b"
+ },
+ {
+  "name": "codesign-grobid-home_pdfalto_mac_arm-64_pdfalto",
+  "argv": [
+   "codesign",
+   "-dv",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0,
+   1
+  ],
+  "started_at": "2026-11-07T14:10:12.034191Z",
+  "finished_at": "2026-11-07T14:10:12.038588Z",
+  "log": "logs/48-codesign-grobid-home_pdfalto_mac_arm-64_pdfalto.log",
+  "log_sha256": "9bad93d2632268a7e5df04b31535c615e41e360fff780591ef0cd2099e414d35"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_mac_arm-64_pdfalto_server",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto_server"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.038850Z",
+  "finished_at": "2026-11-07T14:10:12.041769Z",
+  "log": "logs/49-file-grobid-home_pdfalto_mac_arm-64_pdfalto_server.log",
+  "log_sha256": "e8dfaaa10575256daa57a3341840878f3cf7e3fe1a9fbf4c19d251a1690978ba"
+ },
+ {
+  "name": "file-grobid-home_pdfalto_mac_arm-64_xpdfrc",
+  "argv": [
+   "file",
+   "-b",
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/xpdfrc"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.042021Z",
+  "finished_at": "2026-11-07T14:10:12.047375Z",
+  "log": "logs/50-file-grobid-home_pdfalto_mac_arm-64_xpdfrc.log",
+  "log_sha256": "9fc298cb1dcf534e7ce9d5127f84ca01e1923c82104cb8774d45db2768b0c757"
+ },
+ {
+  "name": "otool-host-libfontconfig.1.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/opt/homebrew/Cellar/fontconfig/2.18.3/lib/libfontconfig.1.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.048063Z",
+  "finished_at": "2026-11-07T14:10:12.058622Z",
+  "log": "logs/51-otool-host-libfontconfig.1.dylib.log",
+  "log_sha256": "cb87d2087eba1150fabe5c9f3986ef12d52e042c5a2b4a7959b0ab2c518d759b"
+ },
+ {
+  "name": "otool-rpath-libfontconfig.1.dylib",
+  "argv": [
+   "otool",
+   "-l",
+   "/opt/homebrew/Cellar/fontconfig/2.18.3/lib/libfontconfig.1.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.058904Z",
+  "finished_at": "2026-11-07T14:10:12.069392Z",
+  "log": "logs/52-otool-rpath-libfontconfig.1.dylib.log",
+  "log_sha256": "1be53cb330d8b47585c498f29a5823dff5f9370e76aa0f09e0823d5499b75489"
+ },
+ {
+  "name": "otool-host-libfreetype.6.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.070292Z",
+  "finished_at": "2026-11-07T14:10:12.080109Z",
+  "log": "logs/53-otool-host-libfreetype.6.dylib.log",
+  "log_sha256": "edf39de965459f9b483febab0c2f5cc4909666865832439a7c590744a1f5e8d5"
+ },
+ {
+  "name": "otool-rpath-libfreetype.6.dylib",
+  "argv": [
+   "otool",
+   "-l",
+   "/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.080390Z",
+  "finished_at": "2026-11-07T14:10:12.090708Z",
+  "log": "logs/54-otool-rpath-libfreetype.6.dylib.log",
+  "log_sha256": "83f1aaa8e0987a4b7db14d7bf1dd372a3c604f597da6cd469b16b390ef94d9f1"
+ },
+ {
+  "name": "otool-host-libintl.8.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/opt/homebrew/Cellar/gettext/1.0/lib/libintl.8.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.091224Z",
+  "finished_at": "2026-11-07T14:10:12.101064Z",
+  "log": "logs/55-otool-host-libintl.8.dylib.log",
+  "log_sha256": "a27a868afc2c4fcd57cdda3b6a217d1dc64fe74228071ad3507431fbb1d4ab4d"
+ },
+ {
+  "name": "otool-rpath-libintl.8.dylib",
+  "argv": [
+   "otool",
+   "-l",
+   "/opt/homebrew/Cellar/gettext/1.0/lib/libintl.8.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.101360Z",
+  "finished_at": "2026-11-07T14:10:12.111182Z",
+  "log": "logs/56-otool-rpath-libintl.8.dylib.log",
+  "log_sha256": "2bee763e2110a65709b0436966ccf4267dbbbe363dbfb874b73f7393c64f5638"
+ },
+ {
+  "name": "otool-host-libpng16.16.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/opt/homebrew/Cellar/libpng/1.6.59/lib/libpng16.16.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.111806Z",
+  "finished_at": "2026-11-07T14:10:12.121487Z",
+  "log": "logs/57-otool-host-libpng16.16.dylib.log",
+  "log_sha256": "2ca4aeb5f3f3626bfd0c2559d1cdbccabca2de17fbbd5adbe16b0900bfedd4d8"
+ },
+ {
+  "name": "otool-rpath-libpng16.16.dylib",
+  "argv": [
+   "otool",
+   "-l",
+   "/opt/homebrew/Cellar/libpng/1.6.59/lib/libpng16.16.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.121755Z",
+  "finished_at": "2026-11-07T14:10:12.131768Z",
+  "log": "logs/58-otool-rpath-libpng16.16.dylib.log",
+  "log_sha256": "63297968ab5dcc57b16cd09a7a414ff6ea0c89e2984eebad6ce1ead24566fbc4"
+ },
+ {
+  "name": "otool-host-libbrotlidec.1.2.1.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.132339Z",
+  "finished_at": "2026-11-07T14:10:12.142419Z",
+  "log": "logs/59-otool-host-libbrotlidec.1.2.1.dylib.log",
+  "log_sha256": "621778a0eb9c1bf6801b4c6b4bb91f76b36ee3d55d2fe7d9a350024c086b43ff"
+ },
+ {
+  "name": "otool-rpath-libbrotlidec.1.2.1.dylib",
+  "argv": [
+   "otool",
+   "-l",
+   "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.142707Z",
+  "finished_at": "2026-11-07T14:10:12.152782Z",
+  "log": "logs/60-otool-rpath-libbrotlidec.1.2.1.dylib.log",
+  "log_sha256": "17305de4c83fc42cb996fb22c0f279d636a1454726a4ba45e3b2f582d8a083a8"
+ },
+ {
+  "name": "otool-host-libbrotlicommon.1.2.1.dylib",
+  "argv": [
+   "otool",
+   "-L",
+   "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.2.1.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.153482Z",
+  "finished_at": "2026-11-07T14:10:12.162796Z",
+  "log": "logs/61-otool-host-libbrotlicommon.1.2.1.dylib.log",
+  "log_sha256": "a57ca94622d204e1c2866e66502a77dcf1d222ea4f14e123619a1a9852274869"
+ },
+ {
+  "name": "otool-rpath-libbrotlicommon.1.2.1.dylib",
+  "argv": [
+   "otool",
+   "-l",
+   "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.2.1.dylib"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0
+  ],
+  "started_at": "2026-11-07T14:10:12.163054Z",
+  "finished_at": "2026-11-07T14:10:12.172594Z",
+  "log": "logs/62-otool-rpath-libbrotlicommon.1.2.1.dylib.log",
+  "log_sha256": "2c6ff27fcd4c4a71163ca708e34fb787ec94354fb780942af8971a7868f51179"
+ },
+ {
+  "name": "brew-host-lib-versions",
+  "argv": [
+   "brew",
+   "list",
+   "--versions",
+   "fontconfig",
+   "freetype",
+   "libpng",
+   "openjdk@21"
+  ],
+  "cwd": null,
+  "exit_code": 0,
+  "expected_exit_codes": [
+   0,
+   1
+  ],
+  "started_at": "2026-11-07T14:10:12.172931Z",
+  "finished_at": "2026-11-07T14:10:12.189052Z",
+  "log": "logs/63-brew-host-lib-versions.log",
+  "log_sha256": "5dcaef4a5200e42890184b91fead490e5aa9e31b7f0438c67a66b3ceaa450cc8"
+ },
+ {
+  "name": "pdfalto-version",
+  "argv": [
+   "/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto",
+   "-v"
+  ],
+  "cwd": null,
+  "exit_code": 99,
+  "expected_exit_codes": [
+   0,
+   1,
+   99
+  ],
+  "started_at": "2026-11-07T14:10:12.189314Z",
+  "finished_at": "2026-11-07T14:10:12.194163Z",
+  "log": "logs/64-pdfalto-version.log",
+  "log_sha256": "fa311da2d7dbf564e55f80a8e92c1f7073240e942d39611d99428c9a479896cf"
+ }
+]

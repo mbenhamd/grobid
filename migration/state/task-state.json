@@ -2,8 +2,26 @@
   "schema_version": 1,
   "tasks": {
     "T000": {
-      "status": "pending",
-      "attempts": 0
+      "status": "done",
+      "attempts": 1,
+      "worker": "claude-coordinator",
+      "claimed_at": 1794060068.891686,
+      "heartbeat_at": 1794060068.891686,
+      "updated_at": 1794060757.632819,
+      "submission": {
+        "path": "migration/evidence/T000/evidence.json",
+        "sha256": "6d279f05fceddfd5fda02f307a5219b93952b1cb92793da81be2d59396af2b91",
+        "result_commit": "4382437ae7a41a5898187ebc4ea73f9c717614bb",
+        "worker": "claude-coordinator",
+        "submitted_at": 1794060469.7466948
+      },
+      "review": {
+        "path": "migration/evidence/T000/review/review.json",
+        "sha256": "fa6fb93cadff7f726b9b7c9de8c56426c4c4bc7e46ea6877320f6a035818b3c4",
+        "reviewer": "claude-reviewer-T000",
+        "result_commit": "4382437ae7a41a5898187ebc4ea73f9c717614bb"
+      },
+      "completed_at": 1794060757.632819
     },
     "T001": {
       "status": "pending",
@@ -242,5 +260,43 @@
       "attempts": 0
     }
   },
-  "events": []
+  "events": [
+    {
+      "at": 1794060068.891686,
+      "action": "claim",
+      "task_id": "T000",
+      "worker": "claude-coordinator",
+      "before": "pending",
+      "after": "running"
+    },
+    {
+      "at": 1794060469.7466948,
+      "action": "submit",
+      "task_id": "T000",
+      "worker": "claude-coordinator",
+      "before": "running",
+      "submission": {
+        "path": "migration/evidence/T000/evidence.json",
+        "sha256": "6d279f05fceddfd5fda02f307a5219b93952b1cb92793da81be2d59396af2b91",
+        "result_commit": "4382437ae7a41a5898187ebc4ea73f9c717614bb",
+        "worker": "claude-coordinator",
+        "submitted_at": 1794060469.7466948
+      },
+      "after": "submitted"
+    },
+    {
+      "at": 1794060757.632819,
+      "action": "approve",
+      "task_id": "T000",
+      "worker": "claude-reviewer-T000",
+      "before": "submitted",
+      "review": {
+        "path": "migration/evidence/T000/review/review.json",
+        "sha256": "fa6fb93cadff7f726b9b7c9de8c56426c4c4bc7e46ea6877320f6a035818b3c4",
+        "reviewer": "claude-reviewer-T000",
+        "result_commit": "4382437ae7a41a5898187ebc4ea73f9c717614bb"
+      },
+      "after": "done"
+    }
+  ]
 }

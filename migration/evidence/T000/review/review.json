@@ -1,0 +1,98 @@
+{
+ "task_id": "T000",
+ "reviewer": "claude-reviewer-T000",
+ "result_commit": "4382437ae7a41a5898187ebc4ea73f9c717614bb",
+ "base_commit": "622a521076ba63b96835b240e7f81d10af4c8ed4",
+ "decision": "approve",
+ "review_worktree": "/Users/mbenhamd/Projects/grobid-wt/T000-review (detached at 4382437ae, removed after review)",
+ "commands": [
+  {
+   "argv": [
+    "python3",
+    "-I",
+    "migration/evidence/T000/capture_t000.py",
+    "--oracle",
+    "/Users/mbenhamd/Projects/grobid-oracle",
+    "--kit-root",
+    ".",
+    "--java-home",
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home",
+    "--out",
+    "/private/tmp/claude-501/-Users-mbenhamd-Projects-grobid/db61b6f2-65f9-4d92-94c9-7a65e71c092e/scratchpad/T000-review/out",
+    "--lock-out",
+    "/private/tmp/claude-501/-Users-mbenhamd-Projects-grobid/db61b6f2-65f9-4d92-94c9-7a65e71c092e/scratchpad/T000-review/lock.json"
+   ],
+   "cwd": "/Users/mbenhamd/Projects/grobid-wt/T000-review",
+   "exit_code": 0,
+   "log": "migration/evidence/T000/review/rerun-capture.log",
+   "log_sha256": "8738e929a593d8331b102c3e76f76f7f7f5049f4bfa0ad48e2830148a50f8374"
+  }
+ ],
+ "artifacts": [
+  {
+   "path": "migration/evidence/T000/review/independent-checks.log",
+   "sha256": "3ec6e03237c4e663c04584a2fee08081e23545cfa3c01c8946d90bd426fedc79",
+   "note": "Reviewer's independent checks (not produced by the capture script): independent checks: git rev-parse HEAD HEAD^{tree}; git status --porcelain --ignored; git ls-files -v; shasum -a 256 on the 8 lock files; asset index vs git ls-tree -r HEAD grobid-home; shasum -a 256 on host dylib closure; DYLD_PRINT_LIBRARIES=1 pdfalto -v"
+  },
+  {
+   "path": "migration/evidence/T000/review/rerun-t000-report.json",
+   "sha256": "9d3b3fb8c68f994fa141e3bb0e43b89e809d497a0f1e3d9ab94ec174166ea449"
+  },
+  {
+   "path": "migration/evidence/T000/review/rerun-commands.json",
+   "sha256": "33223a2c4ddc54229cb6a1a15d82579cacb56269705a0d4638bd48acd50a115f"
+  },
+  {
+   "path": "migration/evidence/T000/review/rerun-grobid-home-manifest.json",
+   "sha256": "49f748cddc185a07bf9aaddf65fe4e68dc319c8688e424996c7857ba512969ca"
+  },
+  {
+   "path": "migration/evidence/T000/review/rerun-host-environment-lock.json",
+   "sha256": "4ed6a5b9c7cb8353900b49d24ef1bf4d41bb67318d8b72224a833076323f10fe"
+  },
+  {
+   "path": "migration/evidence/T000/review/rerun-logs.tar",
+   "sha256": "721028691ce7ce581b7cb4bc88efdfbf419f0ee47e7c217bd4483e54cea2a2c2"
+  }
+ ],
+ "case_counts": {
+  "executed": 517,
+  "failed": 0,
+  "skipped": 0,
+  "definition": "Independently recomputed: 8 critical sha256 (shasum) + 506 asset-index (mode,type,blob) tuples vs git ls-tree + oracle HEAD, tree, clean-incl-ignored. Rerun of capture_t000.py: 65 sub-commands, 0 unexpected exits, 0 failures; manifest and host lock byte-identical to committed; report/commands identical except timestamps/cwd/log hashes."
+ },
+ "acceptance": [
+  {
+   "criterion": "Isolated oracle checkout at pinned SHA; clean revision and complete build environment",
+   "result": "pass_with_findings",
+   "basis": "HEAD f313f701, tree a59943da, 0 status lines incl. ignored, no assume-unchanged/skip-worktree, no submodules, connectivity fsck ok. Toolchain/OS/CPU/locale/TZ/Gradle recorded; Maven dependency closure, Gradle distribution hash and user-level build config deferred to T002 (findings F1, F2)."
+  },
+  {
+   "criterion": "Verify eight critical source hashes and enumerate native/model dependency closure",
+   "result": "pass_with_findings",
+   "basis": "8/8 sha256 match by independent shasum. 25 natives hashed and file-typed; mac_arm-64 otool/nm/codesign; host dylib closure (6 Homebrew libs) confirmed by DYLD_PRINT_LIBRARIES and independent sha256. 33 model dirs / 86 files enumerated with sha256. Closure is tree enumeration only, not config-to-file mapping (F3)."
+  },
+  {
+   "criterion": "Record source-derived versus runtime-unresolved fields; no fabricated digest",
+   "result": "pass_with_findings",
+   "basis": "source_derived/runtime_observed/unresolved sections present; container_digests empty and asset runtime_sha256 null, none fabricated. Minor classification looseness (F6)."
+  }
+ ],
+ "findings": [
+  "F1 (minor, build env): gradle-wrapper.properties has no distributionSha256Sum; the Gradle 9.6.1 distribution downloaded by gradlew --version is not integrity-pinned and its hash is not recorded (the zip is gone from ~/.gradle/wrapper/dists, only the unpacked tree remains). Gradle Revision 309d128b... is recorded in logs/19. T002 should hash the unpacked distribution.",
+  "F2 (minor, build env): JDK identity is version strings plus the /opt/homebrew/opt symlink path; the resolved Cellar path appears only inside the gradle log and no JDK file hash is recorded. User-level build config (~/.gradle/gradle.properties, init.d, ~/.m2/settings.xml, JAVA_TOOL_OPTIONS/_JAVA_OPTIONS/GRADLE_OPTS) is not recorded; reviewer observed none present at review time.",
+  "F3 (minor, closure): model 'closure' is an enumeration of files in the git tree; no static map from grobid.yaml/grobid-full.yaml model names/flavors/engines to required files, and DeLFT embeddings/external downloads are not enumerated. Acceptable as source-derived inventory; config-to-asset resolution must be done in T003.",
+  "F4 (minor, script robustness): capture_t000.py does not assert len(source_hashes)==8 (an emptied lock would pass vacuously); zip(paths, rawids) does not check equal lengths; worktree_bytes_differ_from_blob_eol is reported but not a failure (mitigated by the clean-status check); pdfalto -v accepts exit 0/1/99 without asserting the version string; brew exit 1 accepted silently; @rpath and @executable_path deps of the top-level natives are skipped (no real loss here: libwapiti's only @rpath entry is its own install name); post-gradle status check omits --ignored (reviewer confirmed 0 ignored files after rerun). case_counts are hand-derived, not emitted by the script.",
+  "F5 (minor, accuracy): script comment 'config is covered by critical hashes' is incomplete: grobid-home/config/grobid.properties and resources-registry.json are not among the 8 critical hashes (they are hashed in the manifest and covered by the tree id). host_package_versions omits gettext and brotli although both are in the closure (their dylib sha256 are recorded). gradle.wrapper_distribution keeps the properties escape 'https\\://'.",
+  "F6 (minor, classification): source_derived.native_binaries embeds host tool output (file, otool, nm, codesign) and oracle_checkout.path/remotes are host facts; these are static inspections of source bytes but are produced by host tools and would be better labelled host-observed.",
+  "F7 (process): the limitation 'S1 scope is CRF-first by user decision 2026-11-07' has no record in migration/state/STATUS.md, HANDOFF.md, scope.json or an ADR; it should be recorded before T003 relies on it.",
+  "F8 (process): the coordinator branch rust/migration-kit already contains the T000 commits (HEAD cc14c02c8) before review; AGENTS.md says the coordinator integrates reviewed commits. The evidence.json inside the result commit 4382437ae still names result 8b6e922; the corrected packet is in follow-up commit cc14c02c8 (only evidence.json changed), which matches the ledger's submission sha256 6d279f05...",
+  "F9 (privacy): committed logs contain hostname (mbenhamd-5.local) and home paths; disclosed by the author. Consider before any push of this fork.",
+  "F10 (runtime env, not T000-blocking): pdfalto links Homebrew fontconfig/freetype; fontconfig configuration and installed font set can influence extraction and are not recorded. Track in T003."
+ ],
+ "limitations": [
+  "Review reran the same script on the same host and oracle checkout; it confirms reproducibility on this host, not on another machine.",
+  "Full object fsck was not run (connectivity-only); critical file and blob identities were checked independently.",
+  "No build, server start, or PDF processing was exercised; those belong to T002/T003."
+ ]
+}

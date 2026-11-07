@@ -1,0 +1,34 @@
+# independent checks by claude-reviewer-T000 2026-11-07T14:11:59Z
+## oracle identity
+f313f7010773fe8113cbb0f7a774960450a850d0
+a59943da478e6d53e9a7833631768817a44960cb
+status --porcelain --ignored lines: 0
+shallow: true
+ls-files -v non-H: 0
+## critical sha256 (shasum -a 256 in oracle)
+f65f8bbe7b6896e5153d12b6021271274d7e7926e90df857c350c321c2bf5a47  gradle.properties
+ab41eca1a3febef17b8b32400abb0b958daab3aa6ee9ceddbf0337e4cfc9813a  build.gradle
+c94d41b634a5e0ff8a2f812023697b1337eebac18e9962610356a1793f72896d  gradle/wrapper/gradle-wrapper.properties
+27845af16a2241705c6310ad44f50aabedc2609e9c74a4fd2f6578deb4d05620  Dockerfile.crf
+ce8380e28e9401c085910b7814993a63ff6f1882789d2728d09a36b9e6340e3a  Dockerfile.delft
+3c0f62ea53e96bceac3c9a7f85c61005b3f4d314af8786f7603f59b8083fa053  grobid-home/config/grobid.yaml
+70f7677f8d4295e4d443b348b1340371bda7a41841f52b2c2bdf00ee5b1534ae  grobid-home/config/grobid-full.yaml
+f9c3a1b769c2c946b688dab6ae007f5771bdf4cb6d435f0f5bb682883d6892f7  grobid-home/config/grobid-evaluation.yaml
+## asset index vs git ls-tree
+index_entries 506 tree_entries 527 mismatch_or_missing 0 extra 21
+## rerun vs committed (ignoring started_at/finished_at/observed_at/log_sha256/cwd): no differences; manifest byte-identical; all 65 logs identical except cwd line
+## host dylib closure sha256 (shasum)
+e1f5e06e8339b42f0e1af11cc77979ef6a8f48ffa7588e4dc243e4bd69ea656d  /opt/homebrew/Cellar/fontconfig/2.18.3/lib/libfontconfig.1.dylib
+9c99ad47dbf9f90b5cc1732a58fbcf62bc7b7175f75a431ddd7207e7457e00d7  /opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib
+c84dabdb4ece983eded000a677040666c8496cd55c07db9816bf4a3eb216da58  /opt/homebrew/Cellar/gettext/1.0/lib/libintl.8.dylib
+ec95a41f112fac5e0b077f129bccc67acf9b5ad1a01f56cc0ecebae2a8727ff2  /opt/homebrew/Cellar/libpng/1.6.59/lib/libpng16.16.dylib
+f9512a0567d34e00af8dfc40cee8f020ecac2440113ab2861cbce419ee184962  /opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib
+698009971733006eab6d9e441a61ea0856a72a8d23e4a61eb63fec785e89c927  /opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.2.1.dylib
+## dyld-loaded non-system images for pdfalto -v
+<CFE2E910-B77F-3C85-B4FE-1A414567A9B0> /Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto
+<87C3C3D8-36D6-34A3-AFDE-4ADE52451318> /opt/homebrew/Cellar/fontconfig/2.18.3/lib/libfontconfig.1.dylib
+<4A9767CC-E8F5-344F-9FBF-10BDE81E2ADB> /opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib
+<685F7630-FFC2-340B-B015-A7EE74C4D830> /opt/homebrew/Cellar/gettext/1.0/lib/libintl.8.dylib
+<7477C063-3048-3006-B32F-6A0C0451FCE2> /opt/homebrew/Cellar/libpng/1.6.59/lib/libpng16.16.dylib
+<E564C703-D2F2-3382-B8CF-D810955185E8> /opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib
+<590F161A-25B0-328F-9688-D054320FA38B> /opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.2.1.dylib
