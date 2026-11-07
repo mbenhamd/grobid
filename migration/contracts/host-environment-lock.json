@@ -1,0 +1,80 @@
+{
+ "schema_version": 1,
+ "meaning": "Runtime-observed oracle host environment at T000. Later tasks must re-check these before trusting oracle captures; drift requires a new lock, never an in-place edit.",
+ "pin_commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+ "pin_tree": "a59943da478e6d53e9a7833631768817a44960cb",
+ "captured_by": "migration/evidence/T000/capture_t000.py",
+ "report": "migration/evidence/T000/t000-report.json",
+ "host": {
+  "uname": "Darwin mbenhamd-5.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:33:50 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T6050 arm64",
+  "cpu": [
+   "Apple M5 Pro",
+   "18",
+   "51539607552"
+  ],
+  "locale_LANG": "LANG=\"C.UTF-8\"",
+  "tz": "CET +0100"
+ },
+ "jdk": {
+  "java_home": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home",
+  "java_version": [
+   "openjdk version \"21.0.13.0.3\" 2026-10-24",
+   "OpenJDK Runtime Environment Homebrew (build 21.0.13.0.3)",
+   "OpenJDK 64-Bit Server VM Homebrew (build 21.0.13.0.3, mixed mode, sharing)"
+  ]
+ },
+ "gradle": {
+  "wrapper_distribution": "https\\://services.gradle.org/distributions/gradle-9.6.1-bin.zip",
+  "version_lines": [
+   "Gradle 9.6.1",
+   "Launcher JVM:  21.0.13.0.3 (Homebrew 21.0.13.0.3)",
+   "OS:            Mac OS X 26.4 aarch64"
+  ]
+ },
+ "rust": [
+  "rustc 1.88.0 (6b00bc388 2025-06-23)"
+ ],
+ "pdfalto_mac_arm64": {
+  "sha256": "f8fdadd6f5e43cd2eb82e7642333feb1d2ab39af0d090ee1566a8e8d84087696",
+  "version_probe": "pdfalto version 0.6.2"
+ },
+ "libwapiti_mac_arm64_sha256": "602854c4656faae75a50a052f5825dcb179a73836dc881dfffbde6f0ab229173",
+ "host_dylib_closure": [
+  {
+   "install_name": "/opt/homebrew/opt/fontconfig/lib/libfontconfig.1.dylib",
+   "resolved": "/opt/homebrew/Cellar/fontconfig/2.18.3/lib/libfontconfig.1.dylib",
+   "sha256": "e1f5e06e8339b42f0e1af11cc77979ef6a8f48ffa7588e4dc243e4bd69ea656d"
+  },
+  {
+   "install_name": "/opt/homebrew/opt/freetype/lib/libfreetype.6.dylib",
+   "resolved": "/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib",
+   "sha256": "9c99ad47dbf9f90b5cc1732a58fbcf62bc7b7175f75a431ddd7207e7457e00d7"
+  },
+  {
+   "install_name": "/opt/homebrew/opt/gettext/lib/libintl.8.dylib",
+   "resolved": "/opt/homebrew/Cellar/gettext/1.0/lib/libintl.8.dylib",
+   "sha256": "c84dabdb4ece983eded000a677040666c8496cd55c07db9816bf4a3eb216da58"
+  },
+  {
+   "install_name": "/opt/homebrew/opt/libpng/lib/libpng16.16.dylib",
+   "resolved": "/opt/homebrew/Cellar/libpng/1.6.59/lib/libpng16.16.dylib",
+   "sha256": "ec95a41f112fac5e0b077f129bccc67acf9b5ad1a01f56cc0ecebae2a8727ff2"
+  },
+  {
+   "install_name": "/opt/homebrew/opt/brotli/lib/libbrotlidec.1.dylib",
+   "resolved": "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib",
+   "sha256": "f9512a0567d34e00af8dfc40cee8f020ecac2440113ab2861cbce419ee184962"
+  },
+  {
+   "install_name": "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.dylib",
+   "resolved": "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.2.1.dylib",
+   "sha256": "698009971733006eab6d9e441a61ea0856a72a8d23e4a61eb63fec785e89c927"
+  }
+ ],
+ "host_package_versions": [
+  "fontconfig 2.18.3",
+  "freetype 2.15.0",
+  "libpng 1.6.59",
+  "openjdk@21 21.0.13.0.3"
+ ]
+}

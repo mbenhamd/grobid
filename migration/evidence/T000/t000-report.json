@@ -1,0 +1,950 @@
+{
+ "schema": "migration/evidence/T000/v1",
+ "task_id": "T000",
+ "pin": {
+  "commit": "f313f7010773fe8113cbb0f7a774960450a850d0",
+  "tree": "a59943da478e6d53e9a7833631768817a44960cb",
+  "declared_version": "0.9.2-SNAPSHOT"
+ },
+ "source_derived": {
+  "oracle_checkout": {
+   "path": "/Users/mbenhamd/Projects/grobid-oracle",
+   "head": "f313f7010773fe8113cbb0f7a774960450a850d0",
+   "tree": "a59943da478e6d53e9a7833631768817a44960cb",
+   "clean_including_ignored": true,
+   "shallow": true,
+   "remotes": [
+    "upstream\thttps://github.com/grobidOrg/grobid.git (fetch)",
+    "upstream\thttps://github.com/grobidOrg/grobid.git (push)"
+   ]
+  },
+  "critical_source_hashes": [
+   {
+    "path": "gradle.properties",
+    "expected_sha256": "f65f8bbe7b6896e5153d12b6021271274d7e7926e90df857c350c321c2bf5a47",
+    "actual_sha256": "f65f8bbe7b6896e5153d12b6021271274d7e7926e90df857c350c321c2bf5a47",
+    "match": true
+   },
+   {
+    "path": "build.gradle",
+    "expected_sha256": "ab41eca1a3febef17b8b32400abb0b958daab3aa6ee9ceddbf0337e4cfc9813a",
+    "actual_sha256": "ab41eca1a3febef17b8b32400abb0b958daab3aa6ee9ceddbf0337e4cfc9813a",
+    "match": true
+   },
+   {
+    "path": "gradle/wrapper/gradle-wrapper.properties",
+    "expected_sha256": "c94d41b634a5e0ff8a2f812023697b1337eebac18e9962610356a1793f72896d",
+    "actual_sha256": "c94d41b634a5e0ff8a2f812023697b1337eebac18e9962610356a1793f72896d",
+    "match": true
+   },
+   {
+    "path": "Dockerfile.crf",
+    "expected_sha256": "27845af16a2241705c6310ad44f50aabedc2609e9c74a4fd2f6578deb4d05620",
+    "actual_sha256": "27845af16a2241705c6310ad44f50aabedc2609e9c74a4fd2f6578deb4d05620",
+    "match": true
+   },
+   {
+    "path": "Dockerfile.delft",
+    "expected_sha256": "ce8380e28e9401c085910b7814993a63ff6f1882789d2728d09a36b9e6340e3a",
+    "actual_sha256": "ce8380e28e9401c085910b7814993a63ff6f1882789d2728d09a36b9e6340e3a",
+    "match": true
+   },
+   {
+    "path": "grobid-home/config/grobid.yaml",
+    "expected_sha256": "3c0f62ea53e96bceac3c9a7f85c61005b3f4d314af8786f7603f59b8083fa053",
+    "actual_sha256": "3c0f62ea53e96bceac3c9a7f85c61005b3f4d314af8786f7603f59b8083fa053",
+    "match": true
+   },
+   {
+    "path": "grobid-home/config/grobid-full.yaml",
+    "expected_sha256": "70f7677f8d4295e4d443b348b1340371bda7a41841f52b2c2bdf00ee5b1534ae",
+    "actual_sha256": "70f7677f8d4295e4d443b348b1340371bda7a41841f52b2c2bdf00ee5b1534ae",
+    "match": true
+   },
+   {
+    "path": "grobid-home/config/grobid-evaluation.yaml",
+    "expected_sha256": "f9c3a1b769c2c946b688dab6ae007f5771bdf4cb6d435f0f5bb682883d6892f7",
+    "actual_sha256": "f9c3a1b769c2c946b688dab6ae007f5771bdf4cb6d435f0f5bb682883d6892f7",
+    "match": true
+   }
+  ],
+  "grobid_home": {
+   "tracked_files": 527,
+   "by_top_level": {
+    "grobid-home/config": {
+     "files": 5,
+     "bytes": 50508
+    },
+    "grobid-home/language-detection": {
+     "files": 53,
+     "bytes": 1695414
+    },
+    "grobid-home/lexicon": {
+     "files": 50,
+     "bytes": 81427760
+    },
+    "grobid-home/lib": {
+     "files": 13,
+     "bytes": 5078423
+    },
+    "grobid-home/models": {
+     "files": 86,
+     "bytes": 492227159
+    },
+    "grobid-home/pdfalto": {
+     "files": 266,
+     "bytes": 168027350
+    },
+    "grobid-home/schemas": {
+     "files": 12,
+     "bytes": 4346072
+    },
+    "grobid-home/scripts": {
+     "files": 4,
+     "bytes": 33104
+    },
+    "grobid-home/sentence-segmentation": {
+     "files": 38,
+     "bytes": 212617
+    }
+   },
+   "asset_index_entries": 506,
+   "missing_in_tree": [],
+   "outside_asset_index_scope": [
+    "grobid-home/config/grobid-evaluation.yaml",
+    "grobid-home/config/grobid-full.yaml",
+    "grobid-home/config/grobid.properties",
+    "grobid-home/config/grobid.yaml",
+    "grobid-home/config/resources-registry.json",
+    "grobid-home/schemas/doc/Grobid_doc.html",
+    "grobid-home/schemas/dtd/Grobid.dtd",
+    "grobid-home/schemas/odd/Grobid.compiled.odd",
+    "grobid-home/schemas/odd/Grobid.odd",
+    "grobid-home/schemas/rng/Grobid.rnc",
+    "grobid-home/schemas/rng/Grobid.rng",
+    "grobid-home/schemas/xsd/Grobid.w3c",
+    "grobid-home/schemas/xsd/Grobid.xsd",
+    "grobid-home/schemas/xsd/dcr.xsd",
+    "grobid-home/schemas/xsd/tei.xsd",
+    "grobid-home/schemas/xsd/xlink.xsd",
+    "grobid-home/schemas/xsd/xml.xsd",
+    "grobid-home/scripts/install_jep_lib.sh",
+    "grobid-home/scripts/preload_embeddings.py",
+    "grobid-home/scripts/run_evaluation.sh",
+    "grobid-home/scripts/select_error_cases.py"
+   ],
+   "git_object_mismatch": [],
+   "worktree_bytes_differ_from_blob_eol": [],
+   "manifest": "grobid-home-manifest.json",
+   "manifest_sha256": "49f748cddc185a07bf9aaddf65fe4e68dc319c8688e424996c7857ba512969ca"
+  },
+  "model_directories": {
+   "affiliation-address": [
+    {
+     "file": "model.wapiti",
+     "sha256": "d05153c9d1e7ae34d557ec464ce3c55932d89353765021d6fa8a60986b277c93",
+     "bytes": 3007307
+    }
+   ],
+   "affiliation-address-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "9e4af6852b10d791dd837e3ca77da7d5bf1771d12edc592bd1b2f84d964debb7",
+     "bytes": 1854
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "ed960668d609a204a6e13f03fa8413aa1fe4de3289290f7b4922be535890931c",
+     "bytes": 1657780
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "a08d55524da8acc3c2e24f46bf3e8665642342869d565fd532f2b6bb4dbde5c7",
+     "bytes": 6236
+    }
+   ],
+   "citation": [
+    {
+     "file": "model.wapiti",
+     "sha256": "5f17697840c78fa9595119aa7f579f5e9576fbc879477c47507a5f9a6bc264f5",
+     "bytes": 22103761
+    }
+   ],
+   "citation-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "93c147a06626a23f2ebc1b596dcb2889fcd77c5ba0632c151b841f096495e229",
+     "bytes": 2827
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "68fc81b989a7d640dae9906382abb3bd4b4a60c19fbffffeb2946bbf257ec796",
+     "bytes": 1847760
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "72aab580ed0c52c45de88c4cce63d6654a2c5862221c69a88aefcdf6a3fd0e71",
+     "bytes": 50162
+    }
+   ],
+   "citation-BidLSTM_ChainCRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "5d706d9594a08cae3b9489f1e03a4e9c0d2655a6ef049bcf3f6525ed43613c52",
+     "bytes": 2836
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "95107e5176345ef92bca15e01b1ed927a6104c4024da0b8ec81f24069a0f81f8",
+     "bytes": 1862136
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "72aab580ed0c52c45de88c4cce63d6654a2c5862221c69a88aefcdf6a3fd0e71",
+     "bytes": 50162
+    }
+   ],
+   "copyright_gru": [
+    {
+     "file": "config.json",
+     "sha256": "895e0a068103334569a93866666b072577ebddfe442c7520347e3db914ae8769",
+     "bytes": 451
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "3c4974368f9c4f48a8dfbc331edfb3b709e3b9a1b5323b0eafeaf5226d8ace9c",
+     "bytes": 927776
+    }
+   ],
+   "date": [
+    {
+     "file": "model.wapiti",
+     "sha256": "2bf0c901dd8cf8e2201467c3fa22d480b03e789420fce8056ee97efc8e637f98",
+     "bytes": 111422
+    }
+   ],
+   "date-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "5180fe1d1f744d04225caea21c8f8d7cb57aa9f655fdc1024e12f4a9eb9cad79",
+     "bytes": 1586
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "7bf7d40f90d2944ab65fa094479325a95e03936ed75c093106b52491ccd1056c",
+     "bytes": 1641168
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "58705f2178cebbb09b773e38fddcba89e79cca0ceab9289fd3ac44f8917db60f",
+     "bytes": 3256
+    }
+   ],
+   "figure": [
+    {
+     "file": "model.wapiti",
+     "sha256": "aba1886c7201551bb3a8151b96aab039196af1259855c6fa7b92c7b4229b7230",
+     "bytes": 422671
+    }
+   ],
+   "figure-BidLSTM_CRF": [
+    {
+     "file": "config.json",
+     "sha256": "a1d268b1d755afa2d58487c238e819a0da88dca9c31a527aa94f202ddf937afd",
+     "bytes": 709
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "d8dfdf51ea80d867ae40d30527249d2d1a6da4e4422bd2bf091c511799d94953",
+     "bytes": 1608016
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "61b815cf8a68a394e40426fef0c0f394600771010fcb4a57beec05343da57bf7",
+     "bytes": 2630
+    }
+   ],
+   "figure-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "0adeafaacf8d06e7849a20ffd4ffac7444bb38742c469b2f03b0874edf455595",
+     "bytes": 2890
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "cb94de67c92a69322e078afbe2cd345b7cf9394ea593a97e5d67a4d10bd7644e",
+     "bytes": 1645008
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "2afbe3582d5949b3852a66d8fcd9f8b370d6f31c7683cccc2f486d47f9d9cd3e",
+     "bytes": 5316
+    }
+   ],
+   "fulltext": [
+    {
+     "file": "article/light-ref/model.wapiti",
+     "sha256": "5406942ec3d0fa6090a176b061c75db615320bebf26d143a94195a34c1585432",
+     "bytes": 12386747
+    },
+    {
+     "file": "article/light/model.wapiti",
+     "sha256": "5406942ec3d0fa6090a176b061c75db615320bebf26d143a94195a34c1585432",
+     "bytes": 12386747
+    },
+    {
+     "file": "model.wapiti",
+     "sha256": "cfeecab26bab01eb05389662f2cdd38d25d58040a0b70299750c01f8099db1f7",
+     "bytes": 38545642
+    }
+   ],
+   "funding-acknowledgement": [
+    {
+     "file": "model.wapiti",
+     "sha256": "4df8eefd1ca160710ccf352a4931c3497c78e7fec405dfdb0ede1cab3faf480d",
+     "bytes": 6553350
+    }
+   ],
+   "funding-acknowledgement-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "5659610087abb9cdded461ad4b23ea57913cc825f61301e24da97ffc86fe56bd",
+     "bytes": 1632
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "9a88a0c307d40b348c4a95d20d8accc56427a0638e419be17adf464320814d38",
+     "bytes": 1656416
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "961c8d280a3e187442b3b47ff07167166357db288cbc7adf17df9344c12ed32a",
+     "bytes": 5789
+    }
+   ],
+   "header": [
+    {
+     "file": "article/light-ref/model.wapiti",
+     "sha256": "a0b88f97544afec176403ef845aa5212154d9646523d0b398da1be40d285280b",
+     "bytes": 24208634
+    },
+    {
+     "file": "article/light-ref/placeholder.txt",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "file": "article/light/model.wapiti",
+     "sha256": "a2d9ef43a6287f32dbf79f291694dd5f5ecc69e9df8aed044e24cd57a0ffc27f",
+     "bytes": 24197668
+    },
+    {
+     "file": "article/light/placeholder.txt",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "file": "model.wapiti",
+     "sha256": "9966a973faa662e0c966774c64586aff07e64d96bde520bb7252a656219e491a",
+     "bytes": 24034608
+    },
+    {
+     "file": "sdo/ietf/model.wapiti",
+     "sha256": "5204a00fc3bd0272bd667cf48b9f86f67b84b3010d26afd8d773b0a1a5adc8b8",
+     "bytes": 554411
+    }
+   ],
+   "header-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "c8c9c774cf5342d5ecf096e678f0ad525a4d24474b97a733a88c97dc5e9ecc63",
+     "bytes": 2927
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "714eef760e4c2b659bb1b3bd9065e1a2bb80423764bbd9b6692c69807705a305",
+     "bytes": 1695552
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "2943df8b520a2ba48ed804573504fc2a0e3b80da2dd6893073f17a05e2c166d0",
+     "bytes": 13122
+    }
+   ],
+   "header-BidLSTM_ChainCRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "40616e35c9326058b401af565f7b0c6b7fcf3cb1c4cf184ba057917eaa19d9a7",
+     "bytes": 2936
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "902aaf1020936c3cb6cc4bf7654279c854fe630375fff7da72bcd7cce634d1c8",
+     "bytes": 1709928
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "2943df8b520a2ba48ed804573504fc2a0e3b80da2dd6893073f17a05e2c166d0",
+     "bytes": 13122
+    }
+   ],
+   "header-article-light-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "ad024ce36226c181e8ccdc5b59c606ef6d99af3e9cdb48255ffed8b1f90c95e5",
+     "bytes": 2918
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "b235a0f38aab3edb4c681c6a5dff475fbe5579c5cc4958ad77dd25fc07ee197e",
+     "bytes": 1673508
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "8d48ab32b34e64a526a66c75fca4812a94cf1904fc4246986eae543960cdc569",
+     "bytes": 11001
+    }
+   ],
+   "header-article-light-BidLSTM_ChainCRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "87ec1540900bbcb27fcb7889e045ecb62efe3ecf3e7ab7416c5de912d63839f5",
+     "bytes": 2927
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "89cf64247a3c5a916b2703db9c17720f04032b700cbc22f312721e640df2fc31",
+     "bytes": 1685812
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "8d48ab32b34e64a526a66c75fca4812a94cf1904fc4246986eae543960cdc569",
+     "bytes": 11001
+    }
+   ],
+   "header-article-light-ref-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "29adfed3962215bae34748aa1b3b7c710c6c835550086cd4ff243ca87ef8cb8a",
+     "bytes": 2922
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "b235a0f38aab3edb4c681c6a5dff475fbe5579c5cc4958ad77dd25fc07ee197e",
+     "bytes": 1673508
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "8d48ab32b34e64a526a66c75fca4812a94cf1904fc4246986eae543960cdc569",
+     "bytes": 11001
+    }
+   ],
+   "header-article-light-ref-BidLSTM_ChainCRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "8dd1621761cbf05ae3fcc898e3463ab4872bf71b9c684151a88c01268a13de2d",
+     "bytes": 2931
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "89cf64247a3c5a916b2703db9c17720f04032b700cbc22f312721e640df2fc31",
+     "bytes": 1685812
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "8d48ab32b34e64a526a66c75fca4812a94cf1904fc4246986eae543960cdc569",
+     "bytes": 11001
+    }
+   ],
+   "license_gru": [
+    {
+     "file": "config.json",
+     "sha256": "4db1791ec76705b616ca2315a6a05d609819d65743977180df64f9723472dd2e",
+     "bytes": 586
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "992be42a845981eca0135d96fe58ce35774bf123d6a7407b9dd828a83d2c34f3",
+     "bytes": 929576
+    }
+   ],
+   "name": [
+    {
+     "file": "citation/model.wapiti",
+     "sha256": "67611eac7ce7aa1f945d28282ff0d36aabd71be9dc751323d8f18e9165845d94",
+     "bytes": 481363
+    },
+    {
+     "file": "header/model.wapiti",
+     "sha256": "42c66b16b6a1950c69000be890c132b09e5114b858dccd2c7de1f34928a4f472",
+     "bytes": 2704204
+    }
+   ],
+   "name-citation-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "2bc001546dcfdf9a2e9bc02355538e4e36d1157b375dfa49cf43e408bbeabacb",
+     "bytes": 1839
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "54585f81ce760d022317fc8876b05d4ceae94153e254202fe8604b8903c33899",
+     "bytes": 1643968
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "0f3ee7fe930d0fe29b2d138262002d1744d19c65d04d484d4f8c5bb8fda509f5",
+     "bytes": 4037
+    }
+   ],
+   "name-header-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "99c8b8aa78ebe59b2184d6f1e2875f9524c37033c2666edadc6ce64404c8fd1b",
+     "bytes": 1869
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "acbefc6f4b79c4d7ada8a6908752c7045211f3c44d4cf9f19812206102689afa",
+     "bytes": 1656316
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "a1897fbb8b30265268cfcc5f937342db2254da890546c72d5a8c835e24a7cbc0",
+     "bytes": 6214
+    }
+   ],
+   "patent": [
+    {
+     "file": "citation/model.wapiti",
+     "sha256": "39aafb1fb3d7f06cf40b17c6ae5e292e4a125fac7bbd58eed21f520a87df010b",
+     "bytes": 82487324
+    }
+   ],
+   "patent-citation-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "6fc4fdbfa0be0797638efe970229cbe0dafc2d4670b2146abf79f2049586e8a6",
+     "bytes": 2584
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "7e4d6623408dc6f6aa4e550c94021433d27ca695e200c68fc42ef94861465342",
+     "bytes": 1654500
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "a45fe38bff9206549bda5f05b771e3b23b8dcaa2931eb88bc5c9ed8015984962",
+     "bytes": 7112
+    }
+   ],
+   "reference-segmenter": [
+    {
+     "file": "model.wapiti",
+     "sha256": "cf51216fc62acbfd0dacff568c5f9bc99a9689e3c6e01af0307b939bf4d1fe8c",
+     "bytes": 12167531
+    }
+   ],
+   "reference-segmenter-BidLSTM_CRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "4b36f161fe33a67ee901a45c75cf99b75b82190270514dbdfbcbefc0c1d49813",
+     "bytes": 3129
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "bdb2193d4ecac71e0990fa7563e88f36c7aa644d4429d5da35e38e4d262ec3e4",
+     "bytes": 1652392
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "0610bc05bc0a4f593476dfe8569cc201cc7bd8340263fd4e05296144ef160ca2",
+     "bytes": 7195
+    }
+   ],
+   "reference-segmenter-BidLSTM_ChainCRF_FEATURES": [
+    {
+     "file": "config.json",
+     "sha256": "831fadeb0946438a238d02c81d8f3233a1b41bb2f0d51c9286970d3ba52629ab",
+     "bytes": 3138
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "6e4f6f3bf90c6f89251857abf7f106f064677e45cfaa76a963c3f82709c7fdc3",
+     "bytes": 1666744
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "0610bc05bc0a4f593476dfe8569cc201cc7bd8340263fd4e05296144ef160ca2",
+     "bytes": 7195
+    }
+   ],
+   "segmentation": [
+    {
+     "file": "article/light-ref/model.wapiti",
+     "sha256": "6f05489a352170aaa29621a318822e4e671f25d3516c34e5553830bded6ca668",
+     "bytes": 62124029
+    },
+    {
+     "file": "article/light-ref/placeholder.txt",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "file": "article/light/model.wapiti",
+     "sha256": "cbfc8c1506846b488af33ea0a4420a19cd4302d5ae05b94ebe8f9c0bea706d02",
+     "bytes": 62139971
+    },
+    {
+     "file": "article/light/placeholder.txt",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+     "bytes": 0
+    },
+    {
+     "file": "model.wapiti",
+     "sha256": "a0c078d734d74bd1a95582ceedb304cbb9a307dd4ab37f30bc8a38f782134590",
+     "bytes": 62133818
+    },
+    {
+     "file": "sdo/ietf/model.wapiti",
+     "sha256": "57e4e7f3dfd51f3179650004a59c78485d348f64b7b79305488062392136613e",
+     "bytes": 3989991
+    }
+   ],
+   "table": [
+    {
+     "file": "model.wapiti",
+     "sha256": "abadbf119e3142ae252567f35c98594df289a3c2dd45b342854bcde136566e91",
+     "bytes": 1427222
+    }
+   ],
+   "table-BidLSTM_CRF": [
+    {
+     "file": "config.json",
+     "sha256": "0450101f9deedc99e1d6d7e38605c237e4a0b56eeede0ba8dafae50c337a679a",
+     "bytes": 709
+    },
+    {
+     "file": "model_weights.hdf5",
+     "sha256": "5180012cdd96a8f295b4345cb6b9b6a79084a5ac6c44a6c0c8e05f2cb1c5f2ae",
+     "bytes": 1610316
+    },
+    {
+     "file": "preprocessor.json",
+     "sha256": "34e6abf941ef6a8c8a51bc951f1f765c1bcdd16896b0b156ff6e74c090bff91f",
+     "bytes": 2994
+    }
+   ]
+  },
+  "native_binaries": [
+   {
+    "path": "grobid-home/lib/lin-32/ld-linux.so.2",
+    "sha256": "e04edff4b2fcdc1fd11f4ab068cc5ad03b69507b84e53ca69260f2f34d5e4b6a",
+    "file": "ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=b08b63fa211f12bd9326ed9a32bc8592bde92c91, stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-32/libc.so.6",
+    "sha256": "8850e0542856e9f34617b2487b0cb8fb15d2288536c2599ad6bb5592b133c309",
+    "file": "ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, BuildID[sha1]=afe730526a2b13d8dd211dfded5f037070c028e2, for GNU/Linux 2.6.24, stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-32/libgcc_s.so.1",
+    "sha256": "10ccd5eeadbe4ac625577b7a3e3437a9f30160d7b1ae6480b4090738f7bfda3b",
+    "file": "ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=fba6ea9391497465df2cd980873e4851746052e6, stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-32/libm.so.6",
+    "sha256": "f0cefa79e35bfd366a54e2e256a1731b895dbccd66d45281f8018d4d99daf4f5",
+    "file": "ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.2, BuildID[sha1]=a5c72170784fafca3ee7ea66aeb9d17c2bb39812, for GNU/Linux 2.6.24, stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-32/libstdc++.so.6",
+    "sha256": "c1d4ea8d9d9323d38b9eb80768a905db65f549c7858c11c8bf8d9e2ce411d981",
+    "file": "ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=96b9cb6b542dac65f995ff4b2a68213653b86f02, stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-32/libwapiti.so",
+    "sha256": "7dfef35c6afce6d17ae1283ef411a85d8043e752ddc6fb57b4b82429f0fb3659",
+    "file": "ELF 32-bit LSB shared object, Intel 80386, version 1 (SYSV), dynamically linked, BuildID[sha1]=51eb2eec02fce70fde5a95358b0fdc7593999035, not stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-64/libcrfpp.so",
+    "sha256": "639efd10d3b5c38b92705bcdc5a41c278d740cf1de54915bb6d7cf9d58ec0629",
+    "file": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=f5752a39bde212644513d68695b73d9f277bce26, not stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin-64/libwapiti.so",
+    "sha256": "9e4c34cbe876bc8659695aec73b8d022a0061ad94938f1af2790272d1642537b",
+    "file": "ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, BuildID[sha1]=3ef486c6de46831e3616c02c80732ecf3e10cb55, not stripped"
+   },
+   {
+    "path": "grobid-home/lib/lin_arm-64/libwapiti.so",
+    "sha256": "8c572bc5c85c0329df855583f14725769fd2aa000de91bd2a795c3c6cfa7b18d",
+    "file": "ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, BuildID[sha1]=12f51bb39545529d9b8faf025e524ea58b0a5114, not stripped"
+   },
+   {
+    "path": "grobid-home/lib/mac-64/libwapiti.dylib",
+    "sha256": "7435018a4e5b6baad4403cda22460b41f3e49a9ccd8d3092268dc119bdd4a2fd",
+    "file": "Mach-O 64-bit dynamically linked shared library x86_64"
+   },
+   {
+    "path": "grobid-home/lib/mac_arm-64/libwapiti.dylib",
+    "sha256": "602854c4656faae75a50a052f5825dcb179a73836dc881dfffbde6f0ab229173",
+    "file": "Mach-O 64-bit dynamically linked shared library arm64",
+    "otool_L": [
+     "\t@rpath/libwapiti.dylib (compatibility version 0.0.0, current version 0.0.0)",
+     "\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 1900.180.0)",
+     "\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1351.0.0)"
+    ],
+    "codesign": "Executable=/Users/mbenhamd/Projects/grobid-oracle/grobid-home/lib/mac_arm-64/libwapiti.dylib\nIdentifier=libwapiti.dylib\nFormat=Mach-O thin (arm64)\nCodeDirectory v=20400 size=1256 flags=0x20002(adhoc,linker-signed) hashes=36+0 location=embedded\nSignature=adhoc\nInfo.plist=not bound\nTeamIdentifier=not set\nSealed Resources=none\nInternal requirements=none",
+    "exported_symbols": {
+     "total": 161,
+     "jni_Java_prefixed": 67,
+     "sample_non_jni": [
+      "_fatal",
+      "_fmemopen",
+      "_freeModel",
+      "_get_default_opt",
+      "_get_params_obj_var",
+      "_grd_docrf",
+      "_grd_domaxent",
+      "_grd_domemm",
+      "_grd_dospl",
+      "_grd_fldopsi",
+      "_grd_flfwdbwd",
+      "_grd_flupgrad",
+      "_grd_free",
+      "_grd_gradient",
+      "_grd_logloss",
+      "_grd_new",
+      "_grd_spdopsi",
+      "_grd_spfwdbwd",
+      "_grd_spupgrad",
+      "_grd_stcheck",
+      "_grd_stfree",
+      "_grd_stnew",
+      "_grd_subemp",
+      "_info",
+      "_labelFromModel",
+      "_loadModel",
+      "_main",
+      "_mdl_compact",
+      "_mdl_free",
+      "_mdl_load",
+      "_mdl_new",
+      "_mdl_save",
+      "_mdl_sync",
+      "_mth_getjob",
+      "_mth_spawn",
+      "_ns_readstr",
+      "_ns_writestr",
+      "_opt_defaults",
+      "_opt_parse",
+      "_opt_switch"
+     ]
+    }
+   },
+   {
+    "path": "grobid-home/lib/win-32/libcrfpp.dll",
+    "sha256": "12f187484f7d16a820f7845acda2456b0b721e66c4323dcf63ccbf1a74533ef2",
+    "file": "PE32 executable (DLL) (GUI) Intel 80386, for MS Windows"
+   },
+   {
+    "path": "grobid-home/lib/win-64/libwapiti.dll",
+    "sha256": "2a2e6d6444a8028bbf42a667b0497c7f793488db1d595463cdcfbc71ebf6ef52",
+    "file": "PE32+ executable (DLL) (console) x86-64, for MS Windows"
+   },
+   {
+    "path": "grobid-home/pdfalto/lin-64/pdfalto",
+    "sha256": "678d76d5f5334a23c59b91252632f6cca6cf7b617122273d290e418c93dc2931",
+    "file": "ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=7b8a4a6f7f7cfd88c56450f96353bfe7eb64171b, for GNU/Linux 3.2.0, not stripped"
+   },
+   {
+    "path": "grobid-home/pdfalto/lin-64/pdfalto_server",
+    "sha256": "678ca6a837ab38b8a090f80eaeee4bd2c4c14f140f980578a21b8958f17d9a87",
+    "file": "Bourne-Again shell script text executable, ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/lin-64/xpdfrc",
+    "sha256": "719ee9aafc2afcb2713c26cb271538550ba50bf135c88906b4e8bf37e155b93f",
+    "file": "ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/lin_arm-64/pdfalto",
+    "sha256": "a2ae4c6542b441fcb4e70a97edbc493878acc6be1499177123d7191fc8cd1650",
+    "file": "ELF 64-bit LSB executable, ARM aarch64, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=a41f6a626e0dbd209f9195432c891d97b1da4e78, for GNU/Linux 3.7.0, not stripped"
+   },
+   {
+    "path": "grobid-home/pdfalto/lin_arm-64/pdfalto_server",
+    "sha256": "678ca6a837ab38b8a090f80eaeee4bd2c4c14f140f980578a21b8958f17d9a87",
+    "file": "Bourne-Again shell script text executable, ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/lin_arm-64/xpdfrc",
+    "sha256": "719ee9aafc2afcb2713c26cb271538550ba50bf135c88906b4e8bf37e155b93f",
+    "file": "ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/mac-64/pdfalto",
+    "sha256": "337d41f9d4073e24da6f22e2e58b41442a4511a05b993052ba8c87177e2c04d2",
+    "file": "Mach-O 64-bit executable x86_64"
+   },
+   {
+    "path": "grobid-home/pdfalto/mac-64/pdfalto_server",
+    "sha256": "f10ebd73669bc2b81e7c1a72e37ba419ac9eddee0d52f8ddcc8879fe7470e40b",
+    "file": "Bourne-Again shell script text executable, ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/mac-64/xpdfrc",
+    "sha256": "a2b88fd3db79fb8569e884dbf52325ab9f3e6de628cbcecdbe81094a76ce006d",
+    "file": "ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/mac_arm-64/pdfalto",
+    "sha256": "f8fdadd6f5e43cd2eb82e7642333feb1d2ab39af0d090ee1566a8e8d84087696",
+    "file": "Mach-O 64-bit executable arm64",
+    "otool_L": [
+     "\t/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)",
+     "\t/opt/homebrew/opt/fontconfig/lib/libfontconfig.1.dylib (compatibility version 18.0.0, current version 18.0.0)",
+     "\t/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)"
+    ],
+    "codesign": "Executable=/Users/mbenhamd/Projects/grobid-oracle/grobid-home/pdfalto/mac_arm-64/pdfalto\nIdentifier=pdfalto\nFormat=Mach-O thin (arm64)\nCodeDirectory v=20400 size=301120 flags=0x20002(adhoc,linker-signed) hashes=9407+0 location=embedded\nSignature=adhoc\nInfo.plist=not bound\nTeamIdentifier=not set\nSealed Resources=none\nInternal requirements=none"
+   },
+   {
+    "path": "grobid-home/pdfalto/mac_arm-64/pdfalto_server",
+    "sha256": "f10ebd73669bc2b81e7c1a72e37ba419ac9eddee0d52f8ddcc8879fe7470e40b",
+    "file": "Bourne-Again shell script text executable, ASCII text"
+   },
+   {
+    "path": "grobid-home/pdfalto/mac_arm-64/xpdfrc",
+    "sha256": "d0cab49ecbe0f3b605fc95f54ea757d6dfa498716d03f623a1e8603e2257b725",
+    "file": "ASCII text"
+   }
+  ],
+  "gradle_wrapper_distribution": "https\\://services.gradle.org/distributions/gradle-9.6.1-bin.zip"
+ },
+ "runtime_observed": {
+  "observed_at": "2026-11-07T14:06:42.682704Z",
+  "toolchains": {
+   "uname": {
+    "exit_code": 0,
+    "output": "Darwin mbenhamd-5.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:33:50 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T6050 arm64"
+   },
+   "sw_vers": {
+    "exit_code": 0,
+    "output": "ProductName:\t\tmacOS\nProductVersion:\t\t26.4\nBuildVersion:\t\t25E246"
+   },
+   "cpu": {
+    "exit_code": 0,
+    "output": "Apple M5 Pro\n18\n51539607552"
+   },
+   "java-version": {
+    "exit_code": 0,
+    "output": "openjdk version \"21.0.13.0.3\" 2026-10-24\nOpenJDK Runtime Environment Homebrew (build 21.0.13.0.3)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.13.0.3, mixed mode, sharing)"
+   },
+   "javac-version": {
+    "exit_code": 0,
+    "output": "javac 21.0.13.0.3"
+   },
+   "rustc-version": {
+    "exit_code": 0,
+    "output": "rustc 1.88.0 (6b00bc388 2025-06-23)\nbinary: rustc\ncommit-hash: 6b00bc3880198600130e1cf62b8f8a93494488cc\ncommit-date: 2025-06-23\nhost: aarch64-apple-darwin\nrelease: 1.88.0\nLLVM version: 20.1.5"
+   },
+   "cargo-version": {
+    "exit_code": 0,
+    "output": "cargo 1.88.0 (873a06493 2025-05-10)"
+   },
+   "python-version": {
+    "exit_code": 0,
+    "output": "Python 3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]"
+   },
+   "clang-version": {
+    "exit_code": 0,
+    "output": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.4.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin"
+   },
+   "make-version": {
+    "exit_code": 0,
+    "output": "GNU Make 3.81\nCopyright (C) 2006  Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.\nThere is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.\n\nThis program built for i386-apple-darwin11.3.0"
+   },
+   "git-version": {
+    "exit_code": 0,
+    "output": "git version 2.50.1 (Apple Git-155)"
+   },
+   "locale": {
+    "exit_code": 0,
+    "output": "LANG=\"C.UTF-8\"\nLC_COLLATE=\"C.UTF-8\"\nLC_CTYPE=\"UTF-8\"\nLC_MESSAGES=\"C.UTF-8\"\nLC_MONETARY=\"C.UTF-8\"\nLC_NUMERIC=\"C.UTF-8\"\nLC_TIME=\"C.UTF-8\"\nLC_ALL="
+   },
+   "tz": {
+    "exit_code": 0,
+    "output": "CET +0100"
+   },
+   "gradlew-version": {
+    "exit_code": 0,
+    "output": "------------------------------------------------------------\nGradle 9.6.1\n------------------------------------------------------------\n\nBuild time:    2026-06-26 14:25:50 UTC\nRevision:      309d128bd9fe8c0b71311878fc660b9cbaa07c51\n\nKotlin:        2.3.21\nGroovy:        4.0.32\nAnt:           Apache Ant(TM) version 1.10.17 compiled on April 6 2026\nLauncher JVM:  21.0.13.0.3 (Homebrew 21.0.13.0.3)\nDaemon JVM:    /opt/homebrew/Cellar/openjdk@21/21.0.13.0.3/libexec/openjdk.jdk/Contents/Home (no Daemon JVM specified, using current Java home)\nOS:            Mac OS X 26.4 aarch64"
+   }
+  },
+  "pdfalto_mac_arm64_version_probe": {
+   "exit_code": 99,
+   "output": "pdfalto version 0.6.2"
+  },
+  "host_dylib_closure_of_arm64_natives": [
+   {
+    "install_name": "/opt/homebrew/opt/fontconfig/lib/libfontconfig.1.dylib",
+    "needed_by": "grobid-home/pdfalto/mac_arm-64/pdfalto",
+    "resolved": "/opt/homebrew/Cellar/fontconfig/2.18.3/lib/libfontconfig.1.dylib",
+    "exists": true,
+    "sha256": "e1f5e06e8339b42f0e1af11cc77979ef6a8f48ffa7588e4dc243e4bd69ea656d"
+   },
+   {
+    "install_name": "/opt/homebrew/opt/freetype/lib/libfreetype.6.dylib",
+    "needed_by": "/opt/homebrew/opt/fontconfig/lib/libfontconfig.1.dylib",
+    "resolved": "/opt/homebrew/Cellar/freetype/2.15.0/lib/libfreetype.6.dylib",
+    "exists": true,
+    "sha256": "9c99ad47dbf9f90b5cc1732a58fbcf62bc7b7175f75a431ddd7207e7457e00d7"
+   },
+   {
+    "install_name": "/opt/homebrew/opt/gettext/lib/libintl.8.dylib",
+    "needed_by": "/opt/homebrew/opt/fontconfig/lib/libfontconfig.1.dylib",
+    "resolved": "/opt/homebrew/Cellar/gettext/1.0/lib/libintl.8.dylib",
+    "exists": true,
+    "sha256": "c84dabdb4ece983eded000a677040666c8496cd55c07db9816bf4a3eb216da58"
+   },
+   {
+    "install_name": "/opt/homebrew/opt/libpng/lib/libpng16.16.dylib",
+    "needed_by": "/opt/homebrew/opt/freetype/lib/libfreetype.6.dylib",
+    "resolved": "/opt/homebrew/Cellar/libpng/1.6.59/lib/libpng16.16.dylib",
+    "exists": true,
+    "sha256": "ec95a41f112fac5e0b077f129bccc67acf9b5ad1a01f56cc0ecebae2a8727ff2"
+   },
+   {
+    "install_name": "/opt/homebrew/opt/brotli/lib/libbrotlidec.1.dylib",
+    "needed_by": "/opt/homebrew/opt/freetype/lib/libfreetype.6.dylib",
+    "resolved": "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlidec.1.2.1.dylib",
+    "exists": true,
+    "sha256": "f9512a0567d34e00af8dfc40cee8f020ecac2440113ab2861cbce419ee184962"
+   },
+   {
+    "install_name": "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.dylib",
+    "needed_by": "/opt/homebrew/opt/brotli/lib/libbrotlidec.1.dylib",
+    "resolved": "/opt/homebrew/Cellar/brotli/1.2.1/lib/libbrotlicommon.1.2.1.dylib",
+    "exists": true,
+    "sha256": "698009971733006eab6d9e441a61ea0856a72a8d23e4a61eb63fec785e89c927"
+   }
+  ],
+  "host_package_versions": [
+   "fontconfig 2.18.3",
+   "freetype 2.15.0",
+   "libpng 1.6.59",
+   "openjdk@21 21.0.13.0.3"
+  ]
+ },
+ "unresolved": [
+  "Maven/Gradle runtime dependency closure and built jar hashes: T002 (build oracle).",
+  "Runtime-loaded model/lexicon/pdfalto data hashes and effective per-getter config: T003.",
+  "DeLFT/TensorFlow/Python/embeddings environment: out of S1 scope (CRF-first), deferred.",
+  "Container digests: none; oracle is built natively on this host, not from an image.",
+  "Corpus revision and item hashes: T004.",
+  "Language/sentence detector runtime behavior: not exercised."
+ ],
+ "failures": []
+}
